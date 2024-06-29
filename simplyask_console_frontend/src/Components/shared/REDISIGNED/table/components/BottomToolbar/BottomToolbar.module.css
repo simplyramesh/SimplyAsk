@@ -1,0 +1,13 @@
+.bottomToolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 22px 0 0 8px;
+}
+
+/* .left {
+}
+
+.right {
+} */

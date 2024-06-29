@@ -1,0 +1,175 @@
+.container {
+  display: flex;
+
+  height: 54px;
+  max-height: 86px;
+
+  margin-bottom: 18px;
+}
+
+.subHeader {
+  display: flex;
+
+  /* height: 72px; */
+  /* max-height: 86px; */
+}
+
+.marginLeft {
+  min-width: 250px;
+
+  margin-left: 18px;
+}
+
+.subHeader_collapse {
+  min-width: 0;
+  height: auto;
+  max-height: none;
+}
+
+.left {
+  flex: 1 1 auto;
+
+  margin: 8px 0;
+}
+
+.subLeft {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+  justify-content: center;
+
+  cursor: default;
+
+  font-size: 14px;
+  font-style: normal;
+  color: #2d3a47;
+
+  margin-top: 10px;
+  margin-bottom: 6px;
+  margin-right: 8px;
+}
+
+.subLeft_collapsed {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.right {
+  display: flex;
+  flex: 0;
+  align-items: flex-start;
+}
+
+.subRight {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 12px 0;
+}
+
+.subRight_collapsed {
+  margin: 0;
+}
+
+.group_title {
+  display: flex;
+  align-items: center;
+
+  font-size: 16px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-style: normal;
+  color: #2d3a47;
+
+  margin: 0 0 14px;
+}
+
+.sub_groupTitle {
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-style: normal;
+  color: #2d3a47;
+
+  margin-bottom: 6px;
+  white-space: nowrap;
+}
+
+.ratio {
+  display: flex;
+  gap: 4px;
+
+  font-size: 14px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: #2d3a47;
+}
+
+.column_ratio {
+}
+
+.column_name {
+  font-size: 14px;
+  font-weight: 400;
+  color: #2d3a47;
+  white-space: nowrap;
+}
+
+.sysObjField {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 4px;
+
+  font-weight: 400;
+  text-align: left;
+}
+
+.sysObjField_collapsed {
+  flex-wrap: nowrap;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.not_selected {
+  font-size: 14px;
+  font-weight: 500;
+  color: #e03b24;
+
+  white-space: nowrap;
+}
+
+.icon {
+  margin: -10px 0;
+}
+
+.divider {
+  flex-shrink: 0;
+
+  height: 2px;
+
+  border-color: #2d3a47;
+  border-style: solid;
+  border-width: 0;
+  border-bottom-width: 2px;
+
+  margin: 0px 0px 4px;
+}
+
+.divider_span {
+  display: inline-block;
+
+  padding-left: calc(8px * 1.2);
+  padding-right: calc(8px * 1.2);
+}

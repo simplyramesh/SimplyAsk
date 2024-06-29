@@ -1,0 +1,45 @@
+.closeSessionButton {
+  cursor: pointer !important;
+  font-size: 30px !important;
+  color: var(--secondaryColor) !important;
+  margin-right: 5px !important;
+}
+
+.closeSessionDropdown {
+  top: var(--chat-bar-height);
+  transform: translateX(-85%);
+  width: fit-content !important;
+}
+
+/* Styling the check mark. */
+.closeSessionDropdown > div:nth-of-type(2) > svg {
+  color: var(--statusResolvedColor) !important;
+}
+
+/* Styling the x. */
+.closeSessionDropdown > div:nth-of-type(3) > svg {
+  color: var(--statusOverdueColor) !important;
+}
+
+.dropdownMenu {
+  top: var(--chat-bar-height);
+  right: 20px;
+  width: fit-content !important;
+}
+
+
+.requestContainer > p {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.requestContainer > span {
+  font-size: 16px;
+  margin: 15px 0;
+  width: 70%;
+}
+
+.requestContainer > button {
+  width: 70%;
+}

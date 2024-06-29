@@ -1,0 +1,124 @@
+/* css for divider like MUI Divider component */
+.container {
+  flex-shrink: 0;
+
+  margin: 5px 0 !important;
+
+  border-style: solid;
+  border-width: 0;
+  border-bottom-width: 2px;
+}
+
+.horizontal_height {
+  height: 2px;
+  margin-bottom: 4px;
+}
+
+.color_default {
+  border-color: #2d3a47;
+}
+
+.color_lightOrange {
+  border-color: #ffd7bb;
+}
+
+.color_gray {
+  border-color: #d4d4d4;
+}
+
+.absolute {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+}
+
+.inset {
+  margin-left: 72px;
+}
+
+.centerH {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.centerV {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.vertical {
+  height: 100%;
+
+  border-bottom-width: 0;
+  border-right-width: thin;
+}
+
+.flexItem {
+  align-self: stretch;
+
+  height: auto;
+}
+
+.withChildren {
+  display: flex;
+
+  border: 0;
+
+  text-align: center;
+  white-space: nowrap;
+}
+.withChildren::before,
+.withChildren::after {
+  content: '';
+
+  position: relative;
+  top: 50%;
+
+  width: 100%;
+
+  border-top: thin solid #2d3a47;
+
+  transform: translateY(50%);
+}
+
+.withChildrenV {
+  flex-direction: column;
+}
+
+.withChildrenV::before,
+.withChildrenV::after {
+  left: 50%;
+  top: 0;
+
+  height: 100%;
+
+  border-left: thin solid #2d3a47;
+  border-top: 0;
+
+  transform: translateX(0%);
+}
+
+.textRightH::before {
+  width: 90%;
+}
+
+.textRightH::after {
+  width: 10%;
+}
+.textLeftH::before {
+  width: 10%;
+}
+
+.textLeftH::after {
+  width: 90%;
+}
+
+.wrapper {
+  display: inline-block;
+
+  padding-left: calc(8px * 1.2);
+  padding-right: calc(8px * 1.2);
+}
+

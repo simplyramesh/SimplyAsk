@@ -1,0 +1,56 @@
+.filters {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.searchBar {
+  max-width: 25%;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.filesScrollbar {
+  height: calc(100vh - 500px) !important;
+}
+
+.files {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 160px));
+  gap: 2rem;
+}
+
+.searchBar {
+  min-width: 35%;
+}
+
+.searchBar > input {
+  font-size: 16px !important;
+}
+
+@media screen and (max-width: 900px) {
+  .searchBar > svg {
+    margin-left: -20px !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .searchBar > svg {
+    margin-left: -45px !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .searchBar > svg {
+    margin-left: -65px !important;
+    width: 24px;
+    height: 24px;
+  }
+
+  .searchBar > input {
+    font-size: 13px !important;
+  }
+}

@@ -1,0 +1,40 @@
+.add_column {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+
+  transition: background-color 200ms ease-in-out;
+
+  max-height: 42px;
+  padding: 12px;
+
+  border: none;
+  border-radius: 5px;
+  outline: none;
+
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.add_icon {
+  pointer-events: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add_icon svg {
+  height: 18px;
+}
+
+.add_text {
+  pointer-events: none;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d3a47;
+
+  white-space: nowrap;
+}

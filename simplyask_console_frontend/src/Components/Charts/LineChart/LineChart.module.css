@@ -1,0 +1,12 @@
+.lineChart {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  color: var(--primaryColor) !important;
+  width: 200px !important;
+  height: 200px !important;
+}

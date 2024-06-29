@@ -1,0 +1,68 @@
+.root {
+  height: 100%;
+}
+
+.profileCardItem {
+  display: flex;
+  align-items: center;
+}
+
+.profileCardItem {
+  margin-bottom: 20px;
+}
+
+.profileCardItemText {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  padding: 0 0.5rem;
+  background-color: var(--backgroundColor);
+  border-radius: 5px;
+  border: 1px solid var(--tertiaryColor);
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: var(--primaryColor);
+}
+
+.profileCardItemText.error {
+  border: 1px solid #E03B24 !important;
+  outline: none !important;
+}
+
+.profileCardItemText.warning {
+  border: 1px solid #E7BB09 !important;
+  outline: none !important;
+}
+
+
+.profileCardItemText:focus {
+  border-color: var(--secondaryColor) !important;
+}
+
+.delete {
+  color: rgb(153, 153, 153);
+  font-size: 25px;
+  padding-left: 4px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.delete:hover {
+  color: var(--primaryColor);
+}
+
+.flex_between {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5px;
+  align-items: center;
+}
+
+.counting {
+  color: rgba(45, 58, 71, 1);
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}

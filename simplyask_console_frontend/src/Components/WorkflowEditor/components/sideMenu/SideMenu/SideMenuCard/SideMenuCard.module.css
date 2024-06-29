@@ -1,0 +1,97 @@
+.card {
+  display: flex;
+  gap: 16px;
+
+  margin: 22px 0;
+}
+
+.stepIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+
+  border-radius: 5px;
+}
+
+.branch_color {
+  background: #ffecdf;
+}
+
+.branch_color > svg {
+  width: 24px;
+  height: 28px;
+}
+
+.blue {
+  background: #dfeeff;
+  color: #4299ff;
+}
+
+.blue > svg {
+  width: 24px;
+}
+
+/* .stepIcon > svg {
+} */
+
+.right_wrapper {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 8px;
+
+  margin: -4px -8px -4px -8px;
+}
+
+.editArea {
+  display: inline-flex;
+  flex: 1 1 auto;
+  align-items: center;
+
+  padding: 4px 8px 2px 8px;
+}
+
+.editing {
+  display: inline-flex;
+  flex: 1 1 auto;
+  align-items: center;
+
+  padding: 4px 8px 2px 8px;
+}
+
+.editArea:hover {
+  border-radius: 7px;
+
+  background: #eaecf0;
+}
+
+.text {
+  flex: 1 1 auto;
+
+  overflow-wrap: anywhere;
+}
+
+.subText {
+  flex: 1 1 auto;
+
+  margin: -8px 0 0 8px;
+}
+
+.actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.editAltIcon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.editAltIcon > svg {
+  width: 24px;
+}

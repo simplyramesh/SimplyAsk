@@ -1,0 +1,106 @@
+{
+	"en": {
+		"heading": {
+			"title": "Scheduled Callback Requester For Mobility Order Fallouts",
+			"body": "Fill in the following fields to send a customer an SMS requesting them to book a scheduled callback to resolve an order-related issue.",
+			"step": "Step",
+			"of": "of"
+		},
+		"agent": {
+			"title": "Agent Information",
+			"label": "Your TELUS Agent ID",
+			"brackets": "only numbers, excluding “x” or “t”",
+			"placeholder": "Enter TELUS Agent ID",
+			"error": " TELUS Agent ID is required",
+			"error2": " TELUS Agent ID must be 6 characters or less",
+			"error3": " TELUS Agent ID must be a number"
+		},
+		"agentEmail": {
+			"label": "Your Telus Email",
+			"placeholder": "Enter Email Address",
+			"error": "Email Address is required",
+			"error2": "Email Address must be a valid email address"
+		},
+		"customerInfo": "Customer Information",
+		"checkbox": {
+			"label": "Customer Language",
+			"en": "English",
+			"fr": "French"
+		},
+		"doms": {
+			"label": "Order Number",
+			"placeholder": "Enter DOMS Order Number",
+			"error": "DOMS Order Number is required"
+		},
+		"ban": {
+			"label": "Customer BAN",
+			"placeholder": "Enter BAN",
+			"error": "Customer BAN is required"
+		},
+		"fullName": {
+			"label": "Customer Full Name",
+			"placeholder": "Enter Full Name",
+			"error": "Customer Full Name is required",
+			"error2": "Customer Full Name must only contain letters"
+		},
+		"mobile": {
+			"label": "Customer Phone Number",
+			"placeholder": "Enter Phone Number",
+			"error": "Customer Phone Number is required",
+			"error2": "Customer Phone Number must be a 10 digit number"
+		},
+		"submit": {
+			"message": "Upon clicking the “Send SMS Callback Request” button below, the specified “Customer Phone Number” will receive an SMS message requesting the customer to book a scheduled callback.",
+			"button": "Send SMS Callback Request"
+		}
+	},
+	"fr": {
+		"heading": {
+			"title": "Demande de rappel sur rendez-vous - Commande de services de mobiles rejetée",
+			"body": "Remplissez les champs suivants pour envoyer à un client un texto lui demandant de prendre un rendez-vous de rappel pour ré\u00A0gler un problè\u00A0me lié\u00A0 à une commande.",
+			"step": "Étape",
+			"of": "de"
+		},
+		"agent": {
+			"title": "Renseignements sur l'agent",
+			"label": "Votre code d'agent TELUS",
+			"brackets": "chiffres seulement, sans X ou T",
+			"placeholder": "Entrez votre code d'agent TELUS",
+			"error": "L'identifiant de l'agent est requis",
+			"error2": "L'identifiant de l'agent doit comporter 6 caractères ou moins",
+			"error3": "L'identifiant de l'agent doit être un nombre"
+		},
+		"customerInfo": "Renseignements sur le client",
+		"checkbox": {
+			"label": "Langue du client",
+			"fr": "Français",
+			"en": "Anglais"
+		},
+		"doms": {
+			"label": "Numéro de commande DOMS",
+			"placeholder": "Entrez le numé\u00A0ro de commande DOMS",
+			"error": "Le numéro de commande DOMS est requis"
+		},
+		"ban": {
+			"label": "Numéro de compte du client",
+			"placeholder": "Entrez le numé\u00A0ro de compte",
+			"error": "Le numéro de compte du client est requis"
+		},
+		"fullName": {
+			"label": "Nom complet du client",
+			"placeholder": "Entrez le nom complet",
+			"error": "Le nom complet du client est requis",
+			"error2": "Le nom complet du client doit contenir uniquement des lettres"
+		},
+		"mobile": {
+			"label": "Numéro de téléphone du client",
+			"placeholder": "Entrez le numé\u00A0ro de té\u00A0lé\u00A0phone",
+			"error": "Le numéro de téléphone du client est requis",
+			"error2": "Le numéro de téléphone du client doit être un numéro à 10 chiffres"
+		},
+		"submit": {
+			"message": "Lorsque vous cliquez sur le bouton « Envoyer un texto de demande de rappel », le “numé\u00A0ro de té\u00A0lé\u00A0phone du client” indiqué\u00A0 recevra un texto demandant au client de prendre rendez-vous pour un rappel.",
+			"button": "Envoyer un texto de demande de rappel"
+		}
+	}
+}

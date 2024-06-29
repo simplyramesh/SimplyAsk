@@ -1,0 +1,128 @@
+.root {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--whiteColor);
+}
+
+.topMenu {
+  box-sizing: border-box;
+  height: 65px;
+  width: 100%;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  background-color: var(--tertiaryColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0 !important;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.titleContainer > p {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.notificationsScrollbar {
+  flex: 6;
+}
+
+.notificationsContainer {
+  padding: 0 1rem;
+}
+
+.closeIcon {
+  color: var(--primaryColor) !important;
+  font-size: 32px !important;
+  cursor: pointer;
+}
+
+.clearButton {
+  font-size: 13px !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.notificationContainer {
+    display: flex;
+    background: #F3F3F3;
+    justify-content: flex-start;
+    border-radius: 9px;
+    padding: 5px;
+    margin: 0 15px 30px 13px;
+    transition: 0.1s;
+}
+
+.notificationContainer:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.unread {
+  flex-shrink: 0;
+  width: 9px;
+  background-color: var(--secondaryColor);
+  margin-right: 13px;
+  transition: 0.1s;
+  border-radius: 10px 0 0 10px;
+}
+
+.read {
+  background-color: transparent !important;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: var(--tertiaryColor);
+  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.1);
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  margin: 20px 20px 20px 0;
+  color: var(--primaryColor);
+}
+
+.content p {
+  margin-top: 16px;
+}
+
+.content p:first-child {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: -15px;
+}
+
+.right {
+  flex: 1;
+  text-align: right;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.timestamp {
+  margin-top: 3px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.closeNotifIcon {
+  color: var(--primaryColor) !important;
+  font-size: 20px !important;
+  cursor: pointer;
+  margin-top: 16px;
+  margin-bottom: 0;
+}

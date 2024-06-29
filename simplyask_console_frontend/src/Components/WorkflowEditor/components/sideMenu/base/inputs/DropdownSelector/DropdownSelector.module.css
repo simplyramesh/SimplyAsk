@@ -1,0 +1,43 @@
+.wrapper {
+  position: relative;
+
+  display: flex;
+  gap: 8px;
+}
+
+.container {
+  position: relative;
+  flex: 1 1 auto;
+}
+
+.dropdown_indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.dropdown_indicator > svg {
+  width: 14px;
+
+  color: #2d3a47;
+}
+
+.header_divider {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  cursor: pointer;
+}
+
+.error div[class*='-control'] {
+  border: 1px solid #E03B24 !important;
+  outline: none !important;
+}
+
+.warning div[class*='-control'] {
+  border: 1px solid #E7BB09 !important;
+  outline: none !important;
+}

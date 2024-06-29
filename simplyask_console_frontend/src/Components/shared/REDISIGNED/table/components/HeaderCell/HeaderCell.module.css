@@ -1,0 +1,15 @@
+.headerCell {
+  display: flex;
+  flex: 1 1 auto;
+  gap: 6px;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+  color: #2d3a47;
+
+  margin: 0;
+}

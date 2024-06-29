@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: consolefrontend
+  labels:
+    app: consolefrontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: consolefrontend
+  template:
+    metadata:
+      labels:
+        app: consolefrontend
+    spec:
+      containers:
+        - name: consolefrontend
+          image: {{image}}
+          imagePullPolicy: IfNotPresent
+          ports:
+          - containerPort: 3000
+          env:
+          - name: NODE_ENV
+            value: staging
+      imagePullSecrets:
+      - name: dockerhub
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: consolefrontend
+  labels:
+    app: consolefrontend
+spec:
+  selector:
+    app: consolefrontend
+  ports:
+    - port: 3000
+      protocol: TCP
+      name: consolefrontend
+  type: NodePort

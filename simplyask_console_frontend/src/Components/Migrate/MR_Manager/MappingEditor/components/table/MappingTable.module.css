@@ -1,0 +1,123 @@
+.table {
+  border: 1px solid #aaaeb6;
+  /* border-collapse: collapse; */
+  border-spacing: 0;
+
+  background: #ffffff;
+
+  /* width: 100%; */
+  /* max-width: 100%; */
+  margin: 2px;
+}
+
+.table > * {
+  padding: 0;
+}
+
+.table .tr:first-child .td {
+  border-top: 0;
+}
+
+.table .tr:last-child .td {
+  border-bottom: none;
+}
+
+.thead {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+
+.tr {
+  /* border: 1px solid #aaaeb6; */
+}
+
+.th {
+  max-height: 86px;
+  padding: 6px;
+
+  border-top: var(--border-top);
+  border-right: var(--border-right);
+  border-bottom: var(--border-bottom);
+  border-left: var(--border-left);
+
+  background: var(--bgColor);
+
+  margin: 0;
+}
+
+.tbody {
+  height: fit-content;
+}
+
+.td {
+  position: relative;
+
+  transition: background-color 200ms ease-in-out, border 200ms ease-in-out,
+    outline 200ms ease-in-out;
+
+  min-height: 64px;
+  /* padding: 12px 18px; */
+  padding: 0;
+
+  border-bottom: 1px solid #aaaeb6;
+  border-left: var(--border-left);
+
+  background: #ffffff;
+
+  /* border-top: 'none'; */
+  /* border-right: 'none'; */
+  /* position: relative; */
+  /* width: 1%; */
+}
+
+.td[data-editable='true']:hover {
+  border: none;
+  outline: 2px solid #2d3a47;
+
+  /* border: 2px solid #2d3a47; */
+}
+
+.td[data-editable='true']:focus-within {
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+
+  border: none;
+  outline: 2px solid #4299ff;
+
+  /* border: 2px solid #4299ff; */
+}
+
+.td[data-editable='true']:hover {
+  border-bottom: 2px solid #2d3a47;
+}
+
+.td[data-editable='true']:hover + .td[data-editable='true'],
+.td[data-editable='true']:hover + .td[data-editable='false'] {
+  border-left: 2px solid #2d3a47;
+}
+
+.td[data-editable='true']:focus-within {
+  border-bottom: 2px solid #4299ff;
+}
+
+.td[data-editable='true']:focus-within + .td[data-editable='true'],
+.td[data-editable='true']:focus-within + .td[data-editable='false'] {
+  border-left: 2px solid #4299ff;
+}
+
+.td[data-editable='false'] {
+  border-left: var(--disabled-border-left);
+  border-bottom: 1px solid #cfd3da;
+
+  background: var(--disabled-bgColor);
+
+  pointer-events: none;
+}
+
+.tr .td:first-child:hover {
+  background-color: #e3f0fd;
+}
+
+.tr .td:nth-child(-n + 2) {
+  width: 0.0000000001%;
+}

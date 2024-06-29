@@ -1,0 +1,225 @@
+.topBarLeft {
+  display: flex;
+  align-items: center;
+}
+
+.topBarLeft p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.topBarLeft span {
+  margin: 0 5px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.backButton {
+  border: var(--borderWidth) solid var(--primaryColor) !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 10px !important;
+  cursor: pointer;
+  color: #2d3a47 !important;
+}
+
+.statusButton {
+  padding: 0 !important;
+}
+
+.statusButton>*>* {
+  border-radius: 15px !important;
+  padding: 0.1rem 0 !important;
+}
+
+.statusDropdownMenu {
+  width: 250px;
+  right: 2rem;
+  top: 52px;
+}
+
+.statusDropdownMenu>div {
+  padding: 0.5rem;
+}
+
+.tabs_labels>div>div>button {
+  font-size: 16px !important;
+}
+
+.statusDropdownMenu>div {
+  cursor: pointer;
+}
+
+.statusDropdownMenu>div:hover {
+  background: rgb(205, 205, 205);
+}
+
+@media screen and (max-width: 1300px) {
+  .tabs_labels>div>div>button {
+    font-size: 16px !important;
+  }
+
+  .topBarLeft span {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .tabs_labels>div>div>button {
+    font-size: 14px !important;
+    margin-right: 10px !important;
+  }
+
+  .topBarLeft p {
+    font-size: 20px;
+  }
+
+  .topBarLeft span {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tabs_labels>div>div>button {
+    font-size: 12px !important;
+    margin-right: -5px !important;
+  }
+
+  .tabs_labels>div {
+    overflow-x: scroll !important;
+  }
+}
+
+
+.topBarLeft {
+  display: flex;
+  align-items: center;
+}
+
+.topBarLeft p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.topBarLeft span {
+  margin: 0 5px;
+  font-weight: 300;
+}
+
+.backButton {
+  border: var(--borderWidth) solid var(--primaryColor) !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 10px !important;
+  color: #2d3a47 !important;
+}
+
+.statusButton {
+  padding: 0 !important;
+}
+
+.statusButton>span>div>svg {
+  display: none;
+}
+
+.statusButton>*>* {
+  border-radius: 15px !important;
+  padding: 0.1rem 0 !important;
+}
+
+.modal {
+  width: 600px !important;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 0 !important;
+  padding: 2.5rem !important;
+  border-radius: 20px !important;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1) !important;
+  overflow: hidden !important;
+}
+
+.modal>p {
+  align-self: center !important;
+  font-weight: 600;
+  font-size: 20px;
+  padding-top: 10px;
+  color: var(--primaryColor);
+}
+
+.warningIcon {
+  color: var(--statusAssignedColor);
+  width: 115px !important;
+  height: 115px !important;
+  /* margin: -10px 0 -15px 0; */
+  align-self: center !important;
+}
+
+.deleteButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.deleteButtons>button,
+.copyButton {
+  padding: 0 !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  width: 90px !important;
+  height: 40px !important;
+}
+
+.deleteButtons>button:first-child {
+  border: var(--borderWidth) solid var(--primaryColor) !important;
+}
+
+
+.statusDropdownMenu {
+  width: 250px;
+  right: 2rem;
+}
+
+.statusDropdownMenu>div {
+  padding: 0.5rem;
+}
+
+
+.toggleButton:focus {
+  outline: none;
+}
+
+.toggleDeleteButton {
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 45px;
+  width: 150px;
+  right: 2rem;
+  top: 4.5rem;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: var(--whiteColor);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  z-index: 10;
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  padding: 0 0 0 15px;
+  font-size: 14px;
+}
+
+.closeIcon {
+  margin-top: -20px;
+  margin-left: 525px;
+  font-size: 30px;
+  color: rgb(153, 153, 153);
+  cursor: pointer;
+  float: right !important;
+}

@@ -1,0 +1,69 @@
+
+.WorkflowEditorZoomBtn, .WorkflowEditorExpandBtn {
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.WorkflowEditorZoomBtn:disabled {
+    opacity: .3;
+    pointer-events: none;
+}
+
+.WorkflowEditorZoomBtnIcon {
+    transition: opacity 300ms ease;
+    width: 20px;
+    height: 20px;
+}
+
+.WorkflowEditorZoomBtn:hover {
+    opacity: 0.7;
+}
+
+.WorkflowEditorHeaderCompact {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    background-color: white;
+    padding: 0 10px;
+    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ACACAC;
+    border-radius: 5px;
+}
+
+.WorkflowEditorHeaderCompact .WorkflowEditorZoomBtn:after,
+.WorkflowEditorHeaderCompact .WorkflowEditorZoomDropdown:after {
+    content: "";
+    position: absolute;
+    left: calc(100% + 9px);
+    top: 9px;
+    height: 24px;
+    width: 1px;
+    background-color: #DFDFDF;
+}
+.WorkflowEditorHeaderCompact .WorkflowEditorZoomBtn:after {
+    top: 0;
+}
+
+
+.WorkflowEditorHeaderCompact .WorkflowEditorZoomBtn {
+    position: relative;
+}
+
+.WorkflowEditorExpandBtn {
+    position: relative;
+    margin-left: 18px;
+}
+
+.WorkflowEditorExpandBtn:hover {
+    opacity: 0.7;
+}
+
+

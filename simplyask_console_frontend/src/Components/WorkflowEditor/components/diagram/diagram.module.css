@@ -1,0 +1,365 @@
+.BaseSquare {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 92px;
+    width: 116px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.BaseSquare.Start {
+    background-color: #E8FFEE;
+    color: #45D16C;
+}
+
+.BaseSquare.End {
+    background-color: #FFE8E8;
+    color: #EE5F4B;
+}
+
+.EndOfLoop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 44px;
+    padding: 0 8px;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0,0,0,.2);
+    color: var(--secondaryColor);
+    font-weight: 600;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.BaseSquareIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 4px solid;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.BaseSquareIconEnd {
+    width: 12px;
+    height: 12px;
+    background: #EE5F4B;
+    border: 2px solid #EE5F4B;
+}
+
+/* Slot */
+
+.Slot {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    flex-grow: 1;
+    pointer-events: none;
+}
+
+.Slot em {
+    width: 80px;
+    word-break: break-all;
+    white-space: break-spaces;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.SlotInner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    border: 3px dashed transparent;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+.SlotInner.Active {
+    pointer-events: all;
+    border-color: #6D7A86;
+    background: rgba(225, 228, 238, 0.5);
+}
+
+  
+
+.SlotInner.Hover {
+    border-color: #45D16C;
+}
+
+.SlotPlus {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    background-color: #2D3A47;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+}
+
+
+
+.SlotPlus:before, .SlotPlus:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+
+.SlotPlus:before {
+    width: 3px;
+    height: 14px;
+}
+
+.SlotPlus:after {
+    height: 3px;
+    width: 14px;
+}
+
+.SlotArrow {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: calc(100% - 4px);
+    height: 3px;
+    background-color: #2D3A47;
+    z-index: -1;
+}
+
+.SlotArrow:before, .ConditionalBranch:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: calc(50% - 7px);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 7px 14px;
+    border-color: transparent transparent transparent #2D3A47;
+}
+
+
+.Slot.End .SlotPlus {
+    width: 24px;
+    height: 24px;
+    background-color: #FFE8E8;
+    border: 4px solid #EE5F4B;
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.Slot.End .SlotPlus:after {
+    width: 8px;
+    height: 8px;
+    background-color: #EE5F4B;
+    border-radius: 2px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-4px, -4px);
+}
+
+.Slot.End .SlotPlus:before {
+    visibility: hidden;
+}
+
+
+.ConditionalBranch:before {
+    left: -26px;
+}
+
+.SlotArrow:after {
+    content: "";
+    position: absolute;
+    right: -4px;
+    top: calc(50% - 7px);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 7px 14px;
+    border-color: transparent transparent transparent #2D3A47;
+}
+
+
+.Slot.End .SlotArrow {
+    pointer-events: none;
+    background-color: transparent;
+    background-image: linear-gradient(to right, #333 0%, #333 50%, transparent 50%, transparent 100%);
+}
+
+.Slot.End .SlotArrow:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -6px;
+    width: 50%;
+    height: 0;
+    border-bottom: 3px dashed #333;
+    display: block !important;
+    opacity: .2;
+    box-sizing: border-box;
+}
+
+.TriangleIcon {
+    width: 14px;
+    height: 14px;
+}
+
+/*branches*/
+
+.Branch {
+    position: relative;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.Branch > .Slot:only-child {
+    min-width: 336px;
+    width: 100%;
+}
+
+.Branch > .Slot:last-child .SlotArrow {
+    width: 100%;
+}
+
+.Branch > .Slot:last-child .SlotArrow:after {
+    display: none;
+}
+
+.Branch > .Slot:first-child .SlotArrow:before {
+    display: none;
+}
+
+.Branch.Group {
+    width: auto;
+    padding: 40px 0;
+    margin: 26px 0;
+    flex-grow: 0;
+}
+
+.Branch.Group:before {
+    content: "";
+    position: absolute;
+    left: 70px;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.Branch.Group.LOOP_GROUP:before {
+    border: 4px dashed #2D3A47;
+}
+
+.Branch.Group.RPA_GROUP:before {
+    border: 4px solid var(--secondaryColor);
+}
+
+.Branch.Group.RPA_GROUP.RPAError:before {
+    border: 4px solid #E03B24;
+}
+
+
+.ConditionalBranch {
+    position: relative;
+    display: grid;
+    grid-row-gap: 50px;
+    margin-left: 26px !important;
+}
+
+.ConditionalBranch:after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    height: 3px;
+    width: 26px;
+    background-color: #2D3A47;
+    transform: translateY(-50%);
+}
+
+.ConditionalBranch > .Branch:first-child:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: calc(50% + 50px);
+    width: 3px;
+    background-color: #2D3A47;
+}
+
+.ConditionalBranch > .Branch:not(:first-child):not(:last-child):before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: calc(100% + 50px);
+    width: 3px;
+    background-color: #2D3A47;
+}
+
+.ConditionalBranch > .Branch:last-child:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    height: calc(50% + 50px);
+    width: 3px;
+    background-color: #2D3A47;
+}
+
+.ConditionalBranch > .Branch:first-child:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: calc(50% + 50px);
+    width: 3px;
+    background-color: #2D3A47;
+}
+
+.ConditionalBranch > .Branch:not(:first-child):not(:last-child):after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: calc(100% + 50px);
+    width: 3px;
+    background-color: #2D3A47;
+}
+
+.ConditionalBranch > .Branch:last-child:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    height: calc(50% + 50px);
+    width: 3px;
+    background-color: #2D3A47;
+}

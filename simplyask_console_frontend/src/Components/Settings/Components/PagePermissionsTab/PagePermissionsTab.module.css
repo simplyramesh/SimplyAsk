@@ -1,0 +1,47 @@
+.root {
+  height: 100%;
+  align-items: center;
+  margin: 0 !important;
+}
+
+.contentHeight {
+  height:100%;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.editButton {
+  border-radius: 50%;
+  background-color: var(--tertiaryColor);
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  float: right;
+}
+
+.editIcon {
+  color: var(--primaryColor) !important;
+  height: 25px !important;
+  width: 25px !important;
+}
+
+.roleContainer > span {
+  border-radius: 100vh;
+  background-color: var(--tertiaryColor);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+
+.roleContainer.secondColor > span {
+  background-color: var(--secondaryColor) !important;
+  color: var(--whiteColor) !important;
+}

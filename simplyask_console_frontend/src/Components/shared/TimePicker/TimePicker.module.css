@@ -1,0 +1,40 @@
+.timepicker {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inputGroup {
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+    background-color: var(--backgroundColor);
+    border-radius: 5px;
+    border: 1px solid var(--tertiaryColor);
+    margin-right: 6px;
+}
+
+.dots {
+    margin: 0 2px;
+}
+
+.input {
+    width: 40px !important;
+    height: 38px !important;
+    text-align: center !important;
+    border: none !important;
+    background-color: transparent;
+}
+
+.input:focus {
+    border: 1px solid var(--primaryColor) !important;
+}
+
+.input.invalid {
+    border: 1px solid var(--statusOverdueColor) !important;
+}
+
+.timepicker .select {
+    flex-shrink: 0;
+    width: 80px;
+}

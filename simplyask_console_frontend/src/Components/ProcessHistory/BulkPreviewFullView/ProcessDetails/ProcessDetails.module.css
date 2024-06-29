@@ -1,0 +1,141 @@
+.root {
+  width: 100%;
+  height: 100%;
+}
+
+.root_loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.falloutReportExportButtons {
+  border: 2px solid rgba(45, 58, 71, 1);
+  color: rgba(45, 58, 71, 1);
+  width: 200px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 1);
+  height: 44px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin: 20px 0 35px 0;
+  text-decoration: none !important;
+}
+
+.falloutReportExportButtons:hover {
+  background: var(--tertiaryColor);
+}
+
+.downloadImgParent {
+  display: flex;
+  align-items: center;
+}
+
+.process_details_top_property {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid rgba(45, 58, 71, 0.25);
+}
+
+.process_details_bottom_property {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex_col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.justify_between {
+  justify-content: space-between;
+}
+
+.justify_center {
+  justify-content: center;
+}
+
+.file_name_header_font_format {
+  word-break: break-all;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.process_details_left_side_text_format {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.process_details_gap {
+  margin-bottom: 20px;
+}
+
+.process_details_gap_bottom{
+  margin-top: 25px;
+}
+
+.process_details_gap_bottom >div:not(:last-child){
+  margin-bottom: 25px;
+}
+
+.process_details_gap>div {
+  margin-bottom: 25px;
+}
+
+.process_details_margin_right_full_section {
+  margin-left: -20px;
+  border-right: 1px solid #caced1;
+}
+
+.process_details_button_alignment {
+  align-items: center;
+  width: 210px;
+  gap: 8px;
+}
+
+.margin_top_35px {
+  margin-top: 35px;
+}
+
+.link_color {
+  color: #2075f5;
+}
+
+.link_color:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.capitalize {
+  text-transform: capitalize;
+  margin-right: 4px;
+}
+
+@media screen and (max-width: 1280px) {
+  .process_details_margin_right_full_section {
+    margin-left: 0;
+    border-right: 0;
+  }
+
+  .process_details_top_property,
+  .process_details_bottom_property {
+    width: 100%;
+  }
+}

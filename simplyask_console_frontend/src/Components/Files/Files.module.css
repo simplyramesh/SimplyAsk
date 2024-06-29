@@ -1,0 +1,108 @@
+.card {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.tabs_header > div > div > button {
+  font-size: 16px !important;
+  min-width: 90px !important;
+}
+
+.button {
+  color: var(--primaryColor) !important;
+  font-size: 20px !important;
+}
+
+.filesScrollbar {
+  height: 750px !important;
+}
+
+.files {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 160px));
+  gap: 2rem;
+}
+
+.searchBar {
+  width: 250px;
+}
+
+.backContainer {
+  margin: 10px 0 25px 0;
+  color: var(--primaryColor) !important;
+  display: flex;
+  align-items: center;
+}
+
+.backContainer > p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.backButton {
+  cursor: pointer;
+  padding: 0.4rem;
+  width: 30px;
+  height: 30px;
+  background-color: var(--tertiaryColor) !important;
+  border-radius: 50%;
+}
+
+.modal {
+  border: 0 !important;
+  padding: 1.5rem !important;
+  border-radius: 5px !important;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+.fileModal {
+  left: 20% !important;
+  width: 60% !important;
+  padding: 2rem !important;
+  border-radius: 25px !important;
+}
+
+.emptyFolderMsg {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1350px) {
+  .NavTabs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .NavTabs > div:nth-child(2) {
+    margin-left: 0;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .searchBar {
+    flex: 1;
+  }
+
+  .button {
+    font-size: 16px !important;
+    border-radius: 15px !important;
+  }
+
+
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 880px) {
+}
+
+@media screen and (max-width: 650px) {
+  .searchBar {
+    width: 100%;
+  }
+}

@@ -1,0 +1,43 @@
+.root {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  position: relative;
+  cursor: pointer;
+  width: fit-content;
+  min-width: 61px;
+  border-radius: 16px;
+    padding: 0.3rem 0.3rem 0.3rem 0.5rem;
+    font-size: 13px;
+
+  background-color: var(--switch-main-color);
+  color: var(--whiteColor);
+}
+
+.inactiveColor {
+  background-color: #2d3a47;
+}
+
+.inactive {
+  flex-direction: row-reverse;
+  padding-left: 0.3rem;
+  padding-right: 0.5rem;
+}
+
+.label {
+  width: 100%;
+}
+
+.thumb {
+  height: 20px;
+  width: 20px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: var(--switch-thumb-color);
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

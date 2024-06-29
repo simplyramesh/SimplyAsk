@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.default {
+  padding: 0 22px;
+}
+
+.group {
+  margin: 0;
+  padding: 0;
+}
+
+.outer {
+  margin: 32px 22px;
+}
+
+.inner {
+  margin: 12px 0;
+}
+
+.wide {
+  margin: 0 8px 18px 8px;
+
+  /* flex: 1 1 auto; */
+  /* width: 100%; */
+}
+
+.flex1 {
+  flex: 1 1 auto;
+}
+
+
+.centered {
+  justify-content: center;
+  align-items: center;
+}

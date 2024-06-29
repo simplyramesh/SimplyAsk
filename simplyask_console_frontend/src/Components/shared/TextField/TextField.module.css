@@ -1,0 +1,95 @@
+.flex_col {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+    flex: 1;
+}
+
+.label {
+    font-size: 16px;
+    color: #2D3A47;
+    font-weight: 600;
+}
+
+.input {
+    height: 38px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 10px;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-top: 2px;
+    color: #2D3A47 !important;
+    font-family: "Montserrat", sans-serif;
+}
+
+.input:focus {
+    outline: #2d3a47;
+    border-color: #2d3a47;
+}
+
+.flex_row {
+    display: flex;
+    gap: 5px;
+}
+
+.optionalSpan {
+    color: rgb(177, 177, 177)
+}
+
+.fullInputWidth {
+    width: 630px
+}
+
+.width220 {
+    width: 220px;
+}
+
+.width135 {
+    width: 135px;
+}
+
+.invalidRedBorder {
+    border: 1px solid rgba(224, 59, 36, 1)
+}
+
+.fixAddressErrorPosition {
+    position: absolute;
+    bottom: -78px;
+}
+
+.centerVertically {
+    display: flex;
+    align-items: center;
+}
+
+.gap_10px {
+    gap: 10px;
+}
+
+.redColorText {
+    color: rgba(224, 59, 36, 1);
+    font-weight: 600;
+}
+
+.largeHeightInput {
+    height: 62px;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.showCharacterCount{
+    position: absolute;
+    bottom: -18px;
+    right: 0;
+    color: rgba(45, 58, 71, 1);
+    font-size: 12px;
+}
+
+.showCharacterCountError{
+    bottom: 0;
+}
+
+.redColorCountText {
+    color: rgba(224, 59, 36, 1);
+}

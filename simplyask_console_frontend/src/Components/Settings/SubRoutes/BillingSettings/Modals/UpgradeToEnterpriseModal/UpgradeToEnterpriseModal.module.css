@@ -1,0 +1,158 @@
+.root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.enterpriseMiddleRoot {
+  position: relative;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.simplyAskIcon1 {
+  position: absolute;
+  left: 10px;
+  top: 40px;
+}
+
+.simplyAskIcon2 {
+  position: absolute;
+  top: 110px;
+  right: -76px;
+  width: 203px;
+  transform: rotate(40deg);
+}
+
+.simplyAskIcon3 {
+  position: absolute;
+  bottom: -91px;
+  left: -91px;
+  width: 225px;
+  transform: rotate(-35deg);
+}
+
+.simplyAskIcon4 {
+  position: absolute;
+  bottom: 0;
+  right: 95px;
+  width: 225px;
+  transform: rotate(13deg);
+}
+
+.simplyAskIcon5{
+  position: absolute;
+  top: -104px;
+  right: 247px;
+  width: 225px;
+  transform: rotate(-34deg);
+}
+
+.enterpriseCenterDiv {
+  width: 550px;
+  height: 480px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.enterpriseOrangeBox {
+  min-height: 475px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.enterpriseOrangeBoxBg {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondaryColor);
+  border-radius: 15px 15px 0 0;
+}
+
+.enterpriseOrangeBoxHeader {
+  font-size: 30px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.enterprisePlanContent {
+  height: 100%;
+  border: 2px solid #F57B20;
+  border-radius: 0 0 15px 15px;
+  background: #FFFFFF;
+  z-index: 1;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.enterprisePlanContent>div:first-child {
+  margin-top: 35px;
+}
+
+.checkboxIcon {
+  height: 30px !important;
+  width: 30px !important;
+  color: #F57B20;
+  margin-right: 15px;
+}
+
+.enterpriseContentTitle {
+  color: #2D3A47;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.enterpriseContentBody {
+  color: #2D3A47;
+  font-size: 15px;
+}
+
+.enterpriseBodyCol {
+  display: flex;
+  flex-direction: column;
+  gap: 5px
+}
+
+.enterpriseBodyRoot {
+  display: flex;
+}
+
+.footerRoot {
+  height: 120px;
+  border-radius: 0 0 20px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contactUsBtn{
+  width: 202px !important;
+  height: 42px !important;
+  background: rgba(245, 123, 32, 1) !important;
+  font-weight: 500 !important;
+  font-size: 17px !important;
+  color: rgba(255, 255, 255, 1) !important;
+  transition: all 200ms ease;
+}
+
+.contactUsBtn:hover{
+  background: #2D3A47 !important;
+}

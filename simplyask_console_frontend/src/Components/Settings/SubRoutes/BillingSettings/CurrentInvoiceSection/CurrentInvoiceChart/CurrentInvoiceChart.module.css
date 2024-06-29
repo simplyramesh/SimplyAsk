@@ -1,0 +1,135 @@
+.root {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.wrapChart {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.chartLabelParent {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+.flex_row {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.circle_icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+}
+
+.smallLightText {
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 25px;
+}
+
+.smallBoldText {
+  font-weight: 600;
+}
+
+.chartLabelText {
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 25px;
+  line-height: 150%;
+}
+
+.chartLabelTextBold {
+  font-weight: 600;
+}
+
+.breakLine {
+  max-width: 170px;
+  word-break: normal;
+}
+
+@media screen and (max-width: 950px) {
+  .root {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapChart {
+    justify-content: center;
+  }
+
+  .chartLabelParent {
+    gap: 15px;
+    display: grid;
+    height: 100%;
+  }
+
+  .breakLine {
+    max-width: none;
+  }
+
+  .smallLightText {
+    font-size: 14px;
+    margin-left: 18px;
+  }
+
+}
+
+.fadeIn {
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.absolute_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.center_text {
+  color: #2d3a47;
+  text-align: center;
+  font-size: 22px;
+  word-break: normal;
+  margin-top: 7px;
+}
+
+.percentageCost {
+  padding-top: 7px;
+  color: #2d3a47;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}

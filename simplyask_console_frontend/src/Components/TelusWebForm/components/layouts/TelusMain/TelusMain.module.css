@@ -1,0 +1,52 @@
+.main_container {
+  flex: 1 1 auto;
+  overflow-y: hidden;
+  background-color: #FFFFFF;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  overflow-y: inherit;
+  padding: 46px 40px;
+}
+
+.main_text_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 2px;
+}
+
+.main_title {
+  font-size: 44px;
+  line-height: 53px;
+  font-family: 'Helvetica Neue';
+  font-weight: 200;
+  font-style: normal;
+  color: #4b286d;
+  margin: 0;
+}
+
+.main_subtitle {
+  font-size: 18px;
+  line-height: 21px;
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  font-style: normal;
+  color: #2a2c2e;
+  margin: 0;
+}
+
+.main_children {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+@media screen and (min-width: 1000px) {
+  .main {
+    padding: 46px 75px;
+  }
+}

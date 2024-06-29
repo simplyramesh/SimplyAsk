@@ -1,0 +1,86 @@
+.sideModal_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 12px 20px 38px 20px;
+}
+
+.close_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.close_icon svg {
+  pointer-events: none;
+
+  width: 20px;
+}
+
+.sideModal_content {
+  margin: 0 20px;
+}
+
+.content_title {
+  font-size: 20px;
+  font-weight: 600;
+
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.content_subTitle {
+  font-size: 16px;
+  font-weight: 600;
+
+  margin-bottom: 10px;
+}
+
+.content_body {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+
+  margin-bottom: 26px;
+}
+
+.content_fields {
+  position: relative;
+}
+
+.fields_list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  padding: 0;
+
+  color: #2d3a47;
+
+  margin-left: 4px;
+  margin-bottom: 16px;
+}
+
+.list_item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  margin-left: 6px;
+}
+
+.list_indicator {
+  flex: 0;
+}
+
+.list_expression {
+  flex: 1 1 auto;
+
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: #2d3a47;
+}

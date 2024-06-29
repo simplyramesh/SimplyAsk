@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  align-items: center;
+
+  width: 602px;
+}
+
+.container:nth-child(even) > div {
+  border-top: 1px solid #2d3a47;
+  border-bottom: 1px solid #2d3a47;
+}
+
+.fixedHeight {
+  height: 88px;
+}
+
+.fixedHeight > p {
+  padding: 0 14px;
+
+}
+
+.container:last-child {
+  border-bottom: 1px solid #2d3a47;
+}
+
+.left,
+.right {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  padding: 14px 0;
+}
+
+.withLeftBorder {
+  border-left: 1px solid #2d3a47;
+  border-right: 1px solid #2d3a47;
+}
+
+.withRightBorder {
+  border-right: 1px solid #2d3a47;
+}
+
+.withShade {
+  background: #f3f4f8;
+}

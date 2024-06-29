@@ -1,0 +1,45 @@
+.emailItems {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+
+.emailItems:not(:empty) {
+    margin-top: 12px;
+}
+
+.emailItems * {
+    box-sizing: border-box;
+}
+
+.emailItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    padding: 0 10px;
+    background: var(--backgroundColor);
+    border: 1px solid var(--tertiaryColor);
+}
+
+.emailItem{
+    margin-bottom: 8px;
+}
+
+.emailItemText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.emailItemIcon {
+    flex-shrink: 0;
+    margin-left: 10px;
+    font-size: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.emailItemIcon:hover {
+    opacity: 1;
+}

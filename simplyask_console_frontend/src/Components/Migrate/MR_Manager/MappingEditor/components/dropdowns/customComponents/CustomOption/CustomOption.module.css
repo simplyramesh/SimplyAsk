@@ -1,0 +1,12 @@
+.reset_label {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #2d3a47;
+}
+
+.last_save {
+  font-size: 14px;
+  font-weight: 400;
+  color: #808080;
+}

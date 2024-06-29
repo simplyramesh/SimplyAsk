@@ -1,0 +1,68 @@
+.root {
+  text-transform: capitalize;
+  border-radius: 10px;
+  padding: 0.4rem 1.5rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  margin: auto;
+  text-align: center;
+}
+
+.sideModal {
+  font-size: 20px !important;
+  width: 150px !important;
+  border-radius: 15px;
+}
+
+.noBackground {
+  background-color: transparent !important;
+}
+
+.overdue {
+  color: var(--statusOverdueColor);
+  background-color: var(--statusOverdueBackgroundColor);
+}
+
+.assigned {
+  color: var(--statusAssignedColor);
+  background-color: var(--statusAssignedBackgroundColor);
+}
+
+.unassigned {
+  color: var(--statusUnassignedColor);
+  background-color: var(--statusUnassignedBackgroundColor);
+}
+
+.resolved {
+  color: var(--statusResolvedColor);
+  background-color: var(--statusResolvedBackgroundColor);
+}
+
+.capital {
+  text-transform: uppercase !important;
+}
+
+.boxShadow{
+  box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 10%);
+}
+
+@media screen and (max-width: 1200px) {
+  .sideModal {
+    width: 130px !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sideModal {
+    width: 120px !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sideModal {
+    width: 100px !important;
+  }
+}

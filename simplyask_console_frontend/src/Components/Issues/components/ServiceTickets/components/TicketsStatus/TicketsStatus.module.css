@@ -1,0 +1,45 @@
+.root {
+  text-transform: capitalize;
+  border-radius: 10px;
+  padding: 0.4rem 0.7rem 0.5rem 1rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  margin: auto;
+}
+
+.noBackground {
+  background-color: transparent !important;
+}
+
+.overdue {
+  color: var(--statusOverdueColor);
+  background-color: var(--statusOverdueBackgroundColor);
+}
+
+.assigned {
+  color: var(--statusAssignedColor);
+  background-color: var(--statusAssignedBackgroundColor);
+}
+
+.unassigned {
+  color: var(--statusUnassignedColor);
+  background-color: var(--statusUnassignedBackgroundColor);
+}
+
+.updated,
+.created {
+  color: var(--statusUnassignedColor);
+  background-color: var(--statusUnassignedBackgroundColor);
+}
+
+.resolved, .done {
+  color: var(--statusResolvedColor);
+  background-color: var(--statusResolvedBackgroundColor);
+}
+
+.capital {
+  text-transform: uppercase !important;
+}

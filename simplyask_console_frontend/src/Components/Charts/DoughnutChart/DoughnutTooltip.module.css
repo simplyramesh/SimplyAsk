@@ -1,0 +1,52 @@
+.tooltip {
+  position: absolute;
+  --gap: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--primaryColor);
+  border-radius: 10px;
+
+  color: var(--whiteColor);
+  /* if padding is changed, the x and y values should be changed as well in the DoughnutReactChart component */
+  padding: 8px 12px;
+
+  pointer-events: none;
+
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.35s, opacity 0.35s ease-in-out;
+  white-space: nowrap;
+}
+
+.tooltip_chart {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.unBoldTooltipText{
+  font-weight: 400;
+}
+
+.tooltip_action {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 8px;
+}
+
+.tooltip_processes {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 8px;
+}
+
+.tooltip_invisible {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s ease-in-out;
+}

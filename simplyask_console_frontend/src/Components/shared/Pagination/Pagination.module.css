@@ -1,0 +1,9 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: row-reverse;
+    justify-content: space-between; */
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+}

@@ -1,0 +1,79 @@
+.modal {
+    width: 600px !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 0 !important;
+    padding: 2.5rem !important;
+    border-radius: 20px !important;
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1) !important;
+    overflow: hidden !important;
+    z-index: 6000 !important;
+
+}
+
+.modal > p {
+    align-self: center !important;
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 10px;
+    color: var(--primaryColor);
+}
+
+.icon {
+    width: 115px !important;
+    height: 115px !important;
+    /* margin: -10px 0 -15px 0; */
+    align-self: center !important;
+}
+
+.closeIcon {
+    margin-top: -20px;
+    margin-left: 525px;
+    font-size: 30px;
+    color: rgb(153, 153, 153);
+    cursor: pointer;
+    float: right !important;
+}
+
+.fullScreen {
+    margin-top: 0;
+    color: #2D3A47;
+    font-size: 20px;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.description {
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description span {
+    font-weight: 500;
+}
+
+.modalButtons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 5px;
+}
+
+.modalButtons > button {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    width: 155px !important;
+    height: 40px !important;
+}
+
+.modalButtons > button:first-child {
+    border: var(--borderWidth) solid var(--primaryColor) !important;
+}

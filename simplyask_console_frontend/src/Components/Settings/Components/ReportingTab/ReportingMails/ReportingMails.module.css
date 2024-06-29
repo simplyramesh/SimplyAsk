@@ -1,0 +1,18 @@
+.ReportingMails {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.ReportingMailsItem {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ReportingMailsItem + .ReportingMailsItem {
+  margin-top: 8px;
+}

@@ -1,0 +1,29 @@
+.root {
+  background-color: var(--backgroundColor);
+  border: 1px solid var(--tertiaryColor);
+  border-radius: 10px;
+  display: inline-flex;
+  padding: 5px 5px 5px 10px;
+  min-width: 15vw !important;
+  justify-content: space-between;
+}
+
+.pageInfo {
+  display: flex;
+  margin-right: auto;
+}
+
+.pageName {
+  margin-top: 5px;
+}
+
+.icons {
+  margin-left: 0.3vw;
+  margin-top: 3px;
+  color: var(--secondaryColor);
+  transform: scale(0.7);
+}
+
+.visibilityIcon {
+  margin-right: 7px;
+}

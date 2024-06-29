@@ -1,0 +1,167 @@
+.root {
+  height: 100%;
+  width: auto !important;
+  margin: 0 !important;
+  overflow-y: hidden !important;
+  overflow-x: scroll !important;
+}
+
+.root::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.tableHeight {
+  height: calc(100% - 70px) !important;
+}
+
+.topMenu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.topMenu>h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.addGroupTypeButton {
+  color: var(--primaryColor) !important;
+  padding: 0 1.3rem !important;
+  font-size: 17px !important;
+  width: 200px !important;
+  justify-content: space-between !important;
+}
+
+.actionsFlex{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.plusCharacter {
+  font-size: 25px !important;
+  margin-right: 5px !important;
+}
+
+.root table {
+  width: calc(100% - 20px);
+}
+
+.root table>thead>tr>th:last-child {
+  width: 50px !important;
+}
+
+.tableButton {
+  border-radius: 50%;
+  background-color: var(--tertiaryColor);
+  height: 45px;
+  width: 45px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  float: right;
+}
+
+.modal {
+  width: 600px !important;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 0 !important;
+  padding: 2.5rem !important;
+  border-radius: 20px !important;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1) !important;
+  overflow: hidden !important;
+}
+
+.modal>p {
+  align-self: center !important;
+  font-weight: 600;
+  font-size: 20px;
+  padding-top: 10px;
+  color: var(--primaryColor);
+}
+
+.closeIcon {
+  margin-top: -20px;
+  margin-left: 525px;
+  font-size: 30px;
+  color: rgb(153, 153, 153);
+  cursor: pointer;
+  float: right !important;
+}
+
+.description {
+  padding: 20px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description span {
+  font-weight: 500;
+}
+
+.warningIcon {
+  color: var(--statusAssignedColor);
+  width: 115px !important;
+  height: 115px !important;
+  /* margin: -10px 0 -15px 0; */
+  align-self: center !important;
+}
+
+.deleteButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.deleteButtons>button,
+.copyButton {
+  padding: 0 !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  width: 90px !important;
+  height: 40px !important;
+}
+
+.deleteButtons>button:first-child {
+  border: var(--borderWidth) solid var(--primaryColor) !important;
+}
+
+.marginVertical {
+  display: block;
+  margin: 1rem 0;
+}
+
+.agents {
+  height: calc(100% - 100px) !important;
+}
+
+.numberColumn {
+  display: flex;
+  padding-left: 40px;
+}
+
+.tableWidth {
+  width: 100% !important;
+}
+
+.tableParentClassName {
+  height: calc(100% - 75px) !important;
+}
+
+@media screen and (max-width: 900px) {
+  .topMenu>h3 {
+    font-size: 22px;
+  }
+}

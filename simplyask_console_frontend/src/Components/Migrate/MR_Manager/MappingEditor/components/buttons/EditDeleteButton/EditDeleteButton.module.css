@@ -1,0 +1,30 @@
+.icon {
+  display: flex;
+  flex: 0 0 24px;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  color: #2d3a47;
+
+  margin: 12px 6px;
+}
+
+.icon svg {
+  pointer-events: none;
+
+  width: 24px;
+}
+
+.icon:hover {
+  background-color: var(--hover-bgColor);
+
+  /* Charcoal */
+}
+
+.row_icon:hover {
+  background: #caccce;
+}

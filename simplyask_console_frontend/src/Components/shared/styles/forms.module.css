@@ -1,0 +1,179 @@
+.form {
+    height: 100%;
+    padding-top: 80px;
+}
+
+.body {
+    height: 100%;
+    padding: 0 10px;
+}
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 16px;
+    text-align: right;
+    background-color: var(--tertiaryColor);
+    z-index: -1;
+    box-sizing: border-box;
+}
+
+.headerItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.headerItem + .headerItem {
+    margin-top: 14px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.footer * + * {
+    margin-left: 20px;
+}
+
+.fieldset {
+    position: relative;
+    border: none;
+}
+
+.fieldset + .fieldset {
+    margin-top: 20px;
+}
+
+.horizontal {
+    display: grid;
+    grid-template-areas:
+            "label select"
+            "message message";
+    grid-template-columns: auto 1fr;
+}
+
+.horizontal.custom {
+    grid-template-areas:
+            "label input select"
+            "message message message";
+    grid-template-columns: auto auto 2fr;
+}
+
+.horizontal > label {
+    grid-area: label;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primaryColor);
+    align-self: center;
+    margin-bottom: 0;
+}
+
+.horizontal > span {
+    align-self: center;
+}
+
+.horizontal > input {
+    grid-area: input;
+    width: 40px;
+    text-align: center;
+}
+
+.horizontal > div {
+    grid-area: select;
+    flex-grow: 1;
+    margin-bottom: 0;
+}
+
+.horizontal > .errorMessage {
+    grid-area: message;
+}
+
+.horizontal > * + *{
+    margin-left: 6px;
+}
+
+.label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--primaryColor);
+}
+
+.input,
+.textarea {
+    background-color: var(--backgroundColor);
+    border-radius: 5px;
+    border: 1px solid var(--tertiaryColor);
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.select > div {
+    border-radius: 5px !important;
+    border: none !important;
+    font-size: 16px !important;
+    background-color: var(--backgroundColor) !important;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px var(--tertiaryColor) !important;
+}
+
+.select.invalid {
+    border-color: transparent !important;
+}
+
+.select.invalid > div {
+    box-shadow: 0 0 0 1px var(--statusOverdueColor) !important;
+}
+
+.select > div > div > div {
+    color: rgba(0, 0, 0, 1) !important;
+    border-radius: 10px !important;
+}
+
+.invalid {
+    border: 1px solid var(--statusOverdueColor) !important;
+}
+
+.input {
+    height: 40px;
+    font-size: 16px;
+    padding: 0 0.5rem;
+}
+
+.input:focus {
+    border: 1px solid var(--primaryColor);
+    outline: none;
+}
+
+.errorMessage {
+    grid-area: message;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--statusOverdueColor);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 2px 0;
+}
+
+.errorMessage .errorMessageIcon {
+    fill: var(--statusOverdueColor);
+}
+
+.errorMessageIcon {
+    flex-shrink: 0;
+    font-size: 18px;
+}
+
+.errorMessageText {
+    margin-left: 2px;
+}

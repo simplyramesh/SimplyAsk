@@ -1,0 +1,80 @@
+.title {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 10px 0 25px 0;
+}
+
+.root label {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.groupNameInput {
+  height: 40px;
+  font-size: 16px;
+  padding: 0 0.5rem;
+}
+
+.description > textarea:focus-visible,
+.groupNameInput:focus-within {
+  border: 1px solid var(--primaryColor) !important;
+  outline: none !important;
+}
+
+.groupNameInput,
+.description > textarea {
+  background-color: var(--backgroundColor);
+  border-radius: 5px;
+  border: 1px solid var(--tertiaryColor);
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.description > textarea {
+  resize: none;
+  height: 100px;
+  padding: 0.5rem;
+}
+
+.saveButton {
+  width: 130px !important;
+  position: absolute !important;
+  right: 20px;
+  top: 20px;
+  height: 40px !important;
+  font-size: 16px !important;
+}
+
+.saveButton:hover {
+  background-color: var(--secondaryColor) !important;
+}
+
+.select_classes {
+  margin-bottom: 20px;
+  color: red;
+}
+
+.select_classes > div {
+  border-radius: 5px !important;
+  border: none !important;
+  font-size: 16px !important;
+  background-color: var(--backgroundColor) !important;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px var(--tertiaryColor) !important;
+}
+
+.select_classes > div > div > div {
+  color: rgba(0, 0, 0, 1) !important;
+  border-radius: 10px !important;
+}
+
+.fieldInvalid {
+  border: 1px solid red !important;
+}
+
+.selectFieldInvalid > div {
+  border: 1px solid red !important;
+}

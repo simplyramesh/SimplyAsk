@@ -1,0 +1,472 @@
+/* .flex_col {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #f2eff4;
+}
+
+.header_bg {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 50px;
+
+  background-color: #4b286d;
+}
+
+.logo_left {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+}
+
+.telus_logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 22px 46px;
+
+  background-color: #ffffff;
+
+  color: #4b286d;
+
+  margin-bottom: 8px;
+}
+
+.telus_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.telus_icon svg {
+  width: 178px;
+}
+
+.logo_right {
+  display: flex;
+  flex: 1 1 auto;
+  gap: 14px;
+  align-items: center;
+  justify-content: flex-end;
+
+  font-size: 18px;
+  line-height: 21px;
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  font-style: normal;
+  color: #2a2c2e;
+}
+
+.language {
+  cursor: pointer;
+
+  font-size: 18px;
+  font-weight: 400;
+
+  margin: 0;
+}
+
+.language_selected {
+  pointer-events: none;
+
+  font-weight: 500;
+
+  text-decoration-line: underline;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+
+  padding: 46px 40px;
+
+  background-color: #ffffff;
+}
+
+.section_heading {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 44px !important;
+  margin: 0 !important;
+
+  color: #4b286d;
+}
+
+.body {
+  font-size: 18px;
+  line-height: 21px;
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  font-style: normal;
+  color: #2a2c2e;
+
+  margin: 0;
+  margin-top: 10px;
+}
+
+.flex_card {
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+
+  border: 0.5px solid #2a2c2e;
+  border-radius: 5px;
+
+  background: #ffffff;
+}
+
+.card_step {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  font-style: normal;
+  color: #2a2c2e;
+
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.card_title {
+  font-size: 28px;
+  line-height: 34px;
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  font-style: normal;
+  color: #4b286d;
+
+  margin: 0;
+}
+
+.divider {
+  width: 100%;
+
+  border: 1px solid #d8d8d8;
+
+  margin-top: 22px;
+}
+
+.label {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #2a2c2e;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  margin-top: 32px;
+}
+
+.input_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  width: 100%;
+}
+
+.label {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Helvetica Neue';
+  font-weight: 500;
+  font-style: normal;
+  color: #2a2c2e;
+}
+
+.agentId_rule {
+  font-weight: 400;
+}
+
+.checkbox_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Helvetica Neue';
+  font-weight: 500;
+  font-style: normal;
+  color: #2a2c2e;
+
+  margin-top: 32px;
+}
+
+.question {
+  flex: 1 1 auto;
+}
+
+.checkbox_right {
+  display: flex;
+  flex: 0;
+  gap: 22px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.checkbox_label {
+  display: flex;
+  gap: 6px;
+
+  font-weight: 400;
+}
+
+.checkbox {
+  position: relative;
+
+  width: 16px;
+  height: 16px;
+}
+
+input[type='checkbox' i].checkbox {
+  appearance: none;
+
+  background-color: transparent;
+
+  cursor: pointer;
+
+  margin: 0;
+}
+
+input[type='checkbox'].checkbox:before {
+  content: '';
+
+  position: absolute;
+  top: 10%;
+  left: 0;
+
+  display: block;
+
+  width: 16px;
+  height: 16px;
+  padding: 0px;
+
+  border: 2px solid #555555;
+  border-radius: 3px;
+
+  background-color: white;
+}
+
+input[type='checkbox'].checkbox:checked:after {
+  content: '';
+
+  position: absolute;
+  top: 25%;
+  left: 45%;
+
+  display: block;
+
+  width: 4px;
+  height: 10px;
+
+  border: solid #2a2c2e;
+  border-width: 0 2px 2px 0;
+
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.input {
+  padding: 16px 14px;
+
+  border: 0.5px solid #2a2c2e;
+  border-radius: 5px;
+
+  background: #ffffff;
+
+  font-size: 20px;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input::placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(42, 44, 46, 0.5);
+}
+
+input.input:-webkit-autofill,
+input.input:-webkit-autofill:hover,
+input.input:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.invalid_message {
+  font-size: 16px;
+  color: red;
+  white-space: pre-line;
+
+  margin: 0;
+  margin-top: 2px;
+  margin-left: 1px;
+}
+
+.button_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  margin-top: 14px;
+}
+
+.button_message {
+  flex: 1 1 auto;
+
+  width: 100%;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  font-style: normal;
+  color: #2a2c2e;
+
+  margin: 0;
+}
+
+.btnMsg_purple {
+  font-weight: 500;
+  color: #4b286d;
+}
+
+.submit_button,
+.submit_button--disabled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 200ms ease-in;
+
+  padding: 12px 30px;
+
+  border: none;
+  border-radius: 5px;
+  outline: none;
+
+  background: #248700;
+
+  cursor: pointer;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Helvetica Neue';
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.submit_button:hover {
+  background: #3b3c3a;
+
+  cursor: pointer;
+
+  color: #fdfeff;
+}
+
+.submit_button--disabled {
+  pointer-events: none;
+
+  cursor: not-allowed;
+
+  opacity: 0.5 !important;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 40px 30px;
+
+  background-color: #ffffff;
+
+  margin-top: 8px;
+}
+
+.footer_img {
+  width: 140px;
+  height: 28px;
+}
+
+.footer_text {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  font-style: normal;
+  color: #2a2c2e;
+
+  margin: 0;
+}
+
+@media screen and (min-width: 950px) {
+  .telus_logo {
+    padding: 40px 76px;
+  }
+
+  .section {
+    padding: 46px 76px;
+  }
+
+  .checkbox_container {
+    width: calc(50% - 32px);
+  }
+
+  .input_wrapper {
+    width: calc(50% - 32px);
+
+    white-space: nowrap;
+  }
+
+  .input_wrapper:last-child:not(:first-child) {
+    margin-left: 32px;
+  }
+
+  .submit_button,
+  .submit_button--disabled {
+    max-width: 364px;
+  }
+
+  .footer {
+    padding: 40px 76px;
+  }
+} */

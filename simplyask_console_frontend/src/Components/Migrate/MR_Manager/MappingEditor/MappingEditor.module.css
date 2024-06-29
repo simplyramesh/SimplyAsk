@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 76px);
+  /* width: calc(100vw - var(--sidedrawerWidth) - 1px); */
+}
+
+.delete {}
+
+.delete:hover svg {
+  background-color:#CACCCE;
+}

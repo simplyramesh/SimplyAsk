@@ -1,0 +1,86 @@
+.root {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  width: auto !important;
+  height: 220px;
+  /* TODO: remove this margin after adding footer (because the card margin should be removed) */
+  margin: 0 !important;
+}
+
+.root::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 70%;
+  background-color: var(--primaryColor);
+  z-index: 0;
+}
+
+.root > p {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 25px 0 15px 0;
+}
+
+.imgContainer {
+  background-color: var(--tertiaryColor);
+  box-shadow: 0 0 0 5px var(--whiteColor);
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+  position: relative;
+  top: 10px;
+}
+
+.imgContainer > img {
+  height: 45px !important;
+  width: 45px !important;
+}
+
+.root > button {
+  color: var(--primaryColor) !important;
+  padding: 0.3rem 1rem !important;
+  font-weight: 600 !important;
+}
+
+@media screen and (max-width: 1280px) {
+  .root > p {
+    font-size: 20px;
+  }
+
+  .root {
+    padding: 1rem !important;
+  }
+
+  .button {
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .root > p {
+    font-size: 16px;
+    margin: 15px 0 10px 0;
+  }
+
+  .root {
+    padding: 0.7rem !important;
+  }
+
+  .button {
+    font-size: 10px !important;
+  }
+}

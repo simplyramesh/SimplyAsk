@@ -1,0 +1,295 @@
+section {
+  margin: 0;
+  padding: 0;
+}
+
+.readOnly {
+  pointer-events: none !important;
+}
+
+.readOnlyIcon {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+
+.readOnly.hasExecutionError {
+  box-shadow: 0 0 0 2px var(--statusOverdueColor),
+  0 0 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+.readOnly.hasNotExecutionError {
+  box-shadow: 0 0 0 2px var(--statusResolvedColor), 0 0 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+.readOnly.isCurrentlyExecuting {
+  box-shadow: 0 0 0 2px var(--statusAssignedColor), 0 0 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+.step_container {
+  position: relative;
+
+  border-radius: 5px;
+  background: #ffffff;
+
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.step_container:active,
+.step_container:hover,
+.isStepEditing {
+  cursor: pointer;
+  box-shadow: 0 0 0 4px #4299ff;
+}
+
+.step_container.highlighted {
+  box-shadow: 0 0 0 4px #F57B20 !important;
+}
+
+.step_container:active .step_bubbleContainer,
+.step_container:hover .step_bubbleContainer {
+  display: none;
+}
+
+.step_bubbleContainer {
+  display: none;
+  align-items: center;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  max-width: min(max(150px, 175px, 230px), 230px);
+
+  border-radius: 25px;
+  background-color: #2d3a47;
+
+  transform: translate(calc(100% - 44px), calc(-100% - 12px));
+
+  pointer-events: none;
+}
+
+.step_bubbleText {
+  width: clamp(150px, min(max(150px, 175px, 230px), 230px), 230px);
+  padding: 0 16px;
+
+  font-size: 10px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.step_bubbleTextIcon {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+
+  color: #2d3a47;
+
+  transform: translate(calc(50% + 10px), calc(100% - 10px));
+}
+
+.step_bubbleTextIcon > svg {
+  width: 20px;
+  height: 20px;
+}
+
+.step_card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  width: 140px;
+  height: 140px;
+  padding: 14px;
+
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+/* Right corner */
+.step_alert {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  height: 46px;
+  width: 44px;
+}
+
+.step_alert.warning,
+.step_alert.error {
+  border-bottom: 46px solid transparent;
+  border-left: 44px solid transparent;
+}
+
+.step_alert.warning {
+  border-right: 44px solid #fff9c8;
+}
+
+.step_alert.error {
+  border-right: 44px solid #ffe8e8;
+}
+
+.step_alertInner {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.step_alertInner.warning {
+  color: #efbf00;
+}
+
+.step_alertInner.error {
+  color: #ee5f4b;
+}
+
+.step_alertInner:hover + .step_bubbleContainer {
+  display: flex;
+}
+
+.step_alertIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: 0;
+
+  margin-right: 6px;
+  margin-top: 6px;
+}
+
+.step_alertIcon > svg {
+  width: 16px;
+}
+
+.step_iconContainer {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  background-color: #FFECDF;
+  color: #F57B20;
+}
+
+/* Icon colors */
+.FALLOUT_TICKET,
+.CREATE_SERVICE_TICKET,
+.GENERIC_SERVICE_TICKET,
+.LINK,
+.MAIL,
+.MESSAGE,
+.TEST_GIVEN,
+.GET_DATE_TIME,
+.EVALUATE_EXPRESSION,
+.SET_PARAMETER_VALUE,
+.CREATE_EXCEL_SPREADSHEET,
+.EXTRACT_EXCEL_DATA,
+.UPDATE_EXCEL_DATA,
+.EXTRACT_DATA,
+.START_EXTRACTION,
+.SAVE_RECORD,
+.BATCH_PREPARATION,
+.END_EXTRACTION,
+.START_TRANSFORMATION,
+.RECORD_TRANSFORM,
+.END_TRANSFORMATION,
+.START_LOADING,
+.END_LOADING,
+.TRIGGER_PROCESS_DELEGATE {
+  background-color: #dfeeff;
+  color: #4299ff;
+}
+
+.TEST_THEN {
+  background-color: #E0FFDF;
+}
+
+
+/* End Icon Colors */
+
+.step_icon {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.step_icon > svg {
+  width: 24px;
+  pointer-events: none;
+}
+
+.EVALUATE_EXPRESSION span svg,
+.SET_PARAMETER_VALUE span svg,
+.CREATE_EXCEL_SPREADSHEET span svg,
+.EXTRACT_EXCEL_DATA span svg,
+.UPDATE_EXCEL_DATA span svg,
+.EXTRACT_DATA span svg,
+.START_EXTRACTION span svg,
+.SAVE_RECORD span svg,
+.BATCH_PREPARATION span svg,
+.END_EXTRACTION span svg,
+.START_TRANSFORMATION span svg,
+.RECORD_TRANSFORM span svg,
+.END_TRANSFORMATION span svg,
+.START_LOADING span svg,
+.END_LOADING span svg,
+.SIMPLYASSISTANT span svg,
+.TRIGGER_PROCESS_DELEGATE span svg {
+  width: 34px;
+  height: 34px;
+}
+
+.step_text {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+
+  color: #2d3a47;
+}
+
+.step_title {
+  display: -webkit-box;
+  flex: 1 1 auto;
+
+  width: 115px;
+  margin: 0;
+
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  text-overflow: ellipsis;
+  line-height: 16px;
+
+  overflow: hidden;
+  /* note: visibility: hidden will not work with -webkit-line-clamp */
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.step_taskId {
+  flex-shrink: 0;
+
+  margin: 0;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}

@@ -1,0 +1,74 @@
+
+
+.closeSessionButton {
+  cursor: pointer !important;
+  font-size: 40px !important;
+  color: var(--secondaryColor) !important;
+  margin-right: 15px !important;
+}
+
+.closeSessionDropdown {
+  top: var(--chat-bar-height);
+  transform: translateX(-80%);
+  width: fit-content !important;
+}
+
+/* Styling the check mark. */
+.closeSessionDropdown > div:nth-of-type(2) > svg {
+  color: var(--statusResolvedColor) !important;
+}
+
+/* Styling the x. */
+.closeSessionDropdown > div:nth-of-type(3) > svg {
+  color: var(--statusOverdueColor) !important;
+}
+
+.menuButton {
+  font-size: 35px !important;
+  color: var(--primaryColor) !important;
+  cursor: pointer;
+}
+
+.dropdownMenu {
+  top: var(--chat-bar-height);
+  right: 0;
+  width: fit-content !important;
+}
+
+
+.inputForm input {
+  flex: 1;
+  height: 70%;
+  margin: 0 20px;
+}
+
+.attachButton {
+  font-size: 26px !important;
+  color: var(--primaryColor) !important;
+  background-color: var(--tertiaryColor) !important;
+  transform: rotate(0.125turn) !important;
+}
+
+.sendButton {
+  font-size: 30px !important;
+  color: var(--whiteColor) !important;
+  background-color: var(--secondaryColor) !important;
+  transform: rotate(-0.125turn) !important;
+}
+
+.requestContainer > p {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.requestContainer > span {
+  font-size: 16px;
+  margin: 15px 0;
+  width: 70%;
+}
+
+.requestContainer > button {
+  width: 55%;
+}
+

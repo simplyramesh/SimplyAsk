@@ -1,0 +1,144 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+}
+
+.scrollbarRoot {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scrollbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centerImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inputText {
+    border: 2px solid rgba(51, 65, 80, 1);
+    height: 38px;
+    width: 234px;
+    padding-left: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 15px auto 0;
+}
+
+.title {
+    color: rgba(45, 58, 71, 1);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 17px 0;
+    text-align: center;
+}
+
+.body {
+    padding: 0 35px;
+}
+
+.bodyText {
+    color: rgba(45, 58, 71, 1);
+    font-size: 15px;
+    line-height: 140%;
+    text-align: center;
+}
+
+.validationText {
+    margin-top: 25px;
+    color: rgba(45, 58, 71, 1);
+    font-size: 15px;
+    text-align: center;
+}
+
+.flex_row_buttons {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+.flex_row_buttons_disable {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+.cancelBtn {
+    color: rgba(45, 58, 71, 1) !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    height: 40px !important;
+    width: 130px !important;
+    border: 2px solid rgba(45, 58, 71, 1);
+}
+
+.cancelBtn:hover {
+    background: rgba(45, 58, 71, 1) !important;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.continueBtn {
+    color: rgba(255, 255, 255, 1) !important;
+    background: rgba(224, 59, 36, 1) !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    height: 40px !important;
+    width: 130px !important;
+
+}
+
+.continueBtn:hover {
+    color: rgba(45, 58, 71, 1) !important;
+    background: rgba(255, 255, 255, 1) !important;
+    border: 2px solid rgba(45, 58, 71, 1);
+}
+
+.disableContinueBtn {
+    opacity: 0.6 !important;
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+}
+
+.only_flex_row {
+    display: flex;
+    width: 257px;
+    margin-top: 4px;
+    gap: 5px;
+}
+
+.invalidText {
+    word-break: break-all;
+    color: rgba(224, 59, 36, 1);
+    font-weight: 600;
+    font-size: 12px;
+    width: 206px;
+}
+
+.invalidInput {
+    border-color: rgba(224, 59, 36, 1);
+}
+
+.invalidInput:focus-visible {
+    border-color: rgba(224, 59, 36, 1);
+    outline: rgba(224, 59, 36, 1);
+}
+
+.alertIcon {
+    padding-top: 2px;
+}

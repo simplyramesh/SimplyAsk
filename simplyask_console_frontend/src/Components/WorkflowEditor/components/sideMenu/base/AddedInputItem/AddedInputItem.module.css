@@ -1,0 +1,28 @@
+.added {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 10px;
+  padding: 4px 8px;
+
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+
+  background: #f1f1f1;
+}
+
+.added_icon {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.added_icon > svg {
+  width: 14px;
+  height: 14px;
+}

@@ -1,0 +1,23 @@
+.applyFiltersButton {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 0;
+
+  border: none;
+  border-radius: 10px;
+  outline: none;
+
+  background: #f57b20;
+
+  cursor: pointer;
+
+  font-size: 16px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+}

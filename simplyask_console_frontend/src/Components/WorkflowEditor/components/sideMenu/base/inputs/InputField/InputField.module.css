@@ -1,0 +1,68 @@
+.wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.container {
+  position: relative;
+
+  flex: 1 1 auto;
+}
+
+.input {
+  appearance: none;
+  resize: none;
+
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+
+  width: 100%;
+
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  outline: none;
+
+  background: #ffffff;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+}
+
+.input::-webkit-scrollbar {
+  display: none;
+}
+
+.input::placeholder {
+  color: #c4c4c4;
+}
+
+.inputPadding {
+  padding: 10px;
+}
+
+.input.error {
+  border: 1px solid #E03B24 !important;
+  outline: none !important;
+}
+
+.input.warning {
+  border: 1px solid #E7BB09 !important;
+  outline: none !important;
+}
+
+.expandIcon {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 16px;
+  border-radius: 100%;
+  background: #fef2e9;
+  cursor: pointer;
+  color: #2d3a47;
+  margin: 18px;
+}

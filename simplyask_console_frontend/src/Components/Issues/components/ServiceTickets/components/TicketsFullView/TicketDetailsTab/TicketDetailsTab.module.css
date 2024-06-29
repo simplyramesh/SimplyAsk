@@ -1,0 +1,115 @@
+.root {
+  display: flex;
+}
+
+.root p {
+  margin-top: 2px;
+}
+
+.inputContainer input {
+  width: 100%;
+  height: 30px;
+}
+
+.dateContainer div:nth-child(2) {
+  text-align: right;
+}
+
+.agentContainer div:nth-child(2) {
+  text-align: right;
+}
+
+.selectAgent > div > div {
+  border-radius: 10px !important;
+}
+
+.spinner {
+  color: var(--primaryColor) !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.timeline {
+  margin-top: 20px;
+  max-width: 29vw;
+  height: 520px !important;
+}
+
+.selectAgent > div > div > input {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1300px) {
+  .activityCard span {
+    font-size: 16px;
+  }
+
+  .rightTicketDetails span {
+    font-size: 16px;
+  }
+
+  .rightTicketDetails p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .activityCard span {
+    font-size: 16px;
+  }
+
+  .timeline {
+    width: 100% !important;
+    max-width: 70vw;
+  }
+
+  .timeline h3 {
+    font-size: 14px;
+  }
+
+  .timeline p {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .root {
+    flex-direction: column-reverse;
+  }
+
+  .rightTicketDetails span {
+    font-size: 14px;
+  }
+
+  .rightTicketDetails p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .activityCard span {
+    font-size: 16px;
+  }
+
+  .timeline h3 {
+    font-size: 14px;
+  }
+
+  .timeline p {
+    font-size: 12px;
+  }
+
+  .rightTicketDetails span {
+    font-size: 14px;
+  }
+
+  .rightTicketDetails p {
+    font-size: 12px;
+  }
+
+  .timeline {
+    width: 100% !important;
+    max-width: 70vw;
+  }
+}
+

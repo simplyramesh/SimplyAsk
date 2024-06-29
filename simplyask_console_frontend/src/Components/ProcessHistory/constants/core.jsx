@@ -1,0 +1,116 @@
+export const PROCESS_STATUSES = {
+  SUCCESS: 'SUCCESS',
+  EXECUTING: 'EXECUTING',
+  FAILED: 'FAILED',
+  RESOLVED: 'RESOLVED',
+  PREPARING: 'PREPARING',
+  CANCELLED: 'CANCELLED',
+  STOPPED: 'STOPPED',
+  DONE: 'DONE',
+};
+
+export const PROCESS_STATUSES_OPTIONS = [
+  { value: PROCESS_STATUSES.SUCCESS, label: 'Success' },
+  { value: PROCESS_STATUSES.EXECUTING, label: 'Executing' },
+  { value: PROCESS_STATUSES.FAILED, label: 'Failed' },
+  { value: PROCESS_STATUSES.RESOLVED, label: 'Resolved' },
+];
+
+export const PROCESS_STATUS_COLORS_MAP = {
+  [PROCESS_STATUSES.SUCCESS]: { label: 'Success', color: 'green' },
+  [PROCESS_STATUSES.EXECUTING]: { label: 'Executing', color: 'yellow' },
+  [PROCESS_STATUSES.FAILED]: { label: 'Failed', color: 'red' },
+  [PROCESS_STATUSES.RESOLVED]: { label: 'Resolved', color: 'green' },
+  [PROCESS_STATUSES.CANCELLED]: { label: 'Resolved', color: 'grey' },
+  [PROCESS_STATUSES.PREPARING]: { label: 'Not Started', color: 'grey' },
+};
+
+export const PROCESS_EXECUTION_STATUS_LABELS = {
+  [PROCESS_STATUSES.PREPARING]: 'Preparing',
+  [PROCESS_STATUSES.EXECUTING]: 'Executing',
+  [PROCESS_STATUSES.DONE]: 'Done',
+  [PROCESS_STATUSES.RESOLVED]: 'Resolved',
+  [PROCESS_STATUSES.CANCELLED]: 'Cancelled',
+  [PROCESS_STATUSES.STOPPED]: 'Cancelled',
+  [PROCESS_STATUSES.FAILED]: 'Failed',
+  [PROCESS_STATUSES.SUCCESS]: 'Success',
+};
+
+export const PROCESS_HISTORY_FILTER_KEY = 'sideFilter';
+
+export const PROCESS_EXECUTION_FILTERS = {
+  WORKFLOW_NAME: 'workflowName',
+  WORKFLOW_ID: 'workflowId',
+  CURRENT_TASK: 'currentTask',
+  REQUEST_DATA: 'requestData',
+  DURATION: 'duration',
+  PROCESS_NAME: 'processName',
+  INSTANCE_ID: 'instanceId',
+  TRIGGER_BY: 'triggerBy',
+  STATUS: 'status',
+  ENVIRONMENT: 'environment',
+  ENVIRONMENTS: 'environments',
+  START_TIME: 'startTime',
+  END_TIME: 'endTime',
+  STARTED_AFTER: 'startedAfter',
+  STARTED_BEFORE: 'startedBefore',
+  ENDED_AFTER: 'endAfter',
+  ENDED_BEFORE: 'endBefore',
+  TRIGGER_METHODS: 'triggerMethods',
+};
+
+export const sharedDropdownProps = {
+  minMenuHeight: 150,
+  maxMenuHeight: 550,
+  closeMenuOnSelect: false,
+  hideSelectedOptions: false,
+  isClearable: false,
+  openMenuOnClick: true,
+};
+
+export const PROCESS_HISTORY_EXECUTION_STATUS_COLOR_MAP = {
+  [PROCESS_STATUSES.PREPARING]: { label: PROCESS_EXECUTION_STATUS_LABELS.PREPARING, color: 'mutedBlue' },
+  [PROCESS_STATUSES.EXECUTING]: { label: PROCESS_EXECUTION_STATUS_LABELS.EXECUTING, color: 'burntYellow' },
+  [PROCESS_STATUSES.DONE]: { label: PROCESS_EXECUTION_STATUS_LABELS.DONE, color: 'savingsGreen' },
+  [PROCESS_STATUSES.SUCCESS]: { label: PROCESS_EXECUTION_STATUS_LABELS.SUCCESS, color: 'savingsGreen' },
+  [PROCESS_STATUSES.RESOLVED]: { label: PROCESS_EXECUTION_STATUS_LABELS.RESOLVED, color: 'savingsGreen' },
+  [PROCESS_STATUSES.CANCELLED]: { label: PROCESS_EXECUTION_STATUS_LABELS.CANCELLED, color: 'limedSpruce' },
+  [PROCESS_STATUSES.STOPPED]: { label: PROCESS_EXECUTION_STATUS_LABELS.STOPPED, color: 'limedSpruce' },
+  [PROCESS_STATUSES.FAILED]: { label: PROCESS_EXECUTION_STATUS_LABELS.FAILED, color: 'venetianRed' },
+};
+
+export const PROCESS_EXECUTIONS_STATUS_OPTIONS = Object.entries(PROCESS_HISTORY_EXECUTION_STATUS_COLOR_MAP).reduce(
+  (acc, [key, value]) => {
+    if ([PROCESS_STATUSES.STOPPED, PROCESS_STATUSES.DONE, PROCESS_STATUSES.PREPARING].includes(key)) return acc;
+
+    return [...acc, { value: key, ...value }];
+  },
+  []
+);
+
+export const PROCESS_HISTORY_TAB_VALUES = { PROCESS_HISTORY: 'individual', BULK_EXECUTION_HISTORY: 'groups' };
+
+export const PROCESS_EXECUTIONS_SIDE_FILTER_INITIAL_VALUES = {
+  [PROCESS_EXECUTION_FILTERS.STATUS]: [],
+  [PROCESS_EXECUTION_FILTERS.ENVIRONMENTS]: [],
+  [PROCESS_EXECUTION_FILTERS.START_TIME]: '',
+  [PROCESS_EXECUTION_FILTERS.END_TIME]: '',
+  [PROCESS_EXECUTION_FILTERS.TRIGGER_METHODS]: [],
+  [PROCESS_EXECUTION_FILTERS.TRIGGER_BY]: [],
+};
+
+export const PROCESS_EXECUTIONS_INITIAL_VALUES = {
+  [PROCESS_EXECUTION_FILTERS.STATUS]: [],
+  [PROCESS_EXECUTION_FILTERS.ENVIRONMENTS]: [],
+  [PROCESS_EXECUTION_FILTERS.STARTED_BEFORE]: '',
+  [PROCESS_EXECUTION_FILTERS.STARTED_AFTER]: '',
+  [PROCESS_EXECUTION_FILTERS.ENDED_BEFORE]: '',
+  [PROCESS_EXECUTION_FILTERS.ENDED_AFTER]: '',
+  [PROCESS_EXECUTION_FILTERS.TRIGGER_METHODS]: [],
+  [PROCESS_EXECUTION_FILTERS.TRIGGER_BY]: [],
+};
+
+export const PROCESS_HISTORY_EXPORT_SUBMIT_TYPES = {
+  HTML_REPORT: 'HTML_REPORT',
+  CSV_REPORT: 'CSV_REPORT',
+};

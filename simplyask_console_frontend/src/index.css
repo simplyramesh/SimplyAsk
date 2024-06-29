@@ -1,0 +1,91 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"); */
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--backgroundColor);
+  overflow-x: hidden;
+}
+
+button{
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+::-ms-reveal {
+  display: none;
+}
+
+code {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+:root {
+  --primaryColor: #2d3a47;
+  --secondaryColor: #f57b20;
+  --tertiaryColor: #fef2e9;
+  --backgroundColor: #fbfbfb;
+  --blackColor: #000;
+  --whiteColor: #fff;
+  --dangerColor: #ff5252;
+  --successColor: #4bb543;
+  --statusResolvedColor: #5f9936;
+  --statusResolvedBackgroundColor: #ebf2e6;
+  --statusAssignedColor: #e7bb09;
+  --statusAssignedBackgroundColor: #fcf7e0;
+  --statusOverdueColor: #e03b24;
+  --statusOverdueBackgroundColor: #fbe7e4;
+  --statusUnassignedColor: #3865a3;
+  --statusUnassignedBackgroundColor: #e6ecf4;
+  --warningBackgroundColor: #fcf8e3;
+  --borderWidth: 2px;
+  --navbarHeight: 76px;
+  --sidedrawerWidth: 75px;
+  --navbarSpace: calc(var(--navbarHeight) / 3);
+  --shrunk-width: 0px;
+  --chat-bar-height: 95px;
+  --line-chart-month: 0px;
+  --input-background-color: #f1f1f1;
+  --disabled-text-color: rgba(191, 191, 191, 1);
+  --link-color: #2075F5;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 25px;
+}
+
+
+/* for demo */
+div[class^='Screen-module_root'] {
+  height: calc(100% - 146px) !important;
+}
+
+div[class^='MuiAutocomplete-popper'] {
+  z-index: 99999 !important;
+}
+
+.MuiMenu-root.panel-popover {
+  z-index: 6000;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

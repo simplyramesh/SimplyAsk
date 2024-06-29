@@ -1,0 +1,323 @@
+.root {
+    display: flex;
+    flex: 1 1 auto;
+    /* width: 100vw - var(--sidedrawerWidth)); */
+}
+
+.navbar_root {
+    height: 55px;
+    background: var(--whiteColor);
+    width: inherit;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1200;
+}
+
+.lineDiv {
+    background: #DFE4ED;
+    height: 4px;
+    top: -3px;
+    width: 100%;
+    position: absolute;
+    z-index: 100000000;
+}
+
+.polygon_absolute {
+    position: absolute;
+    top: -59px;
+    left: -38px;
+}
+
+.navbarSectionRoot {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px 0 30px;
+    gap: 20px;
+}
+
+.navbarTextRoot {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbarLightText,
+.navbarBoldText {
+    color: #2D3A47;
+    font-size: 16px;
+}
+
+.navbarBoldText {
+    font-weight: 600;
+}
+
+.configurationRoot {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    gap: 15px;
+}
+
+.favorite_text_absolute {
+    padding: 2.93px 10px 2.5px;
+    font-size: 12px;
+    top: -53px;
+    left: -48px;
+    transform: rotate(180deg);
+    white-space: nowrap;
+}
+
+.conf_icon_hover {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    transition: all 160ms ease-in;
+}
+
+.conf_icon_hover:hover {
+    background-color: rgba(45, 58, 71, 0.15);
+    cursor: pointer;
+}
+
+
+.display_hover_comp_root {
+    position: relative;
+    display: none;
+    transition: all 160ms ease-in;
+}
+
+.settings_icon_hover:hover>.display_hover_comp_root,
+.archive_icon_hover:hover>.display_hover_comp_root,
+.favorite_icon_hover:hover>.display_hover_comp_root {
+    display: block;
+    transform: rotate(180deg);
+}
+
+.display_hover_comp {
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    background: rgba(45, 58, 71, 1);
+    z-index: 10000000;
+    border-radius: 25px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.adjustPosition {
+    left: -77px;
+}
+
+.cardRoots {
+    width: 100%;
+    padding: 100px 40px 20px 40px;
+    box-sizing: border-box;
+}
+
+.cardsAnimationRoot {
+    display: flex;
+}
+
+.cardsAnimationView {
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+    border-radius: 20px 20px 0 0 !important;
+    cursor: pointer !important;
+    width: 100px !important;
+    box-shadow: 0 -9px 10px 3px rgb(0 0 0 / 4%) !important;
+    z-index: 10 !important;
+    height: 55px !important;
+    display: flex !important;
+    width: 155px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+}
+
+.cardsAnimationText {
+    color: #2d3a47 !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
+    font-size: 18px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+.cardsAnimationView:nth-child(2) {
+    margin-left: -15px;
+}
+
+.cardsAnimationView:nth-child(1).unActiveView {
+    border-radius: 20px 0 0 0 !important;
+}
+
+.cardsAnimationView:nth-child(2).unActiveView {
+    border-radius: 0 20px 0 0 !important;
+}
+
+.unActiveView {
+    background: rgb(255, 221, 195) !important;
+    box-shadow: none !important;
+    z-index: 0 !important;
+    opacity: 0.6 !important;
+}
+
+.unActiveView:hover {
+    opacity: 1 !important;
+}
+
+.cardsAnimationView:nth-child(1).unActiveView::after {
+    content: "";
+    position: absolute;
+    background: rgb(255, 221, 195);
+    height: 17px;
+    width: 100%;
+    bottom: -16px;
+}
+
+.sideModalCloseIcon {
+    color: var(--primaryColor) !important;
+    font-size: 42px !important;
+    cursor: pointer;
+    position: relative;
+    left: 15px !important;
+    top: 15px !important;
+    z-index: 2 !important;
+}
+
+
+
+.closeIcon {
+    margin-top: -2px;
+    margin-left: 470px;
+    font-size: 35px;
+    color: rgb(153, 153, 153);
+    cursor: pointer;
+}
+
+.warningIcon {
+    color: rgba(231, 187, 9, 1) !important;
+    width: 95px !important;
+    height: 95px !important;
+    margin-top: -25px !important;
+    align-self: center !important;
+}
+
+.modal {
+    width: 528px !important;
+    height: 280px !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 0 !important;
+    padding: 1rem 1.5rem !important;
+    border-radius: 20px !important;
+    box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 10%) !important;
+    overflow: visible !important;
+    max-height: max-content !important;
+    top: 50% !important;
+    left: 50% !important;
+    margin-top: -140px;
+    margin-left: -264px;
+}
+
+.description_title {
+    color: rgba(45, 58, 71, 1);
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(45, 58, 71, 1);
+    width: 90%;
+    text-align: center;
+}
+
+.modalButtons {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.modalCancelButton,
+.modalSaveButton {
+    height: 38px;
+    width: 164px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.modalCancelButton {
+    color: rgba(45, 58, 71, 1);
+    background: #FFFFFF;
+    border: 2px solid rgba(45, 58, 71, 1);
+}
+
+.modalCancelButton:hover {
+    background: rgba(45, 58, 71, 1);
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.modalSaveButton {
+    background: rgba(45, 58, 71, 1);
+    color: #FFFFFF;
+    border: 2px solid rgba(45, 58, 71, 1);
+}
+
+.modalSaveButton:hover {
+    color: rgba(45, 58, 71, 1);
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+    .navbar_root {
+        height: 70px;
+        background: var(--whiteColor);
+        width: calc(100vw - var(--sidedrawerWidth));
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+        position: fixed;
+        z-index: 1200;
+    }
+
+    .cardRoots {
+        padding: 115px 30px 20px 30px;
+    }
+
+    .slash {
+        display: none;
+    }
+
+    .navbarTextRoot {
+        gap: 6px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbarBoldText,
+    .navbarLightText {
+        font-size: 14px;
+    }
+}

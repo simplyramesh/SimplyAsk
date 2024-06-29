@@ -1,0 +1,32 @@
+.scrollable:last-child {
+  /* margin-bottom: 36px; */
+}
+
+.scrollable::-webkit-scrollbar {
+  width: 16px;
+}
+
+.scrollable:hover::-webkit-scrollbar-thumb {
+  border: 4px solid #f4f4f4;
+  border-radius: 10px;
+  background: rgba(198, 198, 198, 0.5);
+}
+
+.scrollable:hover::-webkit-scrollbar-track {
+  background: #f4f4f4;
+  border-radius: 2px;
+}
+
+.scrollable:hover::-webkit-scrollbar-track-piece {
+  margin: 4px 0;
+
+  background: #f4f4f4;
+}
+
+.scrollable {
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  max-height: calc(100% - 64px);
+  padding-bottom: 64px;
+}

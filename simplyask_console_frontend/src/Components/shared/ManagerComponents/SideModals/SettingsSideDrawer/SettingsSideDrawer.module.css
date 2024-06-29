@@ -1,0 +1,259 @@
+.root {
+    width: 100%;
+    height: 100vh;
+    margin-top: 15px;
+}
+
+.title {
+    font-size: 19px;
+    color: rgba(45, 58, 71, 1);
+    font-weight: 600;
+    margin: 15px 10px 10px 15px;
+}
+
+.scrollbarRoot {
+    height: calc(100% - 15px) !important;
+}
+
+.scrollbarChild {
+    box-sizing: border-box;
+    height: 100%;
+    margin-right: 36px;
+}
+
+.secondary_view_root {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0 0 15px 15px;
+}
+
+.remove_padding {
+    padding-left: 0;
+}
+
+.primary_menu_root {
+    padding: 0 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.title_style {
+    color: rgba(45, 58, 71, 1);
+    font-weight: 600;
+}
+
+.rootChild {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.circle {
+    min-width: 12px;
+    min-height: 12px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.circle_sideDrawer {
+    min-width: 15px;
+    width: 15px;
+    height: 15px;
+    min-height: 15px;
+    border-radius: 50%;
+}
+
+.statusText {
+    font-weight: 600;
+    color: rgba(45, 58, 71, 1);
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.status_desc {
+    color: rgba(45, 58, 71, 1);
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+
+.arrowRoot {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 11px;
+}
+
+.active {
+    background: rgba(95, 153, 54, 1);
+}
+
+.reject {
+    background: rgba(224, 59, 36, 1)
+}
+
+.buffer {
+    background: rgba(231, 187, 9, 1)
+}
+
+.fallout {
+    background: rgba(231, 187, 9, 1)
+}
+
+.dropdown_root {
+    z-index: 1;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.statusColorRoot {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 100%;
+    justify-content: center;
+    gap: 5px;
+}
+
+.labelRoot {
+    align-items: center;
+    width: 97px;
+    height: 35px;
+    display: flex;
+    box-sizing: border-box;
+    gap: 13px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.flex_col_status {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.flex_row_status_root {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.add_padding_on_dropdown {
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.add_padding_on_dropdown_root {
+    padding: 10px;
+}
+
+.horizontal_line {
+    background: rgba(212, 212, 212, 1);
+    height: 2px;
+    margin: 25px auto 10px auto;
+    width: 99%;
+}
+
+.addMargin {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.processTitlesRoot {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.descriptionText {
+    color: rgba(45, 58, 71, 1);
+    font-size: 12px;
+    line-height: 150%;
+    padding-right: 60px;
+}
+
+.all_sides_padding_15px {
+    padding: 10px 5px 10px 15px;
+    border-radius: 5px;
+}
+
+.nameAndDesc{
+    padding: 25px 5px 25px 15px;
+    border-radius: 5px;
+}
+
+
+.flex_cols_sideDrawerSettings {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.processTitlesRowRoot {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.processTitlesRowRoot:hover {
+    background: #EDEDED;
+    cursor: pointer;
+}
+
+.arrowRoot {
+    display: flex;
+    align-items: center;
+}
+
+.arrowRoot>svg {
+    width: 41px !important;
+    height: 38px !important;
+}
+
+.margin_50px {
+    margin-bottom: 50px;
+}
+
+.execute_test_suite_button{
+    border-radius: 10px !important;
+    background: rgba(245, 123, 32, 1) !important;
+    color: rgba(255, 255, 255, 1) !important;
+    height: 38px !important;
+    width: 93% !important;
+    margin: 15px auto 10px auto !important;
+    transition: all 160ms ease;
+}
+
+.execute_test_suite_button:hover{
+    background: #2d3a47 !important;
+}
+
+.disableExecuteBtn{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.noCasesAvailableText{
+    text-align: center;
+    margin: 3px 0;
+}
+
+.createCaseRedirection{
+    text-align: center;
+    color: #2075F5;
+    font-weight: 500;
+}
+
+.createCaseRedirection:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

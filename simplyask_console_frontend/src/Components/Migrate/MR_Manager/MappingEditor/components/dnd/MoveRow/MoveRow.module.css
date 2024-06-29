@@ -1,0 +1,35 @@
+.drag {
+  cursor: grab;
+
+  display: flex;
+  align-items: center;
+
+ margin: 20px 12px;
+ gap: 8px;
+}
+
+.drag_icon {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.drag_icon svg {
+	pointer-events: none;
+	height: 24px;
+}
+
+.drag_text {
+
+  pointer-events: none;
+
+
+
+font-size: 14px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+	text-align: center;
+  color: #2d3a47;
+}

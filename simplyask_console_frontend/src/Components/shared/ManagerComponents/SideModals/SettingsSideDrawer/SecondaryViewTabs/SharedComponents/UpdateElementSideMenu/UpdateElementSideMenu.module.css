@@ -1,0 +1,11 @@
+.backBtnIcon {
+    width: 32px;
+    height: 27px;
+    border-radius: 50%;
+    transition: all 160ms ease-in;
+}
+
+.backBtnIcon:hover {
+    background: #EDEDED;
+    cursor: pointer;
+}

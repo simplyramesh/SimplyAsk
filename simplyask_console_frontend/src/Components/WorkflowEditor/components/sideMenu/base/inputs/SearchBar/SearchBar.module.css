@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  align-items: center;
+
+  position: relative;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.input {
+  flex: 1 1 auto;
+
+  width: 100%;
+  padding: 6px 30px 6px 18px;
+
+  border: 1px solid #334150;
+  border-radius: 25px;
+  outline: none;
+
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: 4px;
+  top: 4px;
+
+  padding: 4px;
+
+  border-radius: 100%;
+  background: #334150;
+
+  color: #ffffff;
+}
+
+.icon > svg {
+  width: 16px;
+  height: 16px;
+}

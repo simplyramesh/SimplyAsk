@@ -1,0 +1,212 @@
+import { StyledText } from '../../../shared/styles/styled';
+import { PRODUCT_FILTERS } from '../../constants/productInitialValues';
+import { GOA_NEW_CUSTOMER_MODAL_ROLE_OPTIONS } from '../../constants/productOptions';
+import { renderCustomerAddress, renderCustomerInfo } from '../../utils/formatters';
+import { getCustomerAddress } from '../../utils/helpers';
+/*
+  To add Edit columns, refer to ServiceTickets.js table and column definitions.
+*/
+
+export const CUSTOMER_COLUMNS = [
+  {
+    header: 'Customer Name',
+    accessorFn: (row) => row.name,
+    id: 'name',
+    Cell: ({ cell, row, table }) => (
+      <StyledText size={15} lh={23} weight={400} className="showOnRowHover" onClick={() => table.options.meta.handleViewCustomer(row.original)}>
+        {cell.getValue()}
+      </StyledText>
+    ),
+    size: 360,
+    align: 'left',
+    enableGlobalFilter: false,
+    enableSorting: false,
+  },
+  {
+    header: 'Customer ID',
+    accessorFn: (row) => row.id,
+    id: 'customerId',
+    Cell: renderCustomerInfo,
+    size: 158,
+    align: 'left',
+    enableGlobalFilter: false,
+    enableSorting: false,
+  },
+  {
+    header: 'BAN',
+    accessorFn: (row) => row.ban,
+    id: 'ban',
+    Cell: renderCustomerInfo,
+    size: 158,
+    align: 'left',
+    enableGlobalFilter: false,
+    enableSorting: false,
+  },
+  {
+    header: 'Email',
+    accessorFn: (row) => row.email,
+    id: 'email',
+    Cell: renderCustomerInfo,
+    size: 361,
+    align: 'left',
+    enableGlobalFilter: false,
+    enableSorting: false,
+  },
+  {
+    header: 'Phone Number',
+    accessorFn: (row) => row.phone?.replace(/(\+\d)(\d{3})(\d{3})(\d{4})/, '$1 ($2) $3-$4'),
+    id: 'phone',
+    Cell: renderCustomerInfo,
+    size: 300,
+    align: 'left',
+    enableGlobalFilter: false,
+    enableSorting: false,
+  },
+  {
+    header: 'Shipping Address',
+    accessorFn: (row) => getCustomerAddress(row.place, PRODUCT_FILTERS.SHIPPING_ADDRESS_ROLE),
+    id: PRODUCT_FILTERS.SHIPPING_ADDRESS_ROLE,
+    Cell: renderCustomerAddress,
+    size: 300,
+    align: 'left',
+    enableGlobalFilter: false,
+    enableSorting: false,
+  },
+  {
+    header: 'Service Address',
+    accessorFn: (row) => getCustomerAddress(row.place, PRODUCT_FILTERS.SERVICE_ADDRESS_ROLE),
+    id: PRODUCT_FILTERS.SERVICE_ADDRESS_ROLE,
+    Cell: renderCustomerAddress,
+    size: 300,
+    align: 'left',
+    enableGlobalFilter: false,
+    enableSorting: false,
+  },
+  {
+    header: 'Billing Address',
+    accessorFn: (row) => getCustomerAddress(row.place, PRODUCT_FILTERS.BILLING_ADDRESS_ROLE),
+    id: PRODUCT_FILTERS.BILLING_ADDRESS_ROLE,
+    Cell: renderCustomerAddress,
+    size: 300,
+    align: 'left',
+    enableGlobalFilter: false,
+    enableSorting: false,
+  },
+];
+
+export const GOA_CUSTOMER_COLUMNS = [
+  {
+    header: 'Customer Name',
+    accessorFn: (row) => row.name,
+    id: 'name',
+    Cell: ({ cell, row, table }) => (
+      <StyledText size={15} lh={23} weight={400} className="showOnRowHover" onClick={() => table.options.meta.handleViewCustomer(row.original)}>
+        {cell.getValue()}
+      </StyledText>
+    ),
+    size: 360,
+    align: 'left',
+    enableGlobalFilter: false,
+    enableSorting: false,
+  },
+  {
+    header: 'Customer ID',
+    accessorFn: (row) => row.id,
+    id: 'customerId',
+    Cell: renderCustomerInfo,
+    size: 158,
+    align: 'left',
+    enableGlobalFilter: false,
+    enableSorting: false,
+  },
+  {
+    header: 'Email',
+    accessorFn: (row) => row.email,
+    id: 'email',
+    Cell: renderCustomerInfo,
+    size: 361,
+    align: 'left',
+    enableGlobalFilter: false,
+    enableSorting: false,
+  },
+  {
+    header: 'Phone Number',
+    accessorFn: (row) => row.phone?.replace(/(\+\d)(\d{3})(\d{3})(\d{4})/, '$1 ($2) $3-$4'),
+    id: PRODUCT_FILTERS.PHONE_NUMBER,
+    Cell: renderCustomerInfo,
+    size: 300,
+    align: 'left',
+    enableGlobalFilter: false,
+    enableSorting: false,
+  },
+  {
+    header: 'Badge Number',
+    accessorFn: (row) => row[PRODUCT_FILTERS.BADGE_NUMBER],
+    id: PRODUCT_FILTERS.BADGE_NUMBER,
+    Cell: renderCustomerInfo,
+    size: 300,
+    align: 'left',
+    enableGlobalFilter: false,
+    enableSorting: false,
+  },
+  {
+    header: 'Address',
+    accessorFn: (row) => getCustomerAddress(row.place, PRODUCT_FILTERS.SHIPPING_ADDRESS_ROLE),
+    id: PRODUCT_FILTERS.SHIPPING_ADDRESS_ROLE,
+    Cell: renderCustomerAddress,
+    size: 300,
+    align: 'left',
+    enableGlobalFilter: false,
+    enableSorting: false,
+  },
+  {
+    header: 'Organization',
+    accessorFn: (row) => row[PRODUCT_FILTERS.ORGANIZATION],
+    id: PRODUCT_FILTERS.ORGANIZATION,
+    Cell: renderCustomerInfo,
+    size: 300,
+    align: 'left',
+    enableGlobalFilter: false,
+    enableSorting: false,
+  },
+  {
+    header: 'Department',
+    accessorFn: (row) => row[PRODUCT_FILTERS.DEPARTMENT],
+    id: PRODUCT_FILTERS.DEPARTMENT,
+    Cell: renderCustomerInfo,
+    size: 300,
+    align: 'left',
+    enableGlobalFilter: false,
+    enableSorting: false,
+  },
+  {
+    header: 'Cost Center Code',
+    accessorFn: (row) => row[PRODUCT_FILTERS.COST_CENTER_ID],
+    id: PRODUCT_FILTERS.COST_CENTER_ID,
+    Cell: renderCustomerInfo,
+    size: 300,
+    align: 'left',
+    enableGlobalFilter: false,
+    enableSorting: false,
+  },
+  {
+    header: 'Job Title',
+    accessorFn: (row) => row?.[PRODUCT_FILTERS.TITLE],
+    id: PRODUCT_FILTERS.TITLE,
+    Cell: renderCustomerInfo,
+    size: 300,
+    align: 'left',
+    enableGlobalFilter: false,
+    enableSorting: false,
+  },
+  {
+    header: 'Role',
+    accessorFn: (row) => GOA_NEW_CUSTOMER_MODAL_ROLE_OPTIONS.find((role) => role.value === row?.[PRODUCT_FILTERS.ROLE])?.label,
+    id: PRODUCT_FILTERS.ROLE,
+    Cell: renderCustomerInfo,
+    size: 300,
+    align: 'left',
+    enableGlobalFilter: false,
+    enableSorting: false,
+  },
+];

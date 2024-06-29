@@ -1,0 +1,83 @@
+.toggleDeleteButton {
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 10%);
+
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+
+  padding: 16px;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.toggleDeleteButton_absolute {
+  position: absolute;
+  top: 74px;
+  right: 32px;
+}
+
+.toggleDeleteButton_fixed {
+  position: fixed;
+  top: 70px;
+  right: 18px;
+}
+
+/* CSS for arrow head */
+.toggleDeleteButton::after {
+  content: '';
+  position: absolute;
+  right: 6px;
+  top: -6px;
+
+  width: 0;
+  height: 0;
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 7px solid #ffffff;
+}
+
+.toggleDeleteButton>svg {
+  margin-right: 8px;
+  color: #2d3a47;
+}
+
+.menuHeaderRight {
+  display: flex;
+  flex-direction: row;
+}
+
+.menuHeaderRight_fixed {
+  position: fixed;
+  top: 26px;
+  right: 16px;
+}
+
+.toggleMenuButton {
+  outline: 0;
+  border: none;
+  border-radius: 999999px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+}

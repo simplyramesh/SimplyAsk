@@ -1,0 +1,105 @@
+.root {
+  color: var(--primaryColor) !important;
+  height: 100%;
+}
+
+.root > h3 {
+  font-size: 23px;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.allPages {
+  display: flex;
+}
+
+.root label {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.allPages div {
+  display: flex;
+  margin-left: auto;
+}
+
+.allPages div > p {
+  font-size: 13px;
+  margin-top: 13px;
+}
+
+.showAllLabel {
+  padding-right: 10px;
+}
+
+.readOnlyLabel {
+  padding-left: 10px;
+}
+
+.allPagesSwitch {
+  max-height: 16px;
+  margin-top: 8px;
+}
+
+.allPagesSwitchThumb {
+  margin-top: 0 !important;
+}
+
+.lineBreak {
+  border: none;
+  height: 1px;
+  background-color: var(--primaryColor);
+  opacity: 0.2;
+  margin-bottom: 0;
+}
+
+.pagesListScroll {
+  overflow-y: scroll;
+  padding-bottom: 10px;
+  height: calc(100% - 150px) !important;
+}
+
+.generalPages {
+  padding-bottom: 8px;
+}
+
+.generalPages div {
+  display: flex;
+  margin-right: auto;
+}
+
+.pagesListScroll label {
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+
+.checkedIcon {
+  color: var(--secondaryColor) !important;
+}
+
+.uncheckedIcon {
+  opacity: 0.2;
+  color: var(--secondaryColor) !important;
+}
+
+.saveButton {
+  margin: 0 auto !important;
+  padding: 0.5rem 3.4rem !important;
+}
+
+.switch {
+  max-height: 20px;
+  margin-top: 6px;
+}
+
+.thumb {
+  margin-top: 0 !important;
+}

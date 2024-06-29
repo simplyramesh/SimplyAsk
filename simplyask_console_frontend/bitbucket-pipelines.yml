@@ -1,0 +1,235 @@
+image: atlassian/default-image:3
+
+definitions:
+  steps:
+    - step: &analyze
+        name: Analyze
+        size: 2x
+        image: maven:3-openjdk-11
+        caches:
+          - sonar
+        script:
+          - echo sonar.projectKey=${BITBUCKET_REPO_SLUG} > sonar-project.properties
+          - pipe: sonarsource/sonarqube-scan:1.0.0
+            variables:
+              SONAR_HOST_URL: ${SONAR_HOST_URL}
+              SONAR_TOKEN: ${SONAR_TOKEN}
+    - step: &infra
+        name: Infra
+        script:
+          - >-
+            case $BITBUCKET_BRANCH in
+              develop)
+                INFRASTRUCTURE=${Infrastructure:=simplyask-dev}
+                ;;
+
+              "release/1.0.0")
+                INFRASTRUCTURE=${Infrastructure:=simplyask-qa1}
+                ;;
+
+              "release/1.1.0")
+                INFRASTRUCTURE=${Infrastructure:=simplyask-qa2}
+                ;;
+
+              "release/0.3.1")
+                INFRASTRUCTURE=${Infrastructure:=simplyask-staging}
+                ;;
+
+              prod)
+                INFRASTRUCTURE=${Infrastructure:=simplyask-prod}
+                ;;
+
+              *)
+                INFRASTRUCTURE=${Infrastructure:=simplyask-dev}
+                ;;
+            esac
+          - echo -n $INFRASTRUCTURE > ./infra.txt
+          - echo INFRASTRUCTURE=${INFRASTRUCTURE}
+        artifacts:
+          - infra.txt
+    - step: &build
+        name: Build
+        size: 2x
+        script:
+          - IMAGE_NAME=console_frontend
+          - INFRASTRUCTURE=$(cat ./infra.txt)
+          - >-
+            if test -f "deploy/.env.${INFRASTRUCTURE}"; then
+                cp deploy/.env.${INFRASTRUCTURE} deploy/.env
+            fi
+          - cat deploy/.env
+          - docker build . --file Dockerfile --tag ${IMAGE_NAME}
+          - docker save ${IMAGE_NAME} --output "${IMAGE_NAME}.tar"
+        services:
+          - docker
+        caches:
+          - docker
+        artifacts:
+          - "*.tar"
+    - step: &publish
+        name: Publish
+        size: 2x
+        script:
+          - IMAGE_NAME=console_frontend
+          - INFRASTRUCTURE=$(cat ./infra.txt)
+          - VERSION="${BITBUCKET_BRANCH//\//--}-${INFRASTRUCTURE:0:1}-${BITBUCKET_BUILD_NUMBER}"
+          - IMAGE=${DOCKERHUB_NAMESPACE}/${IMAGE_NAME}
+          - echo ${DOCKERHUB_PASSWORD} | docker login --username "$DOCKERHUB_USERNAME" --password-stdin
+          - docker load --input "${IMAGE_NAME}.tar"
+          - docker tag "${IMAGE_NAME}" "${IMAGE}:${VERSION}"
+          - docker push "${IMAGE}:${VERSION}"
+          - echo IMAGE_TAG=${VERSION}
+        services:
+          - docker
+    - step: &deploy
+        name: Deploy
+        image: google/cloud-sdk:latest
+        deployment: dev
+        script:
+          - IMAGE_NAME=console_frontend
+          - INFRASTRUCTURE=$(cat ./infra.txt)
+          - VERSION="${BITBUCKET_BRANCH//\//--}-${INFRASTRUCTURE:0:1}-${BITBUCKET_BUILD_NUMBER}"
+          - echo IMAGE_TAG=${VERSION}
+          - echo INFRASTRUCTURE=${INFRASTRUCTURE}
+          - echo BITBUCKET_DEPLOYMENT_ENVIRONMENT=${BITBUCKET_DEPLOYMENT_ENVIRONMENT}
+          - IMAGE=${DOCKERHUB_NAMESPACE}/${IMAGE_NAME}
+          - export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+          - echo $GCP_KEY_FILE | base64 -d > ~/.gcloud-api-key.json
+          - gcloud auth activate-service-account --key-file ~/.gcloud-api-key.json
+          - gcloud container clusters get-credentials $GKE_CLUSTER --zone=$GCP_REGION --project $GCP_PROJECT
+          - sed -i "s,{{image}},${IMAGE}:${VERSION},g" deploy/deployment.yaml
+          - kubectl apply -f deploy/deployment.yaml -n simplyask
+          - kubectl rollout status deployment consolefrontend --timeout=5m -n simplyask
+  caches:
+    sonar: ~/.sonar
+  services:
+    docker:
+      memory: 6144
+
+clone:
+  depth: full
+
+pipelines:
+  branches:
+    develop:
+      - step: *analyze
+      - step: *infra
+      - step: *build
+      - step: *publish
+      - step: *deploy
+    release/1.0.0:
+      - step: *analyze
+      - step: *infra
+      - step: *build
+      - step: *publish
+      - step:
+          <<: *deploy
+          deployment: qa1
+    release/1.1.0:
+      - step: *analyze
+      - step: *infra
+      - step: *build
+      - step: *publish
+      - step:
+          <<: *deploy
+          deployment: qa2
+    staging:
+      - step: *analyze
+      - step: *infra
+      - step: *build
+      - step: *publish
+      - step:
+          <<: *deploy
+          deployment: staging
+  custom:
+    build-for:
+      - variables:
+          - name: Infrastructure
+            default: simplyask-dev
+            allowed-values:
+              - "simplyask-dev"
+              - "simplyask-qa1"
+              - "simplyask-qa2"
+              - "simplyask-staging"
+              - "simplyask-prod"
+              - "simplyask-gov-ca"
+              - "telus-np"
+              - "telus-st"
+              - "telus-pr"
+              - "telus-pr-pr"
+              - "rogers"
+      - step: *infra
+      - step: *build
+      - step: *publish
+    build-n-deploy-to-dev:
+      - variables:
+          - name: Infrastructure
+            default: simplyask-dev
+            allowed-values:
+              - "simplyask-dev"
+      - step: *infra
+      - step: *build
+      - step: *publish
+      - step:
+          <<: *deploy
+          deployment: dev
+    build-n-deploy-to-qa1:
+      - variables:
+          - name: Infrastructure
+            default: simplyask-qa1
+            allowed-values:
+              - "simplyask-qa1"
+      - step: *infra
+      - step: *build
+      - step: *publish
+      - step:
+          <<: *deploy
+          deployment: qa1
+    build-n-deploy-to-qa2:
+      - variables:
+          - name: Infrastructure
+            default: simplyask-qa2
+            allowed-values:
+              - "simplyask-qa2"
+      - step: *infra
+      - step: *build
+      - step: *publish
+      - step:
+          <<: *deploy
+          deployment: qa2
+    build-n-deploy-to-staging:
+      - variables:
+          - name: Infrastructure
+            default: simplyask-staging
+            allowed-values:
+              - "simplyask-staging"
+      - step: *infra
+      - step: *build
+      - step: *publish
+      - step:
+          <<: *deploy
+          deployment: staging
+    build-n-deploy-to-prod:
+      - variables:
+          - name: Infrastructure
+            default: simplyask-prod
+            allowed-values:
+              - "simplyask-prod"
+      - step: *infra
+      - step: *build
+      - step: *publish
+      - step:
+          <<: *deploy
+          deployment: prod
+    build-n-deploy-to-gov-ca:
+      - variables:
+          - name: Infrastructure
+            default: simplyask-gov-ca
+            allowed-values:
+              - "simplyask-gov-ca"
+      - step: *infra
+      - step: *build
+      - step: *publish
+      - step:
+          <<: *deploy
+          deployment: gov-ca

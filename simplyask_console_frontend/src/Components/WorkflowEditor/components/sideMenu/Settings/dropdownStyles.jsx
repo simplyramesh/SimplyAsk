@@ -1,0 +1,67 @@
+export const dropdownStyles = {
+  control: (_, state) => ({
+    display: 'flex',
+    flex: '1 1 auto',
+    alignItems: 'center',
+    width: '100%',
+    border: state.isFocused ? '1px solid #2d3a47' : '1px solid #c4c4c4',
+    borderRadius: '10px',
+    outline: 'none',
+    background: '#ffffff',
+    fontSize: '16px',
+    lineHeight: '20px',
+    fontFamily: 'Montserrat',
+    fontWeight: '400',
+    fontStyle: 'normal',
+    cursor: 'pointer',
+    padding: state.selectProps.isSelectDropdown ? '10px' : '8px',
+  }),
+  dropdownIndicator: (provided, state) => ({
+    ...provided,
+    transform: state.selectProps.menuIsOpen ? 'rotate(-180deg)' : 'rotate(0deg)',
+    padding: state.selectProps.isSelectDropdown ? '0 6px 0 4px' : '0 8px',
+    transition: 'transform 150ms ease',
+  }),
+  menu: (provided, state) => ({
+    ...provided,
+    width: state.selectProps.plusIcon ? '286px' : '100%',
+    borderRadius: '10px',
+    background: '#ffffff',
+    boxShadow: '0px 6px 10px 1px rgba(0, 0, 0, 0.05)',
+    padding: '12px 0 12px 12px',
+  }),
+  menuList: (provided) => ({
+    ...provided,
+    paddingRight: '16px',
+    '::-webkit-scrollbar': {
+      width: '16px',
+    },
+    ':hover::-webkit-scrollbar-thumb': {
+      border: '4px solid #F4F4F4',
+      borderRadius: '10px',
+      background: 'rgba(198, 198, 198, 0.5)',
+    },
+    ':hover::-webkit-scrollbar-track': {
+      background: '#F4F4F4',
+      borderRadius: '2px',
+    },
+    ':hover::-webkit-scrollbar-track-piece:': {
+      margin: '4px 0',
+      background: '#F4F4F4',
+    },
+  }),
+  option: (provided, state) => ({
+    ...provided,
+    backgroundColor: 'transparent',
+    ':hover': {
+      backgroundColor: '#EDEDED',
+    },
+    borderRadius: '5px',
+    color: '#2d3a47',
+    cursor: 'pointer',
+    pointerEvents: state.isSelected ? 'none' : 'auto',
+    fontSize: '16px',
+    fontFamily: 'Montserrat',
+    fontWeight: state.isSelected ? '700' : '400',
+  }),
+};

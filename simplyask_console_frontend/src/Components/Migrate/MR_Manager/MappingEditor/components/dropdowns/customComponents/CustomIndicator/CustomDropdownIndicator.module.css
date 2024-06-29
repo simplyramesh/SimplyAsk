@@ -1,0 +1,27 @@
+.wrapper {
+  position: relative;
+
+  display: flex;
+  gap: 8px;
+}
+
+.container {
+  position: relative;
+  flex: 1 1 auto;
+}
+
+.dropdown_indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+
+.dropdown_indicator > svg {
+  width: 14px;
+}
+
+
+

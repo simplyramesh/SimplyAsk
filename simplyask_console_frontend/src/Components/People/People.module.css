@@ -1,0 +1,183 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 34px 36px;
+}
+
+.filters {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 1rem !important;
+}
+
+.searchBar {
+  max-width: 25%;
+}
+
+.tableCard table {
+  width: 100%;
+}
+
+.tableCard {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1500px) {
+  .tableCard {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .tableCard table > tbody > tr > td > div > span {
+    font-size: 10px !important;
+  }
+
+  .tableCard table > tbody > tr > td > div,
+  .tableCard table > thead > tr > th {
+    font-size: 16px !important;
+  }
+
+  .selectFilter {
+    width: 40% !important;
+    font-size: 14px;
+  }
+  .searchBar > input {
+    font-size: 14px !important;
+  }
+
+  .tableCard div > p,
+  .tableCard div > nav > ul > li > button {
+    font-size: 14px !important;
+  }
+
+  .tabs_header > div > div > button {
+    font-size: 16px !important;
+    min-width: 90px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .tableCard {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .tableCard table > tbody > tr > td > div > span {
+    font-size: 9px !important;
+  }
+
+  .tableCard table > tbody > tr > td > div,
+  .tableCard table > thead > tr > th {
+    font-size: 14px !important;
+  }
+
+  .tableCard table > tbody > tr > td {
+    padding: 0.8rem !important;
+  }
+
+  .selectFilter {
+    font-size: 13px;
+  }
+
+  .serviceFilter li label {
+    font-size: 13px !important;
+  }
+
+  .statusFilter li label {
+    font-size: 13px !important;
+  }
+
+  .searchBar > input {
+    font-size: 13px !important;
+  }
+
+  .tableCard div > p,
+  .tableCard div > nav > ul > li > button {
+    font-size: 13px !important;
+  }
+
+  .tabs_header > div > div > button {
+    font-size: 15px !important;
+    min-width: 85px !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .tableCard {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .tableCard table > tbody > tr > td > div > span {
+    font-size: 9px !important;
+  }
+
+  .tableCard table > tbody > tr > td > div,
+  .tableCard table > thead > tr > th {
+    font-size: 12px !important;
+  }
+
+  .selectFilter {
+    font-size: 12px;
+  }
+
+  .serviceFilter li label {
+    font-size: 12px !important;
+  }
+
+  .statusFilter li label {
+    font-size: 12px !important;
+  }
+
+  .searchBar > input {
+    font-size: 12px !important;
+  }
+  .tableCard div > p,
+  .tableCard div > nav > ul > li > button {
+    font-size: 12px !important;
+  }
+
+  .tableCard div {
+    /* this causes two scrollbars to appear inside table body */
+    /* margin: 10px 0 5px 0 !important; */
+  }
+
+  .tabs_header > div > div > button {
+    font-size: 13px !important;
+    min-width: 75px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .selectFilter {
+    font-size: 10px;
+  }
+
+  .serviceFilter li label {
+    font-size: 10px !important;
+  }
+
+  .statusFilter li label {
+    font-size: 10px !important;
+  }
+
+  .searchBar > input {
+    font-size: 10px !important;
+  }
+
+  .searchBar > svg {
+    margin-left: -100px;
+    height: 1.1rem !important;
+    width: 1.1rem !important;
+  }
+}
+
+.dropdown-container {
+  font-size: 10px !important;
+}

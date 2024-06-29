@@ -1,0 +1,169 @@
+.parentRoot {
+  height: 100%;
+}
+
+.notAuthorized {
+  display: block;
+
+  margin: 0 auto;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.isManagerRouteActivatedRoot {
+  height: 100%;
+  padding-bottom: 0;
+}
+
+.readOnly {
+  pointer-events: none;
+
+  height: 100%;
+
+  cursor: not-allowed;
+
+  opacity: 0.5;
+}
+
+.fullScreen {
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 230px);
+  padding: 1rem 2rem;
+
+  border-radius: 20px;
+
+  background-color: var(--whiteColor);
+
+  margin-bottom: 30px;
+}
+
+.lockedAccountImageParent {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+
+  margin-top: 70px;
+}
+
+.lockedAccountImage {
+  width: 420px;
+  height: 275px;
+}
+
+.lockedAccountFirstTextParent {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+
+  margin-top: 40px;
+}
+
+.lockedAccountFirstText {
+  width: 100%;
+  padding: 0 35px;
+
+  font-size: 48px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(45, 58, 71, 1);
+
+  margin-block-start: 10px !important;
+  margin-block-end: 10px !important;
+}
+
+.lockedAccountSecondTextParent {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+
+  margin-top: 25px;
+}
+
+.lockedAccountSecondText {
+  width: 100%;
+  padding: 0 35px;
+
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(45, 58, 71, 1);
+}
+
+.lockedAccountThirdText {
+  width: 560px;
+  padding: 0 35px;
+
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(45, 58, 71, 0.7);
+}
+
+.lockedAccountLastTextParent {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.lockedAccountFourthText {
+  width: 100%;
+  padding: 0 35px;
+
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(45, 58, 71, 1);
+
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1180px) {
+  .lockedAccountImage {
+    width: 257px;
+    height: 174px;
+  }
+
+  .lockedAccountFirstText {
+    font-size: 35px;
+  }
+
+  .lockedAccountSecondText,
+  .lockedAccountThirdText,
+  .lockedAccountFourthText {
+    font-size: 15px;
+  }
+}
+
+.isManagerRouteActivated {
+  /* position: absolute; */
+  /* top: calc(var(--navbarHeight) + var(--navbarSpace) - 30px); */
+  /* left: var(--sidedrawerWidth); */
+
+  box-sizing: border-box;
+
+  transition: all 0.5s ease-out;
+
+  width: auto;
+  padding: 0;
+}

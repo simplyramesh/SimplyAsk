@@ -1,0 +1,48 @@
+.root_parent {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 36px;
+}
+
+.executionCard {
+  /* width: 100%; */
+  height: fit-content;
+  padding: 0 !important;
+  flex: 1 1 auto !important;
+  width: 100% !important;
+}
+
+.second_column_analytics {
+  flex: 1 1 auto !important;
+  width: 100% !important;
+}
+
+.transactionCard {
+  box-sizing: border-box;
+  width: 100%;
+  height: fit-content;
+  padding: 0 !important;
+}
+
+.cardHeader {
+  margin: 0;
+  padding: 1rem;
+  font-size: 24px !important;
+  font-weight: 600;
+  border-radius: 20px 20px 0 0;
+}
+
+.root {
+  /* height: calc(100vh - var(--navbarHeight) - calc(var(--navbarSpace) * 1.9)); */
+  display: flex;
+
+  box-sizing: border-box;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1100px) {
+  .root {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,15 @@
+export const SERVICE_TICKET_TABS = {
+  OVERVIEW: 'OVERVIEW',
+  TICKET_TASKS: 'TICKET_TASKS',
+};
+
+export const SERVICE_TICKET_TABS_CONFIG = {
+  [SERVICE_TICKET_TABS.OVERVIEW]: {
+    label: 'Ticket Details',
+    value: SERVICE_TICKET_TABS.OVERVIEW,
+  },
+  [SERVICE_TICKET_TABS.TICKET_TASKS]: {
+    label: 'Ticket Tasks',
+    value: SERVICE_TICKET_TABS.TICKET_TASKS,
+  },
+};

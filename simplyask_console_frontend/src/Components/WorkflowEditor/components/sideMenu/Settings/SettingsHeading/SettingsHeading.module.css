@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  cursor: default;
+
+  line-height: 24px;
+
+  margin: 16px -4px 18px 14px;
+}
+
+.header + div {
+  flex-grow: 1;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 150ms ease-in, color 150ms ease-in;
+
+  padding: 2px;
+
+  border-radius: 100%;
+
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: #d4d4d4;
+}
+
+.icon > svg {
+  width: 24px;
+  height: 24px;
+}

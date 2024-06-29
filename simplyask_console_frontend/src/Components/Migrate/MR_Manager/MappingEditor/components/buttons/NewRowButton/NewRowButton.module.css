@@ -1,0 +1,51 @@
+.new_rowBtn {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+
+  transition: background 200ms ease-in-out;
+
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+  padding: 12px 22px;
+
+  border: none;
+  border-radius: 74px;
+  outline: none;
+
+  background: #ffffff;
+
+  cursor: pointer;
+
+  margin: 20px 16px;
+}
+
+.new_rowBtn:hover {
+  background: #f9f9f9;
+}
+
+.new_icon {
+  pointer-events: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new_icon svg {
+  height: 18px;
+
+  color: #2d3a47;
+
+  transform: rotate(90deg);
+}
+
+.new_text {
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #2d3a47;
+}

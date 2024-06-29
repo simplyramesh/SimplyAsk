@@ -1,0 +1,172 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  /* background-color: rgba(0, 0, 0, 0.6); */
+}
+
+.bgColor {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+  pointer-events: auto;
+
+  display: flex;
+  justify-content: space-between;
+
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+  width: 528px;
+  height: 282px;
+  padding: 28px 36px 28px 36px;
+
+  border-radius: 25px;
+
+  background: #ffffff;
+}
+
+.left {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 22px;
+  align-items: center;
+  justify-content: center;
+}
+
+.warningIcon {
+  color: #e03b24;
+}
+
+.warningIcon > svg {
+  width: 76px;
+  height: 76px;
+}
+
+.yellowWarningIcon {
+  color: #E7BB09;
+}
+
+.yellowWarningIcon > svg {
+  width: 76px;
+  height: 76px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  text-align: center;
+  vertical-align: baseline;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 150.4%;
+  font-weight: 600;
+}
+
+.message {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 138.4%;
+  font-weight: 400;
+}
+
+.btns {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 26px;
+  align-items: center;
+  justify-content: space-between;
+
+  white-space: nowrap;
+}
+
+.filledBtn,
+.outlineBtn {
+  appearance: none;
+
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+
+  width: 154px;
+  padding: 9px 24px;
+
+  border-radius: 10px;
+  outline: none;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  line-height: 17px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+}
+
+.outlineBtn {
+  border: 2px solid #2d3a47;
+
+  background-color: transparent;
+
+  color: #2d3a47;
+}
+
+.outlineBtn:hover {
+  background-color: #2d3a47;
+
+  color: #ffffff;
+}
+
+.filledBtn {
+  background-color: #2d3a47;
+
+  color: #ffffff;
+}
+
+.filledBtn:hover {
+  border: 2px solid #2d3a47;
+
+  background-color: transparent;
+
+  color: #2d3a47;
+}
+
+.action {
+  flex: 0 0 auto;
+}
+
+.close_icon {
+  cursor: pointer;
+
+  color: #2d3a47;
+}
+
+.close_icon > svg {
+  pointer-events: none;
+
+  width: 16px;
+  height: 16px;
+}

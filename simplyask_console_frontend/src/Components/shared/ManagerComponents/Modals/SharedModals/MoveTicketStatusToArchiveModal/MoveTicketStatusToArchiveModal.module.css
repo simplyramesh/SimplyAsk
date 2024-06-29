@@ -1,0 +1,104 @@
+.root{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.closeIconRoot {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 160ms ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+
+.closeIconRoot:hover {
+    background-color: #f57b20;
+}
+
+.closeIconSvg {
+    width: 30px;
+    height: 30px;
+}
+
+.infoOutlinedIconRoot{
+    position: absolute;
+    left: 50%;
+    margin-left: -45px;
+    top: 33px;
+}
+
+.infoOutlinedIcon{
+    width: 90px;
+    height: 90px;
+    color: rgba(231, 187, 9, 1);
+}
+
+
+.are_you_sure{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 135px;
+    font-weight: 600;
+    font-size: 17px;
+    color: rgba(45, 58, 71, 1);
+}
+
+.content{
+    margin-top: 16px;
+    color: rgba(45, 58, 71, 1);
+    font-size: 14px;
+    padding: 0 40px;
+    text-align: center;
+    line-height: 150%;
+}
+
+.continueBtn {
+    height: 38px !important;
+    width: 130px !important;
+    color: rgba(255, 255, 255, 1) !important;
+    border: 3px solid rgba(45, 58, 71, 1) !important;
+    font-weight: 500 !important;
+    font-size: 17px;
+    background: rgba(45, 58, 71, 1) !important;
+    transition: all 160ms ease-in;
+}
+
+.continueBtn:hover {
+    background: transparent !important;
+    color: rgba(45, 58, 71, 1) !important;
+    cursor: pointer;
+}
+
+.backButton {
+    height: 38px !important;
+    width: 130px !important;
+    color: rgba(45, 58, 71, 1) !important;
+    border: 3px solid rgba(45, 58, 71, 1) !important;
+    font-weight: 500 !important;
+    font-size: 17px;
+    background: transparent !important;
+    transition: all 160ms ease-in;
+}
+
+.backButton:hover {
+    background: rgba(45, 58, 71, 1) !important;
+    color: rgba(255, 255, 255, 1) !important;
+    cursor: pointer;
+}
+
+.flex_row_buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    left: 25%;
+    bottom: 27px;
+}

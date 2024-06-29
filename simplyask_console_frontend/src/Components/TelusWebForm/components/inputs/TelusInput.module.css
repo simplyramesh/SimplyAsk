@@ -1,0 +1,131 @@
+.checkbox_label {
+  user-select: none;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox_label_text {
+  user-select: none;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  font-style: normal;
+  text-align: right;
+  color: #2a2c2e;
+}
+
+input[type='checkbox' i].checkbox_input {
+  appearance: none;
+  position: relative;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #2a2c2e;
+  border-radius: 3px;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0;
+}
+
+input[type='checkbox' i].checkbox_input:checked {
+  background-color: transparent;
+}
+
+input[type='checkbox' i].checkbox_input:checked::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 15%;
+  left: 30%;
+  display: inline-block;
+  padding: 3px 1.5px;
+  border-right: 3px solid #2a2c2e;
+  border-bottom: 3px solid #2a2c2e;
+  transform: rotate(45deg);
+}
+
+.input_label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.input_label_textWrapper {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.input_label_text {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Helvetica Neue';
+  font-weight: 500;
+  font-style: normal;
+  color: #2a2c2e;
+  white-space: nowrap;
+}
+
+.input_label_textParentheses {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  font-style: normal;
+  color: #2a2c2e;
+  white-space: nowrap;
+}
+
+input[type=number].text_input::-webkit-outer-spin-button,
+input[type=number].text_input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number].text_input {
+  -moz-appearance: textfield;
+}
+
+input[type='text' i].text_input,
+input[type='number' i].text_input {
+  min-height: 50px;
+  max-height: 50px;
+  padding: 7px 13px 8px 13px;
+  border: 0.5px solid #2a2c2e;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  font-style: normal;
+  color: #2a2c2e;
+}
+
+input[type='text' i].text_input::placeholder,
+input[type='number' i].text_input::placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  font-style: normal;
+  color: #aaaeb6;
+}
+
+input[type='text' i].text_input:focus,
+input[type='number' i].text_input:focus {
+  border: 0.5px solid #2a2c2e;
+  outline: none;
+}
+
+.input_error {
+  font-family: 'Helvetica Neue';
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: red;
+  margin: 2px 0 0 1px;
+}

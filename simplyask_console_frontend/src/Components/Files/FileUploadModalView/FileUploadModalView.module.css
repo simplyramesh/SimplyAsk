@@ -1,0 +1,73 @@
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--primaryColor) !important;
+}
+
+.titleContainer>p {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.titleContainer>svg {
+  cursor: pointer;
+  font-size: 34px !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.fileContainer {
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  margin: 20px 0;
+  height: 210px;
+  width: 100%;
+  background-color: var(--backgroundColor);
+  border: var(--borderWidth) solid var(--tertiaryColor);
+  border-radius: 15px;
+}
+
+.filePrompt {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  font-size: 22px;
+  color: var(--primaryColor);
+}
+
+.filePrompt>p {
+  margin: 0;
+}
+
+.filePrompt>button,
+.button {
+  padding: 0.625rem 2rem !important;
+  margin: 0 auto !important;
+}
+
+.selectedFile {
+  background-color: var(--whiteColor) !important;
+}
+
+.files {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 160px));
+  gap: 2rem;
+  height: 100%;
+  width: 100%;
+}
+
+/* 
+.spinner {
+  color: var(--whiteColor) !important;
+  height: 26px !important;
+  width: 26px !important;
+} */

@@ -1,0 +1,34 @@
+.topBarLeft {
+  display: flex;
+  align-items: center;
+}
+
+.topBarLeft span {
+  margin: 0 5px;
+  font-weight: 300;
+}
+
+.topBarLeft p {
+  margin: 0;
+}
+
+.backButton {
+  border: var(--borderWidth) solid var(--primaryColor) !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 10px !important;
+}
+
+.filters {
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	width: 100%;
+	padding-left: 1rem !important;
+	padding-right: 0 !important;
+}
+
+.formCard {
+  box-sizing: border-box;
+  width: 100%;
+}

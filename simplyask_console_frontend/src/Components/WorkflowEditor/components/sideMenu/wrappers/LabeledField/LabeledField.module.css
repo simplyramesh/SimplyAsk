@@ -1,0 +1,51 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+  margin-bottom: 30px;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.label {
+  margin-bottom: 10px;
+}
+
+.wrapper div[class*='forms_errorMessage'] {
+  margin-top: 10px;
+}
+
+.gap4 > *:not(:nth-child(-n+2)) {
+  margin-top: 4px;
+}
+
+.gap8 > *:not(:nth-child(-n+2)) {
+  margin-top: 8px;
+}
+
+.gap10 > *:not(:nth-child(-n+2)) {
+  margin-top: 10px;
+}
+
+.gap12 > *:not(:nth-child(-n+2)) {
+  margin-top: 12px;
+}
+
+.gap14 > *:not(:nth-child(-n+2)) {
+  margin-top: 14px;
+}
+
+.gap16 > *:not(:nth-child(-n+2)) {
+  margin-top: 16px;
+}
+
+.inAccordion {
+  padding: 10px 0 0 0;
+}
+
+.warning > p {
+  color: #E7BB09;
+}

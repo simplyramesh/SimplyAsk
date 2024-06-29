@@ -1,0 +1,14 @@
+export const PUBLIC_SUBMISSION_FORM = {
+  TITLE: 'title',
+  DESCRIPTION: 'description',
+  IS_ENABLED: 'isEnabled',
+  PASSWORD: 'password',
+};
+
+export const PUBLIC_SUBMISSION_FORM_INITIAL_VALUES = {
+  [PUBLIC_SUBMISSION_FORM.TITLE]: '',
+  [PUBLIC_SUBMISSION_FORM.DESCRIPTION]: '',
+  [PUBLIC_SUBMISSION_FORM.IS_ENABLED]: false,
+  [PUBLIC_SUBMISSION_FORM.PASSWORD]: '',
+  isPasswordEnabled: false,
+};

@@ -1,0 +1,149 @@
+.root {
+  box-sizing: border-box;
+  background-color: var(--tertiaryColor);
+  flex: 1;
+  margin-bottom: 0 !important;
+  height: 140px;
+  display: flex;
+  align-items: center;
+}
+
+.Title {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat";
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.Icon {
+  background-color: var(--secondaryColor);
+  border-radius: 50%;
+  height: 86px;
+  width: 86px;
+  text-align: center;
+  line-height: 75px;
+  vertical-align: middle;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 110px;
+  padding-top: 20px !important;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+  .Name {
+    font-size: 17px !important;
+  }
+
+  .Unit {
+    padding-top: 0 !important;
+    font-size: 17px !important;
+  }
+
+  .Icon {
+    height: 83px !important;
+    width: 83px !important;
+  }
+
+  .Number {
+    font-size: 35px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Name {
+    font-size: 16px !important;
+  }
+
+  .Unit {
+    margin-block-start: 0 !important;
+    margin-top: 12px !important;
+    font-size: 16px !important;
+  }
+
+  .Number {
+    font-size: 30px !important;
+  }
+
+  .Data {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .Name,
+  .Unit {
+    font-size: 14px !important;
+  }
+
+  .Number {
+    font-size: 25px !important;
+  }
+
+  .Icon {
+    height: 55px !important;
+    width: 55px !important;
+  }
+
+  .root {
+    height: 100px !important;
+    padding: 1.1rem 1rem !important;
+  }
+
+  .Data {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .root {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+}
+
+.Name {
+  font-size: 20px;
+  color: var(--primaryColor);
+  font-weight: 300;
+  height: 100% !important;
+  margin-block-end: 0 !important;
+}
+
+.Name_parent {
+  display: flex;
+  align-items: flex-start;
+}
+
+.Stats {
+  display: flex;
+  position: relative;
+}
+
+.Number {
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--primaryColor);
+  height: 45px !important;
+  margin-block-start: 0 !important;
+  top: 0;
+}
+
+.Unit {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--primaryColor);
+  padding-left: 5px;
+  padding-top: 7px;
+  position: relative;
+}

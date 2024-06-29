@@ -1,0 +1,173 @@
+import HighPriority from '../../../Assets/icons/issues/priorities/high.svg?component';
+import HighestPriority from '../../../Assets/icons/issues/priorities/highest.svg?component';
+import LowPriority from '../../../Assets/icons/issues/priorities/low.svg?component';
+import LowestPriority from '../../../Assets/icons/issues/priorities/lowest.svg?component';
+import MediumPriority from '../../../Assets/icons/issues/priorities/medium.svg?component';
+import NonePriority from '../../../Assets/icons/issues/priorities/none.svg?component';
+
+export const PROCESS_EXECUTION_QUERY_KEYS = {
+  GET_PROCESS_EXECUTIONS_FILES_QUERY_KEY: 'GET_PROCESS_EXECUTIONS_FILES',
+};
+
+export const ISSUES_QUERY_KEYS = {
+  GET_CATEGORY_CONFIG: 'GET_CATEGORY_CONFIG',
+  GET_SERVICE_TICKETS: 'GET_SERVICE_TICKETS',
+  GET_FALLOUT_TICKETS: 'GET_FALLOUT_TICKETS',
+  GET_SERVICE_TICKET_TASKS: 'GET_SERVICE_TICKET_TASKS',
+  GET_SERVICE_TICKET_TASK_BY_ID: 'GET_SERVICE_TICKET_TASK_BY_ID',
+  GET_SERVICE_AGENTS: 'GET_SERVICE_AGENTS',
+  GET_SERVICE_TICKET_BY_ID: 'GET_SERVICE_TICKET_BY_ID',
+  GET_SERVICE_TYPE_CONFIGURATIONS: 'GET_SERVICE_TYPE_CONFIGURATIONS',
+  GET_SERVICE_TYPE_BY_ID: 'GET_SERVICE_TYPE_BY_ID',
+  GET_SERVICE_TICKET_TYPE_DISPLAY_NAME: 'GET_SERVICE_TICKET_TYPE_BY_DISPLAY_NAME',
+  GET_SERVICE_TICKET_ATTACHMENTS: 'GET_SERVICE_TICKET_ATTACHMENTS',
+  GET_DOWNLOAD_ALL_SERVICE_TICKET_ATTACHMENTS: 'GET_DOWNLOAD_ALL_SERVICE_TICKET_ATTACHMENTS',
+  GET_SERVICE_TICKET_ATTACHMENT: 'GET_SERVICE_TICKET_ATTACHMENT',
+};
+
+export const ISSUE_FALLOUT_STATUSES = {
+  UNRESOLVED: 'UNRESOLVED',
+  RESOLVED: 'RESOLVED',
+  FORCE_RESOLVED: 'FORCE_RESOLVED',
+};
+
+export const ISSUE_FALLOUT_PARAMETER_TYPES = {
+  EXECUTION_DATA: 'EXECUTION_DATA',
+  REQUEST_DATA: 'REQUEST_DATA',
+};
+
+export const ISSUE_SERVICE_TICKET_STATUSES = {
+  UNASSIGNED: 'UNASSIGNED',
+  ASSIGNED: 'ASSIGNED',
+  DONE: 'DONE',
+};
+
+export const ISSUE_SERVICE_TICKET_TASKS_STATUSES = {
+  INCOMPLETE: 'Incomplete',
+  COMPLETE: 'Complete',
+  APPROVED: 'Approved',
+  REJECTED: 'Rejected',
+  PENDING_ACTION: 'Pending Action',
+};
+
+export const SERVICE_TICKET_BOA_STATUSES = {
+  SUCCESS: 'SUCCESS',
+  FAILED: 'FAILED',
+};
+
+export const ISSUE_PRIORITIES = {
+  HIGHEST: 'HIGHEST',
+  HIGH: 'HIGH',
+  MEDIUM: 'MEDIUM',
+  LOW: 'LOW',
+  LOWEST: 'LOWEST',
+  NONE: 'NONE',
+};
+
+export const ISSUE_STATUS_MAP = {
+  [ISSUE_FALLOUT_STATUSES.UNRESOLVED]: { label: 'Unresolved', color: 'red' },
+  [ISSUE_FALLOUT_STATUSES.RESOLVED]: { label: 'Resolved', color: 'green' },
+  [ISSUE_FALLOUT_STATUSES.FORCE_RESOLVED]: { label: 'Force resolved', color: 'yellow' },
+
+  [ISSUE_SERVICE_TICKET_STATUSES.UNASSIGNED]: { label: 'Unassigned', color: 'blue' },
+  [ISSUE_SERVICE_TICKET_STATUSES.ASSIGNED]: { label: 'Assigned', color: 'yellow' },
+  [ISSUE_SERVICE_TICKET_STATUSES.DONE]: { label: 'Done', color: 'green' },
+
+  [ISSUE_SERVICE_TICKET_TASKS_STATUSES.INCOMPLETE]: { label: 'Incomplete', color: 'mutedBlue' },
+  [ISSUE_SERVICE_TICKET_TASKS_STATUSES.COMPLETE]: { label: 'Completed', color: 'savingsGreen' },
+  [ISSUE_SERVICE_TICKET_TASKS_STATUSES.APPROVED]: { label: 'Approved', color: 'savingsGreen' },
+  [ISSUE_SERVICE_TICKET_TASKS_STATUSES.REJECTED]: { label: 'Rejected', color: 'venetianRed' },
+  [ISSUE_SERVICE_TICKET_TASKS_STATUSES.PENDING_ACTION]: { label: 'Pending Action', color: 'mutedBlue' },
+};
+
+export const ISSUE_PRIORITY_DATA_MAP = {
+  [ISSUE_PRIORITIES.HIGHEST]: { Icon: HighestPriority, value: ISSUE_PRIORITIES.HIGHEST, label: 'Highest' },
+  [ISSUE_PRIORITIES.HIGH]: { Icon: HighPriority, value: ISSUE_PRIORITIES.HIGH, label: 'High' },
+  [ISSUE_PRIORITIES.MEDIUM]: { Icon: MediumPriority, value: ISSUE_PRIORITIES.MEDIUM, label: 'Medium' },
+  [ISSUE_PRIORITIES.LOW]: { Icon: LowPriority, value: ISSUE_PRIORITIES.LOW, label: 'Low' },
+  [ISSUE_PRIORITIES.LOWEST]: { Icon: LowestPriority, value: ISSUE_PRIORITIES.LOWEST, label: 'Lowest' },
+  [ISSUE_PRIORITIES.NONE]: { Icon: NonePriority, value: ISSUE_PRIORITIES.NONE, label: 'None' },
+};
+
+export const ISSUE_ENTITY_TYPE = {
+  USER: 'USER',
+  PROCESS: 'PROCESS',
+  PROCESS_EXECUTION: 'PROCESS_EXECUTION',
+  WORKFLOW: 'WORKFLOW',
+  AGENT: 'AGENT',
+  ISSUE: 'ISSUE',
+  CONVERSATION: 'CONVERSATION',
+  TEST_CASE: 'TEST_CASE',
+  TEST_SUITE: 'TEST_SUITE',
+  TEST_GROUP: 'TEST_GROUP',
+};
+
+export const ISSUE_ENTITY_SEARCH_TYPE = {
+  USER: 'USER',
+  PROCESS: 'PROCESS',
+  PROCESS_EXECUTION: 'PROCESS_EXECUTION',
+  AGENT: 'AGENT',
+  ISSUE: 'ISSUE',
+  CONVERSATION: 'CONVERSATION',
+};
+
+export const ISSUE_ENTITY_TYPE_LABEL = {
+  [ISSUE_ENTITY_TYPE.USER]: 'People',
+  [ISSUE_ENTITY_TYPE.PROCESS]: 'Process Execution',
+  [ISSUE_ENTITY_TYPE.WORKFLOW]: 'Process',
+  [ISSUE_ENTITY_TYPE.AGENT]: 'Agent',
+  [ISSUE_ENTITY_TYPE.ISSUE]: 'Issue',
+  [ISSUE_ENTITY_TYPE.CONVERSATION]: 'Conversation',
+};
+
+export const ISSUE_CATEGORIES = {
+  SERVICE_TICKET: 'Service Ticket',
+  SERVICE_TICKET_TASK: 'Service Ticket Task',
+  FALLOUT_TICKET: 'Fallout Ticket',
+};
+
+export const ISSUE_ENTITY_RELATIONS = {
+  CREATED: 'CREATED',
+  CREATED_BY: 'CREATED_BY',
+  REPLACED: 'REPLACED',
+  REPLACED_BY: 'REPLACED_BY',
+  RELATED: 'RELATED',
+  PARENT: 'PARENT',
+  IS_PARENT_OF: 'IS_PARENT_OF',
+  IS_BLOCKED_BY: 'IS_BLOCKED_BY',
+  CHILD: 'CHILD',
+  BLOCKS: 'BLOCKS',
+  IS_CHILD_OF: 'IS_CHILD_OF',
+  CLONES: 'CLONES',
+  IS_CLONED_BY: 'IS_CLONED_BY',
+  IS_DUPLICATED_BY: 'IS_DUPLICATED_BY',
+  DUPLICATES: 'DUPLICATES',
+};
+
+export const ISSUE_RELATIONS_LABELS = {
+  [ISSUE_ENTITY_RELATIONS.CREATED]: 'Created',
+  [ISSUE_ENTITY_RELATIONS.CREATED_BY]: 'Created By',
+  [ISSUE_ENTITY_RELATIONS.REPLACED]: 'Replaced',
+  [ISSUE_ENTITY_RELATIONS.REPLACED_BY]: 'Replaced By',
+  [ISSUE_ENTITY_RELATIONS.RELATED]: 'Related',
+  [ISSUE_ENTITY_RELATIONS.PARENT]: 'Parent',
+  [ISSUE_ENTITY_RELATIONS.IS_PARENT_OF]: 'Is Parent Of',
+  [ISSUE_ENTITY_RELATIONS.IS_BLOCKED_BY]: 'Is Blocked By',
+  [ISSUE_ENTITY_RELATIONS.CHILD]: 'Children',
+  [ISSUE_ENTITY_RELATIONS.BLOCKS]: 'Blocks',
+  [ISSUE_ENTITY_RELATIONS.IS_CHILD_OF]: 'Is Child Of',
+  [ISSUE_ENTITY_RELATIONS.CLONES]: 'Clones',
+  [ISSUE_ENTITY_RELATIONS.IS_CLONED_BY]: 'Is Cloned By',
+  [ISSUE_ENTITY_RELATIONS.IS_DUPLICATED_BY]: 'Is Duplicated By',
+  [ISSUE_ENTITY_RELATIONS.DUPLICATES]: 'Duplicates',
+};
+
+export const ISSUE_ACTIVITY_TYPE = {
+  COMMENT: 'COMMENT',
+  HISTORY: 'HISTORY',
+};
+
+export const ISSUE_CATEGORY_ID = {
+  SERVICE_TICKET: 1,
+  SERVICE_TICKET_TASK: 2,
+};

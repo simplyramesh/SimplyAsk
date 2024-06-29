@@ -1,0 +1,41 @@
+/* CSSTransition classes  */
+.menu-primary-Test-Case-Transition-enter {
+  position: absolute;
+  transform: translateX(-100%);
+
+}
+
+.menu-primary-Test-Case-Transition-enter-active {
+  transform: translateX(0%);
+  transition: all 850ms ease;
+}
+
+.menu-primary-Test-Case-Transition-enter-active>div>button {
+  top: -39px;
+  right: 53px;
+}
+
+.menu-primary-Test-Case-Transition-exit-active>div>button {
+  top: -39px;
+  right: 53px;
+}
+
+.menu-secondary-Test-Case-Transition-enter-active>div>div>button {
+  top: -39px;
+  right: 31px;
+}
+
+.menu-secondary-Test-Case-Transition-exit-active>div>div>button {
+  top: -39px;
+  right: 31px;
+}
+
+.menu-secondary-Test-Case-Transition-enter {
+  transform: translateX(100%);
+}
+
+.menu-secondary-Test-Case-Transition-enter-active {
+  transform: translateX(0%);
+  transition: all 850ms ease;
+}
+

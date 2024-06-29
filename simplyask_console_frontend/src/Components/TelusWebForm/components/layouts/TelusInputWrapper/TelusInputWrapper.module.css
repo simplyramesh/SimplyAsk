@@ -1,0 +1,15 @@
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: calc(50% - 74px / 2);
+  /* flex: 1 1 auto; */
+  margin-bottom: 33px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .wrapper {
+    width: 100%;
+  }
+}

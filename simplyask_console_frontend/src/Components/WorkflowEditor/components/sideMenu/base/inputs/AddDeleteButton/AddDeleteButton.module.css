@@ -1,0 +1,47 @@
+.inputIcon_container {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 4px;
+}
+
+.iconButton {
+  appearance: none;
+
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px;
+
+  border: none;
+  border-radius: 100%;
+  outline: none;
+
+  background: #fef2e9;
+
+  cursor: pointer;
+}
+
+.iconButton_disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.iconButton > span {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 100%;
+}
+
+.inputIcon {
+  width: 20px;
+
+  border-radius: 100%;
+}

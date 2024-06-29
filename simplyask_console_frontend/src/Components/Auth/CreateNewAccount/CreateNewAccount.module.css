@@ -1,0 +1,558 @@
+.root {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: #FFFFFF;
+}
+
+.add_margin_from_top{
+    margin-top: 40px;
+}
+
+.promoRoot {
+    height: 40px;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    gap: 7px;
+    background: rgba(235, 242, 230, 1);
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 9999999999999;
+}
+
+.promoIconParent {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.checkedCircle {
+    fill: rgba(95, 153, 54, 1);
+    width: 27px;
+    height: 27px;
+}
+
+.promoCodeBold {
+    color: #2D3A47;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.promoCodeLight {
+    font-size: 16px;
+    color: #2D3A47;
+    font-weight: 400;
+}
+
+.promoCodeDismiss {
+    color: #2075f5;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.promoCodeDismiss:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.leftOrangeBg {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.shiftTopOrangeBg {
+    top: 40px;
+}
+
+.leftSimplyAskWhiteImg {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+}
+
+.shiftTopOrangeBgSimplyAskWhiteImg {
+    top: 70px;
+}
+
+.fullWidthFlex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.rootContainer {
+    padding-right: 9%;
+    display: flex;
+    width: 756px;
+}
+
+.addAnimation{
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.rootContainerScrollable {
+    padding-top: 10px;
+    height: fit-content;
+}
+
+.rootContainerNotScrollable {
+    align-items: center;
+}
+
+.mainTitle {
+    color: rgba(245, 123, 32, 1);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.bottomLeftSpaceDiv {
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 40px;
+    left: 40px;
+    width: 300px;
+    height: 405px;
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+    border: 9px solid rgba(255, 255, 255, 0.3);
+    background: linear-gradient(153.41deg, rgba(251, 251, 251, 0.623) -13.87%, rgba(251, 251, 251, 0.203) 39.84%, rgba(251, 251, 251, 0.63) 98.35%);
+    border-radius: 20px;
+}
+
+.spaceImg {
+    margin-top: 20px;
+}
+
+.scrollBarRoot {
+    border-radius: 10px;
+}
+
+.scrollBarRoot>div {
+    overflow-x: hidden;
+}
+
+
+.mainViewRoot {
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    background: #fbfbfb;
+    height: fit-content;
+    position: relative;
+}
+
+.mainViewRootIntersectedWithWave {
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.MainTextRoot {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.MainTextRootSmall{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 20px 20px;
+}
+
+.planTitle {
+    color: rgba(45, 58, 71, 1);
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 150%;
+}
+
+
+.titleLabel {
+    color: rgba(45, 58, 71, 1);
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.subTitleLabel {
+    color: rgba(45, 58, 71, 1);
+    font-size: 19px;
+    margin-top: 20px;
+}
+
+.scrollBarRoot>div:first-child {
+    padding: 20px !important;
+}
+
+
+.TitleSectionRoot {
+    margin-bottom: 70px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.removeMargin {
+    margin-bottom: 20px;
+}
+
+
+.flex_row_orange {
+    display: flex;
+    margin-top: 5px;
+    gap: 10px;
+}
+
+.orange_text {
+    font-size: 16px;
+    color: #f57b20;
+    font-weight: 600;
+}
+
+.orange_text:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.subTitleLabelNoMargin {
+    font-size: 16px;
+    color: rgba(45, 58, 71, 1);
+}
+
+
+.modal {
+    width: 700px !important;
+    height: 788px !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 0 !important;
+    padding: 0 !important;
+    border-radius: 20px !important;
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1) !important;
+    overflow: visible !important;
+    max-height: max-content !important;
+    top: 50% !important;
+    left: 50% !important;
+    margin-left: -330px;
+    /* Negative half of height. */
+    margin-top: -380px;
+    /* Negative half of width. */
+    background: var(--whiteColor);
+}
+
+.modal_personal_details {
+    width: 700px !important;
+    height: 788px !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 0 !important;
+    padding: 0 !important;
+    border-radius: 20px !important;
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1) !important;
+    overflow: visible !important;
+    max-height: max-content !important;
+    top: 50% !important;
+    left: 50% !important;
+    margin-left: -330px;
+    margin-top: -380px;
+    background: var(--whiteColor);
+}
+
+
+
+.closeIcon_root {
+    z-index: 1;
+    right: 6px;
+    top: 6px;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.closeIcon_root:hover {
+    background-color: var(--tertiaryColor);
+}
+
+.modalRoot {
+    width: 100%;
+    flex: 1;
+}
+
+.minimizeWidth {
+    padding-top: 30px;
+    width: 90%;
+    margin: auto;
+}
+
+
+.closeIcon {
+    font-size: 30px !important;
+    color: var(--primaryColor) !important;
+    float: right !important;
+}
+
+
+.mainTitle {
+    color: rgba(245, 123, 32, 1);
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.bottomLeftSpaceDiv {
+    bottom: 40px;
+    left: 40px;
+    width: 270px;
+    height: 390px;
+}
+
+.planTitle {
+    color: rgba(45, 58, 71, 1);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.planBody {
+    color: rgba(45, 58, 71, 1);
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.planBodySmall {
+    color: rgba(45, 58, 71, 1);
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+
+.learnMoreBtn {
+    background: rgba(45, 58, 71, 1);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    border: 2px solid transparent;
+    transition: all 200ms ease-in-out;
+    font-size: 16px;
+    height: 34px;
+    margin-top: 10px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.learnMoreBtn:hover {
+    cursor: pointer;
+    background: #FBFBFB;
+    border-color: rgba(45, 58, 71, 1);
+    color: rgba(45, 58, 71, 1);
+}
+
+.learnMoreBtnSmall {
+    background: rgba(245, 123, 32, 1);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    height: 38px;
+    border: 2px solid transparent;
+    transition: all 200ms ease-in-out;
+    font-size: 16px;
+    height: 34px;
+    margin-top: 10px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.learnMoreBtnSmall:hover{
+    background: rgba(45, 58, 71, 1) !important;
+    cursor: pointer;
+}
+
+.titleLabel {
+    font-size: 23px;
+}
+
+.subTitleLabel {
+    font-size: 16px;
+}
+
+.slideDownTextParentRoot {
+    z-index: 1;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 130px auto auto auto;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 10%);
+}
+
+.centerArrowIcon{
+    display: flex;
+    align-items: center;
+}
+
+.slideDownTextRoot {
+    cursor: pointer;
+    padding: 3px 20px;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.slideDownText {
+    z-index: 1;
+    color: rgba(45, 58, 71, 1);
+    font-size: 19px;
+    font-weight: 600;
+}
+
+
+.arrowIcon {
+    height: 45px !important;
+    width: 50px !important;
+}
+
+.hideDiv{
+    visibility:hidden;
+}
+
+
+@media screen and (max-width: 1390px) {
+
+    .bottomLeftSpaceDiv {
+        bottom: 10px;
+        left: 15px;
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    .TitleSectionRoot {
+        margin-bottom: 40px;
+    }
+
+
+    .rootContainer {
+        padding-top: 40px;
+        padding-right: 0;
+        margin: auto;
+    }
+
+    .rootContainerScrollable {
+        padding-top: 40px;
+        padding-right: 0;
+        margin: auto;
+    }
+
+    .fullWidthFlex {
+        justify-content: center;
+    }
+
+    .promoIconParent {
+        gap: 5px;
+    }
+
+    .checkedCircle {
+        width: 20px;
+        height: 20px;
+    }
+
+    .promoCodeBold {
+
+        font-size: 13px;
+    }
+
+    .promoCodeLight {
+        font-size: 13px;
+
+    }
+
+    .promoCodeDismiss {
+        font-size: 13px;
+    }
+
+}
+@media screen and (min-width: 1300px) {
+    .rootContainer {
+        margin-right: 4%;
+        padding-right: 2%;
+    }
+}
+@media screen and (min-width: 1900px) {
+    .rootContainer {
+        margin-right: 8%;
+        padding-right: 2%;
+    }
+}
+
+@media screen and (min-width: 2300px) {
+    .rootContainer {
+        margin-right: 10%;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .rootContainer,
+    .slideDownTextParentRoot{
+        width: 545px;
+        margin: 30px auto auto auto;
+
+    }
+
+    .scrollBarRoot>div:first-child {
+        margin-top: 100px !important;
+    }
+
+
+}
+
+
+.fullHeight{
+    height: 100%;
+}
+
+.absoluteClick{
+    position: absolute;
+    z-index: 999999999999999;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}

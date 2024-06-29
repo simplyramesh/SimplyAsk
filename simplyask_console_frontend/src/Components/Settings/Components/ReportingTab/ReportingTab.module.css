@@ -1,0 +1,45 @@
+.root {
+    height: 100%;
+    width: auto !important;
+    margin: 0 !important;
+    overflow-y: hidden !important;
+    overflow-x: scroll !important;
+}
+
+.root::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.tableHeight {
+    height: calc(100% - 70px) !important;
+}
+
+.topMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.root table {
+    width: calc(100% - 20px);
+}
+
+.root table th:nth-child(1),
+.root table th:nth-child(2),
+.root table th:nth-child(3) {
+    width: 20%;
+}
+
+.root table th:nth-child(4),
+.root table th:nth-child(5) {
+    width: calc(15% - 25px);
+}
+
+.root table th:nth-child(6) {
+    width: 50px;
+    text-align: center;
+}

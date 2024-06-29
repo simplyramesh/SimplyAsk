@@ -1,0 +1,53 @@
+export const STEP_ITEM_TYPES = {
+  PARAMETER: 'PARAMETER',
+  SPEAK: 'SPEAK',
+  QUICK_REPLIES: 'QUICK_REPLIES',
+  ACTION: 'ACTION',
+  ACTION_ERROR: 'ACTION_ERROR',
+  INQUIRY: 'INQUIRY',
+  TRANSITION: 'TRANSITION',
+  SWITCH: 'SWITCH',
+};
+
+export const CONNECTOR_STEP_ITEM_TYPES = [STEP_ITEM_TYPES.ACTION_ERROR, STEP_ITEM_TYPES.TRANSITION];
+
+export const STEP_ENTITY_TYPE = {
+  STEP: 'STEP',
+  BLOCK: 'BLOCK',
+};
+
+export const SWITCH_TYPES = {
+  AGENT: 'AGENT',
+  HUMAN: 'HUMAN',
+};
+
+export const SWITCH_INPUT_KEYS = {
+  SWITCH_AGENT_ID: 'switchAgentId',
+  SWITCH_TYPE: 'switchType',
+};
+
+export const TRANSITION_STEP_ITEM_PATHS = {
+  TRANSITION_TYPE: 'data.type',
+  CONDITION_RULE_TYPE: 'data.ruleType',
+  CONDITION: ['data', 'conditions'],
+  CUSTOM_CONDITION: 'data.customCondition',
+  INTENT_NAME: 'data.intent.name',
+  INTENT_TYPE: 'data.intent.intentType',
+  INTENT_ID: 'data.intent.intentId',
+  INTENT_TRAINING_PHRASES: 'data.intent.trainingPhrases',
+  FULFILLMENT_PHRASE: ['data', 'fulfillmentPhrase'],
+};
+
+export const ACTION_CONTROLS_TYPES = {
+  PROCESS_DROPDOWN: 'PROCESS_DROPDOWN',
+  CONTROLS_TITLE: 'CONTROLS_TITLE',
+  PROCESS_INPUT_FIELDS: 'PROCESS_INPUT_FIELDS',
+  PROCESS_OUTPUT_FIELDS: 'PROCESS_OUTPUT_FIELDS',
+  PROMPT_SIMPLYASSISTANT: 'PROMPT_SIMPLYASSISTANT',
+};
+
+export const KNOWLEDGE_SOURCE_TYPES = {
+  AI_MODEL: 'AI_MODEL',
+  CUSTOM: 'CUSTOM',
+  AUGMENTED: 'AUGMENTED',
+};

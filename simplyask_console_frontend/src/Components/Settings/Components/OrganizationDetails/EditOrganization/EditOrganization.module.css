@@ -1,0 +1,49 @@
+.phoneNumberInput {
+    background: #FFFFFF;
+    height: 37px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 10px;
+    font-size: 16px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 378px;
+}
+
+.phoneNumberInput:focus {
+    outline: #2d3a47;
+    border: 1px solid #2d3a47;
+}
+
+.phoneNumberInput>input {
+    outline: none !important;
+    border: none !important;
+    font-size: 16px;
+    font-weight: 400;
+    background: transparent !important;
+    width: 100% !important;
+    color: #2D3A47 !important;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.phoneNumberInput>div>select option {
+    font-size: 16px !important;
+}
+
+.phoneNumberInput>div {
+    pointer-events: none !important;
+}
+
+.phoneNumberInput>div>div:nth-child(3) {
+    display: none;
+}
+
+.phoneNumberInput>div>select {
+    display: none !important;
+}
+
+.phoneNumberInput>div>div {
+    width: 30px !important;
+    margin-top: 4px !important;
+}

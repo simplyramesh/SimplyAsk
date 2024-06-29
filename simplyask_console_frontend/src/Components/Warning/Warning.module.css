@@ -1,0 +1,25 @@
+.root {
+  background-color: var(--warningBackgroundColor);
+  border-radius: 9px;
+  margin-bottom: 15px;
+  border-color: #faebcc;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+}
+
+.text {
+  margin: 15px;
+  color: #66512c;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: medium;
+}
+
+.icon {
+  margin: 1px 8px 1px 3px;
+}

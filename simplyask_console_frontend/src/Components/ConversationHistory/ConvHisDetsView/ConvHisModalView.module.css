@@ -1,0 +1,30 @@
+.root {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.detailsMenuRight {
+  display: flex;
+  align-items: center;
+}
+
+.topMenuButton {
+  font-size: 35px !important;
+  color: var(--primaryColor) !important;
+  cursor: pointer;
+}
+
+.userDetails > p {
+  margin-left: 14px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.dropdownMenu {
+  top: var(--chat-bar-height);
+  right: 20px;
+  width: fit-content !important;
+}

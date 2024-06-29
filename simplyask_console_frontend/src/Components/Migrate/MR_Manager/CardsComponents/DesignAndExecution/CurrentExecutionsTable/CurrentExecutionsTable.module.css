@@ -1,0 +1,222 @@
+.boldTitle {
+    color: rgba(45, 58, 71, 1);
+    font-weight: 600;
+    font-size: 19px;
+    margin: 25px 0 25px 0;
+}
+
+.tableWidth {
+    width: 100% !important;
+    table-layout: fixed !important;
+}
+
+.tableWidth>thead>tr>th:nth-child(2),
+.tableWidth>tbody>tr>td:nth-child(2) {
+    text-align: center !important;
+}
+
+.tableWidth>thead>tr>th:last-child {
+    text-align: end !important;
+    padding-right: 45px !important;
+}
+
+.searchBar {
+    width: 400px !important;
+    border-radius: 20px !important;
+    font-size: 15px !important;
+    height: 30px !important;
+    display: flex !important;
+    align-items: center;
+    padding-right: 3px !important;
+    border: 2px solid rgb(37, 37, 37) !important;
+}
+
+.searchBar>input {
+    width: 100%;
+}
+
+.searchBar>div {
+    display: flex;
+    align-items: center;
+}
+
+.searchBar>div>svg {
+    background: rgba(51, 65, 80, 1) !important;
+    border-radius: 50% !important;
+    font-size: 1.3rem !important;
+    padding: 2px !important;
+    pointer-events: none;
+    transition: all ease-in 600ms;
+    opacity: 0.3;
+}
+
+.searchBarActive>div>svg {
+    pointer-events: all;
+    cursor: pointer;
+    opacity: 1;
+    fill: rgba(255, 255, 255, 1) !important;
+}
+
+.searchBar:focus {
+    font-size: 3.5rem !important;
+}
+
+.tableRoot {
+    margin: 20px -25px 0 -25px;
+}
+
+.paginationRoot {
+    padding: 0 25px;
+}
+
+.tableRoot>div>div>div,
+.paddingForUnScrollableTable>div {
+    padding: 0 12px !important;
+}
+
+
+
+.tableIconsRoot {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-right: 17px;
+}
+
+.playIconHover,
+.pauseIconHover,
+.cancelIconHover {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    transition: all 100ms ease-in;
+    background-color: #FEF2E9;
+    cursor: pointer;
+}
+
+.pauseIconHover {
+    background: rgba(238, 238, 238, 1);
+}
+
+.pauseIconHover:hover {
+    background: rgba(202, 204, 206, 1);
+}
+
+.playIconHover {
+    background: rgba(235, 242, 230, 1);
+}
+
+.playIconHover:hover {
+    background: rgba(204, 231, 184, 1);
+}
+
+.cancelIconHover {
+    background: rgba(251, 231, 228, 1);
+}
+
+.cancelIconHover:hover {
+    background: rgba(240, 204, 198, 1);
+}
+
+.actionIconTable,
+.playIcon {
+    width: 15px
+}
+
+.playIcon {
+    margin-right: -3px;
+}
+
+.showMoreButtonRoot {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.showMoreButton {
+    width: 167px;
+    height: 41px;
+    background: rgba(45, 58, 71, 1);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 2px solid rgba(45, 58, 71, 1);
+    transition: all 100ms ease;
+}
+
+.showMoreButton:hover {
+    cursor: pointer;
+    background: none;
+    color: rgba(45, 58, 71, 1);
+}
+
+.display_hover_comp_root {
+    position: relative;
+    display: none;
+    transition: all 160ms ease-in;
+    white-space: nowrap;
+}
+
+.pauseIconHover:hover>.display_hover_comp_root,
+.cancelIconHover:hover>.display_hover_comp_root,
+.playIconHover:hover>.display_hover_comp_root {
+    display: block;
+}
+
+.display_hover_comp {
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    background: rgba(45, 58, 71, 1);
+    z-index: 10000000;
+    border-radius: 25px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.polygon_absolute {
+    position: absolute;
+    top: -59px;
+    left: -17px;
+}
+
+.playButtonPolygonClass {
+    left: -19px;
+}
+
+.hover_text_absolute {
+    padding: 3px 10px;
+    font-size: 12px;
+    top: -53px;
+    left: -60px;
+}
+
+.cancelIconPositioning {
+    left: -58px;
+}
+
+.pauseIconPositioning {
+    left: -55px;
+}
+
+.minHeightLoader {
+    height: 200px;
+}
+
+@media screen and (max-width: 1150px) {
+    .searchBar {
+        width: 320px !important;
+    }
+
+}

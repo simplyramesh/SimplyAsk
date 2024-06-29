@@ -1,0 +1,86 @@
+.root {
+    height: 100%;
+}
+
+.upperSection {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px 130px 25px;
+    position: relative;
+}
+
+.loaderHeightUpperSection{
+    height: calc(100% - 200px);
+}
+
+.loaderHeight{
+    height: 100%;
+}
+
+.scrollbarRoot{
+    margin-top: 35px;
+}
+
+.titleRoot {
+    color: #2D3A47;
+    font-weight: 600;
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.submitButton {
+    width: 130px;
+    height: 38px;
+    text-align: center;
+    background: #2D3A47;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 16px;
+    right: 18px;
+    top: 18px;
+    position: absolute;
+    box-sizing: border-box;
+    border: 2px solid #2D3A47;
+    transition: all 100ms ease;
+}
+
+.submitButton:hover {
+    background: rgba(255, 255, 255, 1);
+    color: #2D3A47;
+    cursor: pointer;
+}
+
+.disableSubmitButton{
+    pointer-events: none;
+    color: rgba(138, 138, 138, 1);
+    background: #D4D4D4;
+    border: 2px solid transparent;
+}
+
+.headers{
+    color: #2D3A47;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.headersLine {
+    background: #DFE4ED;
+    height: 2px;
+    margin: 5px -25px 0 -25px;
+}
+
+.textFieldRoot{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.reduceInputWidth{
+    width: 70px;
+}
+
+.hideBtn{
+    display: none;
+}

@@ -1,0 +1,121 @@
+.topBarLeft {
+  display: flex;
+  align-items: center;
+}
+
+.topBarLeft span {
+  margin: 0 5px;
+  font-weight: 300;
+}
+
+.backButton {
+  border: var(--borderWidth) solid var(--primaryColor) !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 10px !important;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 1rem !important;
+  padding-right: 0 !important;
+}
+
+.newCategoryButton {
+  height: 80px !important;
+  padding: 0 1.4rem !important;
+  margin: -16px 0 -16px 0 !important;
+  color: var(--primaryColor) !important;
+  font-size: 20px !important;
+}
+
+/* The plus character in the button. */
+.newCategoryButton > span > span {
+  font-size: 32px !important;
+  margin-right: 5px !important;
+}
+
+.searchBar {
+  max-width: 25%;
+}
+
+.tableCard {
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(100vh - 383px);
+}
+
+.tableCard table {
+  width: 100%;
+}
+
+.scrollbars {
+  height: 100%;
+}
+.editButton {
+  border-radius: 50%;
+  background-color: var(--tertiaryColor);
+  height: 45px;
+  width: 45px;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.editIcon {
+  color: var(--primaryColor) !important;
+  height: 25px !important;
+  width: 25px !important;
+}
+
+@media screen and (max-width: 1300px) {
+  .tableCard table {
+    font-size: 14px;
+  }
+
+  .tableCard table > tbody > tr > td > div > span {
+    font-size: 10px !important;
+  }
+
+  .tableCard table > tbody > tr > td > div,
+  .tableCard table > thead > tr > th {
+    font-size: 16px !important;
+  }
+
+  .searchBar > input {
+    font-size: 14px !important;
+    width: 100% !important;
+  }
+
+  .tableCard div > p,
+  .tableCard div > nav > ul > li > button {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .searchBar {
+    width: 230px !important;
+  }
+
+  .tableCard {
+    overflow-x: scroll;
+    width: 100%;
+  }
+  .tableCard table {
+    border-collapse: collapse;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .searchBar > svg {
+    margin-left: -100px;
+    height: 1.3rem !important;
+    width: 1.3rem !important;
+  }
+}

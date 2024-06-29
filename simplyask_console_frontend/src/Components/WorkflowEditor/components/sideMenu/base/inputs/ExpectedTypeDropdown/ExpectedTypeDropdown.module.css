@@ -1,0 +1,11 @@
+.error {
+  border: 1px solid #E03B24 !important;
+  outline: none !important;
+	border-radius: 10px;
+}
+
+.warning {
+	border: 1px solid #E7BB09 !important;
+	border-radius: 10px;
+  outline: none !important;
+}

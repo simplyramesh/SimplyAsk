@@ -1,0 +1,41 @@
+/* CSSTransition classes  */
+.menu-primary-Manager-Transition-enter {
+  position: absolute;
+  transform: translateX(-100%);
+
+}
+
+.menu-primary-Manager-Transition-enter-active {
+  transform: translateX(0%);
+  transition: all 850ms ease;
+}
+
+.menu-secondary-Manager-Transition-enter {
+  transform: translateX(100%);
+}
+
+.menu-secondary-Manager-Transition-enter-active {
+  transform: translateX(0%);
+  transition: all 850ms ease;
+}
+
+.menu-secondary-Manager-Transition-enter-active>div>div>button {
+  top: -40px;
+  right: 29px;
+}
+
+.menu-secondary-Manager-Transition-exit-active>div>div>button {
+  top: -40px;
+  right: 29px;
+}
+
+
+.menu-secondary-Manager-Transition-enter-active>div>div>div>button {
+  top: -40px;
+  right: 29px;
+}
+
+.menu-secondary-Manager-Transition-exit-active>div>div>div>button {
+  top: -40px;
+  right: 29px;
+}

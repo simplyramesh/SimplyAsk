@@ -1,0 +1,31 @@
+.role,
+.more {
+	font-size: 16px;
+	font-style: normal;
+	color: #2d3a47;
+
+	margin: 0;
+}
+
+.role {
+	font-weight: 400;
+	cursor: default;
+}
+
+.more {
+	cursor: pointer;
+
+	font-weight: 600;
+}
+
+/* .plus {
+
+}
+
+.length {
+
+}
+
+.moreText {
+
+} */

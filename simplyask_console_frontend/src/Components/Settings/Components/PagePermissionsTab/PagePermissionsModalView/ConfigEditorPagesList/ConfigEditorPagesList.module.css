@@ -1,0 +1,49 @@
+.switch {
+  max-height: 16px;
+  margin-top: 6px;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.row div > p {
+  font-size: 13px;
+  padding-left: 10px;
+}
+
+.checkbox {
+  margin-top: -4px;
+}
+
+.checkedIcon {
+  color: var(--secondaryColor) !important;
+}
+
+.uncheckedIcon {
+  opacity: 0.2;
+  color: var(--secondaryColor) !important;
+}
+
+.label {
+  margin-top: 15px;
+}
+
+.pageName {
+  background-color: var(--backgroundColor);
+  border: 1px solid var(--tertiaryColor);
+  border-radius: 5px;
+  padding: 5px;
+  height: 21px;
+  margin-left: auto;
+  margin-right: 0 !important;
+  width: calc(16vw + 10%) !important;
+}
+
+.pageName p {
+  margin-left: auto;
+  padding-right: 5px;
+  margin-top: 2px;
+}

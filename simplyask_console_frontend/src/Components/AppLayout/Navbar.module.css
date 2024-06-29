@@ -1,0 +1,247 @@
+.root {
+  position: fixed;
+  left: var(--sidedrawerWidth);
+  width: calc(100% - var(--sidedrawerWidth));
+  background-color: var(--whiteColor);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: var(--navbarHeight);
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1100;
+  box-sizing: border-box;
+  transition: all 0.4s ease-out;
+}
+
+.removeRootBoxShadows{
+  box-shadow: none;
+}
+
+.titleText {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.subTitleText{
+  font-weight: 400;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profileText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  border-left: var(--borderWidth) solid var(--tertiaryColor);
+  padding-left: 20px;
+}
+
+.profileText span {
+  color: var(--secondaryColor);
+}
+
+.profileText p {
+  font-size: x-large;
+  font-weight: 600;
+  color: var(--primaryColor);
+  margin: 0;
+}
+
+div[class*="MuiPaper-root"] {
+  overflow-x: visible;
+  overflow-y: visible;
+}
+
+.popOverWrapper {
+  height: 192px;
+}
+
+.arrow, .arrow_shadow {
+  position: absolute;
+  right: 40px;
+  bottom: 100%;
+  width: 24px;
+  transform: rotate(45deg) translate(10px, 10px);
+  height: 24px;
+  background-color: #FEF2E9;
+  z-index: 0;
+  border-radius: 4px;
+}
+
+.arrow_shadow {
+  z-index: -1;
+  box-shadow: 0 -1px 5px rgba(0,0,0,.3);
+}
+
+.menuAvatar {
+  margin-top: 20px;
+  margin-left: 18px;
+  margin-bottom: 18px;
+  width: 45px;
+  height: 45px;
+}
+
+.menuProfileImage {
+  width: 14.22px;
+  height: 16px;
+  margin-left: 10px;
+}
+
+.menuUserName {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.menuSimplyAskTitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #F57B20;
+}
+
+.profileMenuButton {
+  margin-left: 8px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.profileMenuTop {
+  display: flex;
+  background-color: #FEF2E9;
+  width: 332px;
+  height: 83px;
+  left: 0;
+  top: 10px;
+  border-radius: 4px 4px 0 0;
+}
+
+.profileMenuTopText {
+  margin: 25px 13px 18px 12px;
+}
+
+.profileMenuMiddle {
+  display: flex;
+  border: none;
+  background-color: #ffffff;
+  margin: 7px 7px 7px 7px;
+  width: 318px;
+  height: 36px;
+  align-items: center;
+  padding: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profileMenuMiddle:hover {
+  background-color: #f2f2f2;
+}
+
+.profileMenuMiddleText {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  width: 275px;
+  height: 50px;
+  margin-left: 12.75px;
+  align-items: center;
+  display: flex;
+}
+
+.menuMiddleBottomLine {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 308px;
+  height: 0;
+  background-color: #D4D4D4;
+  border: 1px solid #D4D4D4;
+}
+
+.profileMenuBottom {
+  display: flex;
+  border: none;
+  background-color: #ffffff;
+  margin: 7px 7px 7px 7px;
+  width: 318px;
+  height: 36px;
+  align-items: center;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.profileMenuBottom:hover {
+  background-color: #f2f2f2;
+}
+
+.profileMenuBottomText {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  width: 274px;
+  height: 49px;
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+.fileModal {
+  border: 0 !important;
+  left: 20% !important;
+  width: 60% !important;
+  padding: 2rem !important;
+  border-radius: 25px !important;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .titleText,
+  .subTitleText {
+    font-size: 24px !important;
+  }
+
+  .profileText p {
+    font-size: 22px !important;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .titleText,
+  .subTitleText {
+    font-size: 20px !important;
+  }
+
+  .profileText p {
+    font-size: 18px !important;
+  }
+
+  .buttons {
+    margin-right: 0;
+  }
+}

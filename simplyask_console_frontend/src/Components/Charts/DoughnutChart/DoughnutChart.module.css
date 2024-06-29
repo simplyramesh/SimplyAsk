@@ -1,0 +1,56 @@
+.relative {
+  position: relative;
+  z-index: 10;
+}
+
+.absolute_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100000000;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.text {
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: var(--primaryColor);
+  text-align: center;
+  z-index: 100000000;
+}
+
+.largeText{
+  font-size: 45px;
+}
+
+.textLabel{
+  z-index: 100000000;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: var(--primaryColor);
+  text-align: center;
+}
+
+canvas#race{position:relative; z-index:2;}
+
+.fadeIn{
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}

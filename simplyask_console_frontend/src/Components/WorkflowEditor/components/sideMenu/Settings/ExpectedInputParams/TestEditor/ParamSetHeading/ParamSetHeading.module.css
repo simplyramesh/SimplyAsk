@@ -1,0 +1,79 @@
+.paramSet_heading {
+  position: relative;
+
+  display: inline-flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 0 10px 0;
+}
+
+/* Dropdown */
+.iconMenu {
+  position: relative;
+}
+
+.moreIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  color: #2d3a47;
+}
+
+.moreIcon > svg {
+  width: 24px;
+}
+
+.menu_items {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 6px;
+}
+
+.btn_text {
+  display: inline-flex;
+  flex: 1 1 auto;
+  gap: 12px;
+  align-items: center;
+
+  padding: 6px 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.btn_text > span {
+  pointer-events: none;
+}
+
+.editIcon,
+.trashIcon {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+
+  color: #2d3a47;
+  vertical-align: top;
+}
+
+.editIcon,
+.trashIcon {
+  width: 24px;
+  height: 24px;
+}
+
+
+

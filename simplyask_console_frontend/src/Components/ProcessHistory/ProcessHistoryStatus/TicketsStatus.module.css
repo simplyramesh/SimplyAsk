@@ -1,0 +1,66 @@
+.root {
+  text-transform: capitalize;
+  border-radius: 10px;
+  width: 100px !important;
+  padding: 0.4rem 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  margin: auto;
+}
+
+.noBackground {
+  background-color: transparent !important;
+}
+
+.sideModal {
+  font-size: 20px !important;
+  width: 150px !important;
+  border-radius: 15px;
+}
+
+.rejected,
+.failed {
+  color: var(--statusOverdueColor);
+  background-color: var(--statusOverdueBackgroundColor);
+}
+
+.executing {
+  color: var(--statusAssignedColor);
+  background-color: var(--statusAssignedBackgroundColor);
+}
+
+.accepted {
+  color: var(--statusResolvedColor);
+  background-color: var(--statusResolvedBackgroundColor);
+}
+
+.resolved,
+.success {
+  color: var(--statusResolvedColor);
+  background-color: var(--statusResolvedBackgroundColor);
+}
+
+.capital {
+  text-transform: uppercase !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .sideModal {
+    width: 130px !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sideModal {
+    width: 120px !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sideModal {
+    width: 100px !important;
+  }
+}

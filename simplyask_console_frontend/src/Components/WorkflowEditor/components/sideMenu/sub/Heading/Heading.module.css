@@ -1,0 +1,43 @@
+.withIcon {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+
+  cursor: default;
+
+  line-height: 18px;
+  text-align: left;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+
+.withIcon > svg {
+  flex: 0 0.7 auto;
+
+  width: 20px;
+  height: 20px;
+
+  vertical-align: middle;
+}
+
+.icon {
+  display: inline-block;
+
+  cursor: pointer;
+
+  line-height: 18px;
+  text-align: left;
+  color: #8a8a8a;
+}
+
+.icon > svg {
+  flex: 0 0.7 auto;
+
+  width: 20px;
+  height: 20px;
+
+  vertical-align: middle;
+}

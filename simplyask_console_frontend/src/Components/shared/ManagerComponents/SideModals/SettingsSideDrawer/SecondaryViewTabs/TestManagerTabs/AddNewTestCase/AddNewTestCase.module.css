@@ -1,0 +1,300 @@
+.root {
+    padding: 15px 0 0 8px;
+    height: 100%;
+    width: 100%;
+}
+
+.mainRoot{
+    height: 100%;
+
+}
+
+.backBtnRoot {
+    margin-top: 5px;
+    display: flex;
+    gap: 15px
+}
+
+.backBtnIcon {
+    width: 32px;
+    height: 27px;
+    border-radius: 50%;
+    transition: all 160ms ease-in;
+}
+
+.backBtnIcon:hover {
+    background: #EDEDED;
+    cursor: pointer;
+}
+
+.viewTitle {
+    display: flex;
+    align-items: center;
+    color: rgba(45, 58, 71, 1);
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.saveButton {
+    width: 130px !important;
+    position: fixed !important;
+    right: 31px;
+    top: 22px;
+    height: 40px !important;
+    font-size: 16px !important;
+}
+
+.createNewCase{
+    width: 230px !important;
+    position: fixed !important;
+    right: 31px;
+    top: 22px;
+    height: 40px !important;
+    font-size: 16px !important;
+}
+
+.createNewCase:hover,
+.saveButton:hover {
+    background-color: var(--secondaryColor) !important;
+}
+
+.disableSaveButton {
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+}
+
+.secondary_view_root{
+    height: 100%;
+    padding: 15px 0 0 8px;
+}
+
+.fullHeight {
+    height: 100%;
+}
+
+
+.contentPadding {
+    height: 100%;
+    width: 485px;
+}
+
+.formRoot {
+    padding: 35px 36px 0 8px;
+}
+
+.searchBar {
+    border-radius: 20px !important;
+    font-size: 15px !important;
+    height: 30px !important;
+    display: flex !important;
+    align-items: center;
+    padding-right: 3px !important;
+    border: 2px solid rgb(37, 37, 37) !important;
+}
+
+.searchBar>input {
+    width: 100%;
+}
+
+.searchBar>div {
+    display: flex;
+    align-items: center;
+}
+
+.searchBar>div>svg {
+    background: rgba(51, 65, 80, 1) !important;
+    border-radius: 50% !important;
+    font-size: 1.3rem !important;
+    padding: 2px !important;
+    pointer-events: none;
+    transition: all ease-in 600ms;
+    opacity: 0.3;
+}
+
+.searchBarActive>div>svg {
+    pointer-events: all;
+    cursor: pointer;
+    opacity: 1;
+    fill: rgba(255, 255, 255, 1) !important;
+}
+
+.searchBar:focus {
+    font-size: 3.5rem !important;
+}
+
+.contentRoot {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    position: relative;
+    height: 100%;
+}
+
+.currentTestCases {
+    color: rgba(45, 58, 71, 1);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 36px 10px 8px;
+}
+
+.currentTestCases::after {
+    content: "";
+    background: rgba(45, 58, 71, 1);
+    width: 444px;
+    margin-left: -6px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+}
+
+.error {
+    margin-top: 20px;
+}
+
+.noData {
+    padding: 0 36px 0 8px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+}
+
+.noDataText {
+    color: rgba(45, 58, 71, 1);
+    font-weight: 600;
+    text-align: center;
+}
+
+.noDataDescription {
+    color: rgba(45, 58, 71, 1);
+    line-height: 150%;
+    text-align: center;
+    padding: 0 60px;
+}
+
+.casesRoot {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.7s;
+
+}
+
+
+.testCasesDiv {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.addSeparationLine::after {
+    content: "";
+    background: rgba(212, 212, 212, 1);
+    width: 444px;
+    margin-left: -6px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+}
+
+.testName {
+    font-weight: 600;
+}
+
+.testDescription {
+    font-size: 14px;
+}
+
+.testDataRoot {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-right: 60px;
+}
+
+.threeDotsRoot {
+    padding: 11px 13px !important;
+    display: flex !important;
+    transition: all 160ms ease !important;
+    align-items: center !important;
+    border-radius: 5px !important;
+    min-width: auto !important;
+}
+
+.threeDotsRoot:hover {
+    background: rgba(212, 212, 212, 1) !important;
+    cursor: pointer !important;
+}
+
+.scrollbarRoot {
+    height: calc(100% - 295px) !important;
+}
+
+.scrollbarRoot>div:first-child {
+    padding: 0 36px 0 8px !important;
+}
+
+.pagination_bottom {
+    margin-top: 25px;
+}
+
+.testCaseDropDownRoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: max-content;
+    padding-right: 8px;
+    height: 83px;
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+    background: rgba(251, 251, 251, 1);
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 58px;
+    right: 5px;
+    z-index: 100;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.2s;
+}
+
+.editTestCaseDropDown {
+    height: 100%;
+    color: rgba(45, 58, 71, 1);
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    transition: all 160ms ease !important;
+    padding-left: 13px;
+}
+
+.editTestCaseDropDown:hover {
+    background: rgba(212, 212, 212, 1) !important;
+    cursor: pointer;
+}
+
+.dropdownIcon {
+    width: 16px;
+    height: 16px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

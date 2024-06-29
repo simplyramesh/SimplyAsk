@@ -1,0 +1,36 @@
+export const WIDGETS_QUERY_KEYS = {
+  GET_CHAT_WIDGETS_FILTERED: 'GET_CHAT_WIDGETS_FILTERED',
+  GET_CHAT_WIDGETS_ALL: 'GET_CHAT_WIDGETS_ALL',
+  GET_ALL_AGENTS_FOR_WIDGETS: 'GET_ALL_AGENTS_FOR_WIDGETS',
+  GET_CHAT_WIDGET_BY_ID: 'GET_CHAT_WIDGET_BY_ID',
+  GET_WIDGET_AGENTS_BY_ID: 'GET_WIDGET_AGENTS_BY_ID',
+};
+
+export const DELETE_MODAL_RADIO = {
+  MIGRATE_AGENTS: 'MIGRATE_AGENTS',
+  NO_MIGRATE_AGENTS: 'NO_MIGRATE_AGENTS',
+};
+
+export const DAYS_OF_WEEK = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+export const TWELVE_AM = '12:00 AM';
+export const ELEVEN_FIFTY_NINE_PM = '11:59 PM';
+export const NINE_AM = '9:00 AM';
+export const FIVE_PM = '5:00 PM';
+export const ALL_DAY_STRING = '24 Hours / Day, 7 Days / Week';
+export const STANDARD_BUSINESS_HOUR_STRING = 'Standard Business Hours (9:00 AM - 5:00 PM, Monday - Friday)';
+export const CUSTOM_STRING = 'Custom';
+
+export const PHONE_NUMBER_MANAGEMENT_QUERY_KEYS = {
+  GET_TELEPHONE_INFO: 'GET_TELEPHONE_INFO',
+  GET_WIDGET_AGENTS_BY_ID: 'GET_WIDGET_AGENTS_BY_ID',
+  GET_TELEPHONE_COUNTRIES: 'GET_TELEPHONE_COUNTRIES',
+  GET_TELEPHONE_PROVINCES: 'GET_TELEPHONE_PROVINCES',
+  GET_TELEPHONE_REGIONS: 'GET_TELEPHONE_REGIONS',
+  GET_All_PHONE_NUMBER_IDS: 'GET_All_PHONE_NUMBER_IDS',
+};
+
+export const IMAGE_CROPPER_SHAPE = {
+  round: 'round',
+  square: 'square',
+  rectangle: 'rectangle',
+};

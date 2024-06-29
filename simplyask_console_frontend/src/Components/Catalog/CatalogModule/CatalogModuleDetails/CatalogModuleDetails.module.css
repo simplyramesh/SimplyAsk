@@ -1,0 +1,151 @@
+.topBarLeft {
+  display: flex;
+  align-items: center;
+}
+
+.topBarLeft span {
+  margin: 0 5px;
+  font-weight: 300;
+}
+
+.topBarLeft p {
+  margin: 0;
+}
+
+.backButton {
+  border: var(--borderWidth) solid var(--primaryColor) !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 10px !important;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 1rem !important;
+  padding-right: 0 !important;
+}
+
+.formCard {
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(100vh - 273px);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 15px;
+}
+
+.description {
+  grid-row: 4 / 2;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.input {
+  height: 35px;
+  width: calc(100% - 80px);
+  font-size: 16px;
+  padding: 0 0.5rem;
+  border: 1px solid var(--tertiaryColor);
+  border-radius: 5px;
+  margin-bottom: 25px;
+  background-color: #fbfbfb;
+  border-radius: 10px;
+}
+
+.autoComplete {
+  width: calc(100% - 62px) !important;
+  background-color: var(--backgroundColor) !important;
+  margin-bottom: 25px !important;
+}
+
+.autoComplete input {
+  height: 14px !important;
+}
+
+.datePicker {
+  background-color: var(--backgroundColor);
+  border-radius: 5px;
+  border: 1px solid var(--tertiaryColor);
+  width: 85px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.button {
+  cursor: pointer;
+  text-align: left;
+  width: calc(100% - 62px);
+}
+
+.confirmContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.saveButton {
+  background-color: var(--primaryColor);
+  transition: 0.1s;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 12px 40px 12px 40px;
+  border: none;
+  margin-left: 10px;
+}
+
+.saveButton:hover {
+  background-color: var(--secondaryColor);
+}
+
+.resetButton {
+  background-color: white;
+  transition: 0.1s;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 12px 40px 12px 40px;
+  border: none;
+  margin-left: 10px;
+}
+
+.resetButton:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+/* .editSpinner {
+  color: var(--primaryColor) !important;
+  width: 39px !important;
+  height: 39px !important;
+} */
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .form {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .formCard {
+    width: 100%;
+    height: 100%;
+  }
+}

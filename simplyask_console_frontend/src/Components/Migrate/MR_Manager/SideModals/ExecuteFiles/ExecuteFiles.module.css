@@ -1,0 +1,121 @@
+.root {
+    height: 100%;
+}
+
+.upperSection {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 25px 30px 25px;
+    position: relative;
+}
+
+.fullHeight{
+    height: 100%;
+}
+
+.fileExecutionLoaderRoot{
+    height: calc(100% - 200px);
+}
+
+.titleRoot {
+    color: #2D3A47;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.dragAndDropTitleRoot{
+    color: #2D3A47;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 8px;
+    margin-top: 35px;
+}
+
+.submitButton {
+    width: 130px;
+    height: 38px;
+    text-align: center;
+    background: #2D3A47;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 16px;
+    right: 18px;
+    top: 18px;
+    position: absolute;
+    box-sizing: border-box;
+    border: 2px solid #2D3A47;
+    transition: all 100ms ease;
+}
+
+.submitButton:hover {
+    background: rgba(255, 255, 255, 1);
+    color: #2D3A47;
+    cursor: pointer;
+}
+
+.dragAndDropChildWithFile,
+.dragAndDropChild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 82px;
+    border: 3px dashed rgba(45, 58, 71, 0.65);
+    border-radius: 15px;
+    background: #FBFBFB;
+    box-sizing: border-box;
+}
+
+.dragAndDropChildWithFile{
+    border-color: rgba(95, 153, 54, 1);
+}
+
+.dragAndDropSecondChild {
+    width: 100%;
+    font-weight: 400;
+    color: rgba(45, 58, 71, 1);
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    line-height: 150%;
+}
+
+.selectFileBtnInput {
+    display: none;
+}
+
+.selectFileBtn {
+    font-size: 16px !important;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease-in;
+    transition-duration: 200ms;
+    white-space: nowrap !important;
+    color: #2075f5;
+    margin-top: 3px;
+}
+
+.deleteFileText{
+    font-size: 16px !important;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease-in;
+    transition-duration: 200ms;
+    white-space: nowrap !important;
+    color: rgba(224, 59, 36, 1);
+    margin-top: 1px;
+}
+
+.deleteFileText:hover,
+.selectFileBtn:hover {
+    text-decoration: underline;
+}
+
+.disableSubmitButton{
+    pointer-events: none;
+    color: rgba(138, 138, 138, 1);
+    background: #D4D4D4;
+    border: 2px solid transparent;
+}

@@ -1,0 +1,126 @@
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 2rem !important;
+  gap: 1rem;
+}
+
+.containerRow {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem !important;
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.itemColumn {
+  display: flex;
+  flex-flow: column wrap;
+  gap:5px;
+}
+
+.itemRow {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+
+.executionRow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.itemFallout {
+  width: 100% !important;
+}
+
+.cardHeader {
+  font-size: 18px;
+  align-self: center;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.cardData {
+  font-size: 28px;
+  font-weight: 500;
+  align-self: center;
+}
+
+.spinner {
+  color: var(--primaryColor) !important;
+  width: 80px !important;
+  height: 80px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    gap: 0.6rem;
+    padding: 1.5rem !important;
+  }
+
+  .containerRow {
+    gap: 0.6rem;
+    padding: 1.5rem !important;
+  }
+
+  .itemRow {
+    gap: 0.6rem;
+  }
+
+  .executionRow {
+    gap: 0.6rem;
+  }
+
+  .cardHeader {
+    font-size: 16px;
+    align-self: center;
+  }
+
+  .cardData {
+    font-size: 24px;
+    font-weight: 500;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cardHeader {
+    font-size: 16px !important;
+    align-self: center;
+  }
+
+  .cardData {
+    font-size: 24px !important;
+    font-weight: 500;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cardHeader {
+    font-size: 14px !important;
+    align-self: center;
+  }
+
+  .containerRow,
+  .container {
+    padding: 1rem !important;
+  }
+
+  .cardData {
+    font-size: 18px !important;
+    font-weight: 500;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .container {
+    overflow: hidden;
+  }
+}

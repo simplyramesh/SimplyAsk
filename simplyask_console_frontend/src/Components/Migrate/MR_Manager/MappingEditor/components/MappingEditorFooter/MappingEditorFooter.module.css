@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  /* height: 100%; */
+
+  background: #fbfbfb;
+}
+
+.footer_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 100vh; */
+  gap: 314px;
+}

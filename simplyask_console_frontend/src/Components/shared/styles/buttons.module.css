@@ -1,0 +1,86 @@
+.button {
+    box-sizing: border-box;
+    width: 125px;
+    height: 38px;
+    border: 2px solid var(--widgetTertiaryColor) !important;
+    color: var(--widgetTertiaryColor) !important;
+    border-radius: 10px !important;
+    font-family: 'Montserrat' !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 17px !important;
+}
+
+.black {
+    border: 2px solid var(--primaryColor) !important;
+    color: var(--primaryColor) !important;
+}
+
+.blackFilled {
+    border: 2px solid var(--primaryColor) !important;
+    background-color: var(--primaryColor) !important;
+    color: var(--whiteColor) !important;
+}
+
+.blackFilled:hover {
+    color: var(--primaryColor) !important;
+    background-color: transparent !important;
+}
+
+.tableButton {
+    border-radius: 50%;
+    background-color: var(--tertiaryColor);
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform .2s ease;
+}
+
+.tableButton:hover {
+    transform: scale(1.1);
+}
+
+.tableButton + .tableButton {
+    margin-left: 10px;
+}
+
+/*form buttons*/
+
+.formButton {
+    width: 130px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.formButton[disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.formButton:hover {
+    background-color: var(--secondaryColor) !important;
+}
+
+.iconButton {
+    display: inline-block;
+    padding: 0 !important;;
+    margin: 0 !important;;
+    appearance: none;
+    background-color: transparent !important;
+    flex-shrink: 0;
+    transition: transform .2s ease;
+}
+
+.iconButton svg {
+    width: 36px;
+    height: 36px;
+    color: var(--secondaryColor) !important;
+}
+
+.iconButton:hover {
+    transform: scale(1.1);
+}

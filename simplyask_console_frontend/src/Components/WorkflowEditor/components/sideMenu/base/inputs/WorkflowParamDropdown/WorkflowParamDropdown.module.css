@@ -1,0 +1,30 @@
+.wrapper {
+  position: relative;
+
+  display: flex;
+  gap: 8px;
+}
+
+.container {
+  position: relative;
+  flex: 1 1 auto;
+}
+
+.error div[class*='-control'] {
+  border: 1px solid #E03B24 !important;
+  outline: none !important;
+}
+
+.warning div[class*='-control'] {
+  border: 1px solid #E7BB09 !important;
+  outline: none !important;
+}
+
+.disabled div[class*='-Control'] {
+  border: 1px solid #C4C4C4;
+  background-color: #F5F5F5;
+}
+
+.disabled div[class*='-IndicatorsContainer'] {
+  opacity: .3;
+}

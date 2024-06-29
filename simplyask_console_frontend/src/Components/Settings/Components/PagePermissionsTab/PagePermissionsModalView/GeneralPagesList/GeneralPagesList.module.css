@@ -1,0 +1,31 @@
+.row {
+  padding-bottom: 10px;
+}
+
+.switch {
+  max-height: 16px;
+  margin-top: 4px;
+  padding-left: 0.2rem !important;
+}
+
+.listGap {
+  margin-bottom: 5px;
+}
+
+.pageName {
+  background-color: var(--backgroundColor);
+  border: 1px solid var(--tertiaryColor);
+  border-radius: 5px;
+  padding: 5px;
+  height: 21px;
+  margin-right: 0 !important;
+  margin-left: auto;
+  width: calc(25vw + 10%) !important;
+}
+
+.pageName p {
+  margin-left: auto;
+  padding-right: 5px;
+  margin-top: 2px;
+  font-size: 13px;
+}

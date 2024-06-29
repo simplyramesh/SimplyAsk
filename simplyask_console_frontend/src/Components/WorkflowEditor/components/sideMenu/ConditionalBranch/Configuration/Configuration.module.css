@@ -1,0 +1,14 @@
+.configuration_title {
+  margin: 22px 0 36px 0;
+}
+
+.configuration {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  gap: 16px;
+}
+
+.configuration:last-child {
+  margin-bottom: 36px;
+}

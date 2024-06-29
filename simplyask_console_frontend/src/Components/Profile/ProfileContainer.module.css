@@ -1,0 +1,7 @@
+.content {
+  display: inline-grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+

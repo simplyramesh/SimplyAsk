@@ -1,0 +1,8 @@
+export const ZOOM_CONFIG_SETTINGS = {
+  MIN_ZOOM: 0.01,
+  MAX_ZOOM: 2,
+  DEFAULT_ZOOM: 1,
+  DEFAULT_POSITION: { x: 0, y: 0 },
+};
+
+export const STEP_LABEL_MAX_ROW_HEIGHT = 61;

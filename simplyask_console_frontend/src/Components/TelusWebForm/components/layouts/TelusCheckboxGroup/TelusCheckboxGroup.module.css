@@ -1,0 +1,23 @@
+.checkbox_group_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-family: 'Helvetica Neue';
+}
+
+.checkbox_group {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.checkbox_groupLabel_text {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Helvetica Neue';
+  font-weight: 500;
+  font-style: normal;
+  color: #2a2c2e;
+  white-space: nowrap;
+}

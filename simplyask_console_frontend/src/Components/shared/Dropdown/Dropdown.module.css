@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex: 1 1 auto;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+
+  /* margin: 0 22px; */
+}
+
+.button {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+
+  width: 100%;
+  padding: 10px 48px 10px 10px;
+
+  border: 1px solid #2d3a47;
+  border-radius: 10px;
+  outline: none;
+  background: #ffffff;
+  background: #ffffff;
+
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+
+  appearance: none;
+  cursor: pointer;
+
+  /* Same padding as InputField with autocomplete for consistency */
+}
+
+.select_icon {
+  position: absolute;
+  right: 16px;
+  top: 25%;
+
+  font-size: 24px;
+
+  pointer-events: none;
+
+  /* transform: translateY(-25%); */
+}
+
+.select_icon svg {
+  width: 14px;
+}
+
+.menu_items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 1 auto;
+  margin: 18px;
+}

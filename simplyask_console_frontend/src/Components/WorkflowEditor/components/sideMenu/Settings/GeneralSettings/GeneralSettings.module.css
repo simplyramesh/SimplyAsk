@@ -1,0 +1,17 @@
+.save_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* margin-top: 4px; */
+}
+
+.error div[class*='-control'] {
+  border: 1px solid #E03B24 !important;
+  outline: none !important;
+}
+
+.warning div[class*='-control'] {
+  border: 1px solid #E7BB09 !important;
+  outline: none !important;
+}

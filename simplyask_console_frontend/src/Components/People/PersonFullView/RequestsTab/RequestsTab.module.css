@@ -1,0 +1,230 @@
+.filters {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.multiSelect {
+  flex: 1;
+  display: flex;
+  gap: 30px;
+  z-index: 2;
+}
+
+.selectFilter {
+  width: 20% !important;
+  min-width: 130px !important;
+}
+
+.selectFilter > div {
+  border-radius: 20px !important;
+}
+
+.statusFilter li:first-child {
+  color: var(--statusAssignedColor) !important;
+}
+
+.statusFilter li:nth-child(2) {
+  color: var(--statusOverdueColor) !important;
+}
+
+.statusFilter li:nth-child(3) {
+  color: var(--statusResolvedColor) !important;
+}
+
+.statusFilter li:nth-child(4) {
+  color: var(--statusUnassignedColor) !important;
+}
+
+.searchBar {
+  max-width: 25%;
+}
+
+.tableCard {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.tableCard table {
+  width: 100%;
+}
+
+.searchBar {
+  max-width: 25%;
+}
+
+.selectFilter > div > div > div > div > ul > li > label > div > span {
+  margin-left: 15px !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.searchBar > input {
+  font-size: 16px !important;
+}
+
+@media screen and (max-width: 1300px) {
+  .tabs_labels > div > div > button {
+    font-size: 16px !important;
+  }
+
+  .multiSelect {
+    font-size: 16px !important;
+  }
+
+  .searchBar > input {
+    font-size: 14px !important;
+  }
+
+  .searchBar > svg {
+    margin-left: -24px !important;
+  }
+
+  .selectFilter {
+    font-size: 16px !important;
+  }
+
+  .tableCard {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .tableCard table > tbody > tr > td > div > span {
+    font-size: 9px !important;
+  }
+
+  .tableCard table > tbody > tr > td > div,
+  .tableCard table > thead > tr > th {
+    font-size: 14px !important;
+  }
+
+  .tableCard table > tbody > tr > td {
+    padding: 0.8rem !important;
+  }
+
+  .tableCard div > p,
+  .tableCard div > nav > ul > li > button {
+    font-size: 13px !important;
+  }
+
+  .tabs_header > div > div > button {
+    font-size: 15px !important;
+    min-width: 85px !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .tabs_labels > div > div > button {
+    font-size: 14px !important;
+  }
+  .topBarLeft p {
+    font-size: 20px;
+  }
+
+  .searchBar {
+    width: 35% !important;
+  }
+
+  .searchBar > svg {
+    margin-left: -50px !important;
+  }
+
+  .searchBar > svg {
+    font-size: 18px !important;
+  }
+
+  .multiSelect {
+    font-size: 14px !important;
+  }
+
+  .searchBar > input {
+    font-size: 13px !important;
+  }
+
+  .selectFilter {
+    font-size: 14px !important;
+  }
+
+  .tableCard {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .tableCard table > tbody > tr > td > div > span {
+    font-size: 9px !important;
+  }
+
+  .tableCard table > tbody > tr > td > div,
+  .tableCard table > thead > tr > th {
+    font-size: 12px !important;
+  }
+
+  .tableCard div > p,
+  .tableCard div > nav > ul > li > button {
+    font-size: 12px !important;
+  }
+
+  .tableCard div {
+    /* this causes two scrollbars to appear inside table body */
+    /* margin: 10px 0 5px 0 !important; */
+  }
+
+  .tabs_header > div > div > button {
+    font-size: 13px !important;
+    min-width: 75px !important;
+  }
+
+  .serviceFilter li label {
+    font-size: 14px !important;
+  }
+
+  .statusFilter li label {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .multiSelect {
+    font-size: 12px !important;
+  }
+
+  .selectFilter {
+    font-size: 14px !important;
+  }
+
+  .serviceFilter li label {
+    font-size: 14px !important;
+  }
+
+  .statusFilter li label {
+    font-size: 14px !important;
+  }
+
+  .searchBar > svg {
+    margin-left: -60px !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .multiSelect {
+    font-size: 12px !important;
+  }
+
+  .searchBar > input {
+    font-size: 12px !important;
+  }
+
+  .selectFilter {
+    font-size: 12px !important;
+  }
+
+  .serviceFilter li label {
+    font-size: 12px !important;
+  }
+
+  .statusFilter li label {
+    font-size: 12px !important;
+  }
+}

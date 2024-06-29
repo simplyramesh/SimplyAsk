@@ -1,0 +1,50 @@
+.StateTable {
+    margin: 26px 0 32px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    border-collapse: collapse;
+}
+
+.StateTable th:first-child,
+.StateTable td:first-child {
+    width: 100%;
+    text-align: left;
+}
+
+.StateTable th {
+    padding: 21px;
+    font-weight: 600;
+    background: #edeff5;
+}
+.StateTable th:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.StateTable th:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.StateTable tbody tr {
+    border-bottom: 1.5px solid #bfbfbf;
+}
+
+.StateTable td {
+    padding: 9px 21px;
+    height: 65px;
+}
+
+.StateTable tbody tr:first-child td {
+    padding-top: 50px;
+    padding-bottom: 19px;
+}
+
+.StateTable tbody .hasDescription:first-child td {
+    padding-top: 40px;
+    padding-bottom: 9px;
+}
+
+.item__description {
+    font-size: 14px;
+    color: #808080;
+}

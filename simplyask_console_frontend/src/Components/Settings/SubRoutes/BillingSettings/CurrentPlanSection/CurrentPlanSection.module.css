@@ -1,0 +1,206 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.root:after {
+  content: "";
+  background: #caced1;
+  height: 1px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.paymentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.paymentCardContainer {
+  display: flex;
+  height: 70px;
+  background: #f2f2f2;
+  border-radius: 10px;
+  align-items: center;
+  padding: 0 16px;
+  gap: 15px;
+}
+
+.flex_row {
+  display: flex;
+  align-items: center;
+}
+
+.flex_row_gap_10 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.flex_row_space_between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.largeBoldText {
+  color: rgba(45, 58, 71, 1);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.largeMidText {
+  color: rgba(45, 58, 71, 1);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.margin_top_15px {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.margin_top_10px {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.smallLightText {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--primaryColor);
+}
+
+.smallBoldText {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.cardImg {
+  width: 60px;
+  height: 40px;
+}
+
+.editPayment {
+  font-size: 15px !important;
+  color: var(--secondaryColor) !important;
+  height: 35px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border: none !important;
+  background: transparent !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  border-radius: 10px !important;
+  transition: all 200ms ease-in !important;
+}
+
+.editPayment:hover {
+  background: var(--tertiaryColor) !important;
+}
+
+.roundedDot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+}
+
+.roundedDot > div {
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  background: #2d3a47;
+  left: 1px;
+  top: 1px;
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+.arrowIcon {
+  color: var(--primaryColor) !important;
+  height: 32px !important;
+  width: 32px !important;
+  margin-left: -8px !important;
+}
+
+.openHistory:hover {
+  background: var(--tertiaryColor);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.padding_left_1px {
+  padding-left: 1px;
+}
+
+.select_classes > div {
+  border-radius: 20px !important;
+  border: none !important;
+  font-size: 15px !important;
+  background: var(--backgroundColor) !important;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px var(--primaryColor) !important;
+}
+
+.select_classes > div > div > div {
+  color: rgba(0, 0, 0, 1) !important;
+  border-radius: 10px !important;
+}
+
+.select_classes > div:nth-child(3) {
+  margin-bottom: 0 !important;
+  background-color: #fff !important;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+.select_classes > div > div {
+  margin-top: -3.3px;
+}
+
+.invoiceMonths {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.gap_12px {
+  gap: 12px;
+}
+
+.pdfIcon {
+  width: 20px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.pdfIcon:hover {
+  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(100%) contrast(119%);
+}
+
+@media screen and (max-width: 1250px) {
+  .paymentDetails {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .largeBoldText {
+    font-size: 15px;
+  }
+
+  .largeMidText {
+    font-size: 14px;
+  }
+
+    .smallLightText {
+    font-size: 14px;
+  }
+}
